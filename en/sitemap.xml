@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://MunjungKim.github.io/</loc>
-    <lastmod>2021-03-13T21:47:41+00:00</lastmod>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="kor"
@@ -19,6 +19,59 @@
                 hreflang="en"
                 href="https://MunjungKim.github.io/"
                 />
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/modularity/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/network/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/post/image-test/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/post/image-test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/post/image-test/"
+                />
+  </url><url>
+    <loc>https://MunjungKim.github.io/post/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/post/"
+                />
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://MunjungKim.github.io/ar/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/transitivity/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/tags/demo/</loc>
     <lastmod>2021-03-13T21:47:41+00:00</lastmod>
@@ -38,19 +91,6 @@
                 href="https://MunjungKim.github.io/tags/demo/"
                 />
   </url><url>
-    <loc>https://MunjungKim.github.io/post/</loc>
-    <lastmod>2021-03-13T21:47:41+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/post/"
-                />
-  </url><url>
     <loc>https://MunjungKim.github.io/tags/shortcode/</loc>
     <lastmod>2021-03-13T21:47:41+00:00</lastmod>
     <xhtml:link
@@ -67,24 +107,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://MunjungKim.github.io/tags/shortcode/"
-                />
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/</loc>
-    <lastmod>2021-03-13T21:47:41+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://MunjungKim.github.io/ar/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/tags/"
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/post/figure-shortcode/</loc>
@@ -369,37 +391,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://MunjungKim.github.io/post/emoji-support/"
-                />
-  </url><url>
-    <loc>https://MunjungKim.github.io/post/image-test/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/post/image-test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/post/image-test/"
-                />
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/thumbnail/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/tags/thumbnail/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://MunjungKim.github.io/ar/tags/thumbnail/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/tags/thumbnail/"
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/about/</loc>
