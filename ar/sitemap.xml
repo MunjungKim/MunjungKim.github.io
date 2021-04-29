@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://MunjungKim.github.io/ar/english/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/ar/english/about/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/ar/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://MunjungKim.github.io/ar/"
+                />
+  </url><url>
     <loc>https://MunjungKim.github.io/ar/korean/</loc>
     <lastmod>2021-03-13T21:47:41+00:00</lastmod>
   </url><url>
@@ -21,24 +45,6 @@
                 rel="alternate"
                 hreflang="ar"
                 href="https://MunjungKim.github.io/ar/tags/demo/"
-                />
-  </url><url>
-    <loc>https://MunjungKim.github.io/ar/</loc>
-    <lastmod>2021-03-13T21:47:41+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://MunjungKim.github.io/ar/"
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/ar/korean/post/</loc>
@@ -82,9 +88,6 @@
   </url><url>
     <loc>https://MunjungKim.github.io/ar/korean/post/figure-shortcode/</loc>
     <lastmod>2021-03-13T21:47:41+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/ar/english/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/ar/english/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
@@ -310,9 +313,6 @@
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/ar/korean/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/ar/english/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/ar/tags/index/</loc>

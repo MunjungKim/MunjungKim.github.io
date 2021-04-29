@@ -6,7 +6,17 @@
     <description>Recent content on MJ&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Mar 2021 21:47:41 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/ar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/ar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>https://MunjungKim.github.io/ar/english/about/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/ar/english/about/</guid>
+      <description>RESEARCH INTEREST Computational Neuroscience, Brain Networks, Embedding
+EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
+    </item>
+    
     <item>
       <title>The Figure Shortcode</title>
       <link>https://MunjungKim.github.io/ar/korean/post/figure-shortcode/</link>
@@ -113,15 +123,6 @@
       
       <guid>https://MunjungKim.github.io/ar/korean/about/</guid>
       <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.</description>
-    </item>
-    
-    <item>
-      <title>Curriculum Vitae</title>
-      <link>https://MunjungKim.github.io/ar/english/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/ar/english/about/</guid>
-      <description>##EDUCATION  Pohang University of Science and Technology(POSTECH) *B.A. in Physics *Semester High Honors for 7 semesters  ##RESEARCH EXPERIENCE  Research Participation Program, Pohang University of Science and Technology(POSTECH) *Advisor  #Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.</description>
     </item>
     
   </channel>

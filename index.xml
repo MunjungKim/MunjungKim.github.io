@@ -8,6 +8,16 @@
     <language>en</language>
     <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Curriculum Vitae</title>
+      <link>https://MunjungKim.github.io/about/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/about/</guid>
+      <description>RESEARCH INTEREST Computational Neuroscience, Brain Networks, Embedding
+EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
+    </item>
+    
+    <item>
       <title>Network Property</title>
       <link>https://MunjungKim.github.io/post/image-test/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
@@ -86,15 +96,6 @@
       
       <guid>https://MunjungKim.github.io/post/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Curriculum Vitae</title>
-      <link>https://MunjungKim.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/about/</guid>
-      <description>##EDUCATION  Pohang University of Science and Technology(POSTECH) *B.A. in Physics *Semester High Honors for 7 semesters  ##RESEARCH EXPERIENCE  Research Participation Program, Pohang University of Science and Technology(POSTECH) *Advisor  #Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.</description>
     </item>
     
   </channel>
