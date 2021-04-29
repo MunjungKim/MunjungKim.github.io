@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MJ&#39;s Website</title>
+    <link>https://MunjungKim.github.io/ar/korean/</link>
+    <description>Recent content on MJ&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Mar 2021 21:47:41 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/ar/korean/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://MunjungKim.github.io/ar/korean/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/ar/korean/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://MunjungKim.github.io/ar/korean/contact/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/ar/korean/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://MunjungKim.github.io/ar/korean/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/ar/korean/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.</description>
+    </item>
+    
+  </channel>
+</rss>
