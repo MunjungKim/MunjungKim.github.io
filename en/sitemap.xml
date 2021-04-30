@@ -20,19 +20,6 @@
                 href="https://MunjungKim.github.io/"
                 />
   </url><url>
-    <loc>https://MunjungKim.github.io/about/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/about/"
-                />
-  </url><url>
     <loc>https://MunjungKim.github.io/apad/about/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -69,6 +56,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://MunjungKim.github.io/post/"
+                />
+  </url><url>
+    <loc>https://MunjungKim.github.io/about/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/about/"
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/tags/</loc>
