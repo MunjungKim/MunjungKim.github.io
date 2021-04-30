@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/ar/english/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Curriculum Vitae</title>
+      <title></title>
       <link>https://MunjungKim.github.io/ar/english/about/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
@@ -18,20 +18,20 @@ EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://MunjungKim.github.io/ar/english/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/ar/english/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://MunjungKim.github.io/ar/english/contact/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://MunjungKim.github.io/ar/english/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://MunjungKim.github.io/ar/english/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/ar/english/archives/</guid>
       <description></description>
     </item>
     

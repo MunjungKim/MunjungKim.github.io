@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apads on MJ&#39;s blog</title>
+    <link>https://MunjungKim.github.io/apad/</link>
+    <description>Recent content in Apads on MJ&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/apad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://MunjungKim.github.io/apad/about/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/about/</guid>
+      <description>RESEARCH INTEREST Computational Neuroscience, Brain Networks, Embedding
+EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
+    </item>
+    
+  </channel>
+</rss>
