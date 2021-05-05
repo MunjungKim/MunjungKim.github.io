@@ -6,15 +6,14 @@
     <description>Recent content in Apads on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/apad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/apad/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://MunjungKim.github.io/apad/about/</link>
-      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      <title>Math Typesetting</title>
+      <link>https://MunjungKim.github.io/apad/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/apad/about/</guid>
-      <description>RESEARCH INTEREST Computational Neuroscience, Brain Networks, Embedding
-EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
+      <guid>https://MunjungKim.github.io/apad/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     
   </channel>

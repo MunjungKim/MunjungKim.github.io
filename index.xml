@@ -6,15 +6,14 @@
     <description>Recent content on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://MunjungKim.github.io/apad/about/</link>
-      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      <title>Gradient Descent</title>
+      <link>https://MunjungKim.github.io/post/emoji-support/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/apad/about/</guid>
-      <description>RESEARCH INTEREST Computational Neuroscience, Brain Networks, Embedding
-EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
+      <guid>https://MunjungKim.github.io/post/emoji-support/</guid>
+      <description>This article is written based on the lectureMATH532 by Prof.Hwang.</description>
     </item>
     
     <item>
@@ -92,6 +91,15 @@ EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
     
     <item>
       <title>Math Typesetting</title>
+      <link>https://MunjungKim.github.io/apad/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
       <link>https://MunjungKim.github.io/post/math-typesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
@@ -106,15 +114,6 @@ EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
       
       <guid>https://MunjungKim.github.io/project/math-typesetting/</guid>
       <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://MunjungKim.github.io/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/post/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
     <item>
