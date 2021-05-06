@@ -6,23 +6,32 @@
     <description>Recent content on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Gradient Descent</title>
-      <link>https://MunjungKim.github.io/post/emoji-support/</link>
-      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      <title>Malkus-Lorenz Wheel (Mathematics &#43; Code)</title>
+      <link>https://MunjungKim.github.io/post/lorenz_wheel/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/post/emoji-support/</guid>
-      <description>This article is written based on the lectureMATH532 by Prof.Hwang.</description>
+      <guid>https://MunjungKim.github.io/post/lorenz_wheel/</guid>
+      <description>This term project is first inspired by the book Chaos written by James Gleick.</description>
     </item>
     
     <item>
-      <title>Network Property</title>
-      <link>https://MunjungKim.github.io/post/image-test/</link>
-      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      <title>Hierarchical organization of cortical and thalamic connectivity</title>
+      <link>https://MunjungKim.github.io/apad/math-typesetting/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/post/image-test/</guid>
-      <description>Modularity Modularity is the fraction of the edges that fall within</description>
+      <guid>https://MunjungKim.github.io/apad/math-typesetting/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gradient Descent</title>
+      <link>https://MunjungKim.github.io/post/gradient_descent/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/post/gradient_descent/</guid>
+      <description>This article is written based on the lectureMATH532 by Prof.Hwang.</description>
     </item>
     
     <item>
@@ -37,29 +46,11 @@ EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
     
     <item>
       <title>The Figure Shortcode</title>
-      <link>https://MunjungKim.github.io/post/figure-shortcode/</link>
-      <pubDate>Sat, 13 Mar 2021 21:47:41 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/post/figure-shortcode/</guid>
-      <description>Hugo has figure shortcode built-in, so you can easily add figure captions or hyperlink rel attributes to images.</description>
-    </item>
-    
-    <item>
-      <title>The Figure Shortcode</title>
       <link>https://MunjungKim.github.io/project/figure-shortcode/</link>
       <pubDate>Sat, 13 Mar 2021 21:47:41 +0000</pubDate>
       
       <guid>https://MunjungKim.github.io/project/figure-shortcode/</guid>
       <description>Hugo has figure shortcode built-in, so you can easily add figure captions or hyperlink rel attributes to images.</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://MunjungKim.github.io/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/post/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,39 +63,12 @@ EDUCATION   Pohang University of Science and Technology(POSTECH)</description>
     </item>
     
     <item>
-      <title>Placeholder Text</title>
-      <link>https://MunjungKim.github.io/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/post/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://MunjungKim.github.io/contact/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://MunjungKim.github.io/contact/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://MunjungKim.github.io/apad/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://MunjungKim.github.io/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/post/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme=""><head>
-    <title> MunJung Kim | Hierarchical organization of cortical and thalamic connectivity </title>
+    <title> MunJung Kim | Malkus-Lorenz Wheel (Mathematics &#43; Code) </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Harris, J.A., Mihalas, S., Hirokawa, K.E. et al. Hierarchical organization of cortical and thalamic connectivity. Nature 575, 195–202 (2019). https://doi.org/10.1038/s41586-019-1716-z">
+    <meta name="description" content="Mathematics and Code">
     
     
     
@@ -32,7 +32,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/apad/math-typesetting/">
+    <link rel="canonical" href="/post/lorenz_wheel/">
 
     
     
@@ -55,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Hierarchical organization of cortical and thalamic connectivity"/>
-<meta name="twitter:description" content="Harris, J.A., Mihalas, S., Hirokawa, K.E. et al. Hierarchical organization of cortical and thalamic connectivity. Nature 575, 195–202 (2019). https://doi.org/10.1038/s41586-019-1716-z"/>
+<meta name="twitter:title" content="Malkus-Lorenz Wheel (Mathematics &#43; Code)"/>
+<meta name="twitter:description" content="Mathematics and Code"/>
 
 
     
@@ -170,11 +170,143 @@
         <div class="post-content">
             
             <div class="post-title">
-                <h3>Hierarchical organization of cortical and thalamic connectivity</h3>
+                <h3>Malkus-Lorenz Wheel (Mathematics &#43; Code)</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date"> 
+                                                6/5/2021
+                                           </span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">4-minute read</span>
+                    </div>
                 
             </div>
 
-            <h1 id="summary">Summary</h1>
+            <p>This term project is first inspired by the book <a href="https://en.wikipedia.org/wiki/Chaos:_Making_a_New_Science">Chaos</a> written by James Gleick.</p>
+<h1 id="mathematical-background">Mathematical Background</h1>
+<h2 id="malkus-lorenz-water-wheel">Malkus-Lorenz water wheel</h2>
+<p>I referred to the class <a href="https://www.youtube.com/watch?v=HljJv7Hf6Zo&amp;t=2163s">MAE5790-15</a> at Cornell University and the <a href="https://journals.aps.org/pra/pdf/10.1103/PhysRevA.45.626">paper</a> by Miroslav Kolar and Godfrey Gumbs.</p>
+<p>{{- $image := resources.Get &ldquo;images/waterwheel.png&rdquo; -}}</p>
+<p>Here, I&rsquo;m going to express the dynamics of waterwheel in a mathematical way and show how the movement of a waterwheel follows <a href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz Equation</a>.</p>
+<p>Before start the section, let&rsquo;s define some notations.</p>
+<ul>
+<li>
+<p>\(w \)=  angular velocity of the water wheel.</p>
+</li>
+<li>
+<p>\(\theta\) = angle in lab frame where \theta = 0 indicates 12:00 direction.</p>
+</li>
+<li>
+<p>\(Q(\theta)\) = rate at which water is pumped in.</p>
+</li>
+<li>
+<p>\(r\) = radius of wheel</p>
+</li>
+<li>
+<p>\(m(\theta,t)\) = mass distribution of water around rim.</p>
+</li>
+</ul>
+<h2 id="conservation-law">Conservation Law</h2>
+<p>The mass of water between \(\theta_1\) and \(\theta_2\) is</p>
+<p>$$
+M = \int_{\theta_1}^{\theta_2} m(\theta,t)d\theta
+$$</p>
+<p>The conservation law of the mass of water in the wheel can be written as</p>
+<p>\begin{equation}
+\frac{\partial m}{\partial t} = Q - Km - w\frac{\partial m}{\partial \theta}
+\label{eq:mass}
+\end{equation}</p>
+<p>$Q$ is water in-flowing into the wheel, $Km$ and $w\frac{\partial m}{\partial \theta}$ is water leaking from the water wheel. Here, I assume that the rate at which water leaking form water wheel is</p>
+<p>Then, consider the sector where $\theta \in [\theta_1,\theta_2]$.</p>
+<p>The mass between this section $M$, can be expressed as</p>
+<p>\begin{equation}
+\Delta M =\Delta t \Big[ \int^{\theta_2}<em>{\theta_1} Q(\theta) d\theta - \int^{\theta_2}</em>{\theta_1} Km(\theta) d\theta -m(\theta_2) w+m(\theta_1)w\Big]
+\end{equation}</p>
+<p>\subsection{Newton&rsquo;s law}</p>
+<p>Suppose $I(t)$ is the moment of inertia of the wheel. Then, the torque can be expressed as</p>
+<p>\begin{equation}
+\frac{\partial (Iw)}{\partial t}
+\label{eq: torque_1}
+\end{equation}</p>
+<p>There is two source terms produce torque. One is damping term, and the other is the torque due to the gravity. If we assume that the damping torque is linear to the angular velocity,</p>
+<p>\begin{equation}
+\frac{\partial (Iw)}{\partial t} = -vw + gr\int^{2\pi}_{0}m(\theta,t)sin\theta d\theta
+\label{eq: torque_2}
+\end{equation}</p>
+<p>where $g$ is effective gravity.</p>
+<ol>
+<li>The wheel is much heavier than the water.</li>
+<li></li>
+</ol>
+<p>\subsection{}</p>
+<p>From Eq.(\ref{eq:mass}), we can get</p>
+<p>\begin{equation}
+\frac{\partial M}{\partial t} = Q_{tot} -KM
+\end{equation}</p>
+<p>where $M$ is total mass of water on the wheel.</p>
+<p>\subsection{Fourier Series}</p>
+<p>Since $m(\theta,t)$ is $2\pi$ periodic in $\theta$, it can be represented as Fourier time series.</p>
+<p>\begin{equation}
+m(\theta,t) = \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)
+\label{eq:m_fourier}
+\end{equation}</p>
+<p>Similarly, $Q(\theta)$ also can be represented as Fourier series.</p>
+<p>\begin{equation}
+Q(\theta) = \sum_{n=0}^{\infty}q_n\cos(n\theta)
+\label{eq:Q_fourier}
+\end{equation}</p>
+<p>The reason why there is no $\sin$ term in $Q$ is because water fall into the wheel symmetrically at the top.</p>
+<p>Now, we can plug Eq.(\ref{eq:m_fourier}) and Eq.(\ref{eq:Q_fourier}) into Eq.(\ref{eq:mass}).</p>
+<p>\begin{equation}
+\begin{split}
+\frac{\partial }{\partial t} \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)&amp; = \sum_{n=0}^{\infty}q_n\cos(n\theta)
+\label{eq:Q_fourier} - K\Big[\sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)\Big] \<br>
+&amp;-w\frac{\partial}{\partial \theta}\sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)
+\end{split}
+\end{equation}
+\label{eq:fourier}</p>
+<p>Since $\sin$ and $\cos$ has orthogonality, we can calculate coefficient respectively.</p>
+<p>In terms of $\sin$,</p>
+<p>\begin{equation}
+\dot{a_n} = -Ka_n +w b_n
+\end{equation}</p>
+<p>and in terms of $cos$,</p>
+<p>\begin{equation}
+\dot{b_n} = q_n-Kb_n -w a_n
+\end{equation}</p>
+<p>Finally, we can plug Eq.(\ref{eq:m_fourier}) into Eq.(\ref{eq: torque_2}).</p>
+<p>\begin{equation}
+\begin{split}
+\frac{\partial (Iw)}{\partial t} &amp;= -vw + gr\int^{2\pi}<em>{0}[\sum</em>{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)]sin\theta d\theta \<br>
+&amp;= -vw + gr\int^{2\pi}_{0}[a_1(t)\sin(\theta)]sin\theta d\theta\<br>
+&amp;=-vw+gra_1\pi
+\end{split}
+\end{equation}</p>
+<p>Here, all the terms except $\sin\theta$ in $m(\theta,t)$ vanish because of the orthogonality.</p>
+<p>In summary we get three below equations.</p>
+<p>\begin{empheq}[box=\fbox]{align}
+\dot{a_n}&amp;= -Ka_n+w b_n\<br>
+\dot{b_n}&amp;=q_n-Kb_n-w a_n\<br>
+I\dot{w} &amp;=-vw+gra_1\pi
+\end{empheq}</p>
+<p>In the above equation, only $a_1$ ,$b_1$, and $w$ decouple. Therefore, we don&rsquo;t have to concentrate on $a_n$ and $b_n$ except $n=1$.</p>
+<p>\begin{empheq}[box=\fbox]{align}
+\dot{a_1}&amp;= -Ka_n+w b_1\<br>
+\dot{b_1}&amp;=q_1-Kb_1-w a_1\<br>
+I\dot{w} &amp;=-vw+gra_1\pi
+\end{empheq}</p>
+<p>This is exactly same with Lorenz equation after introducing the following equations and change time coordinate from $t$ to $s = Kt$
+\begin{align}
+\rho &amp;= \frac{\pi Agr^2q_1}{K^2v}\<br>
+\sigma &amp;= \frac{v}{KI}
+\end{align}
+and</p>
+<p>\begin{align}
+x &amp;= \frac{w}{K}\<br>
+y &amp;= \frac{\rho K a_1}{q_1} \<br>
+z &amp;= \rho -\frac{\rho K b_1}{q_1}
+\end{align}</p>
 <p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
 <ul>
 <li>Create a partial under <code>/layouts/partials/math.html</code></li>
@@ -195,7 +327,8 @@
 <p>Block math:
 $$
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p></div>
+$$</p>
+</div>
         <div class="post-footer">
             <div class="info">
                 
