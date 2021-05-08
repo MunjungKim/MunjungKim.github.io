@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nestrov Accelerated Gradient on MJ&#39;s blog</title>
+    <link>https://MunjungKim.github.io/tags/nestrov-accelerated-gradient/</link>
+    <description>Recent content in Nestrov Accelerated Gradient on MJ&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/tags/nestrov-accelerated-gradient/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gradient Descent</title>
+      <link>https://MunjungKim.github.io/post/gradient_descent/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/post/gradient_descent/</guid>
+      <description>This article is written based on the lecture MATH532 by Prof.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -178,29 +178,22 @@
                                                 3/5/2021
                                            </span>
                         <em class="fas fa-stopwatch"></em>
-                        <span class="reading-time">2-minute read</span>
+                        <span class="reading-time">15-minute read</span>
                     </div>
                 
             </div>
 
-            <p>This article is written based on the lecture <a href="https://plms.postech.ac.kr/local/ubion/course/syllabusV.php?id=1022">MATH532</a>  by Prof.Hwang at POSTECH.</p>
+            <p>This article is written based on the lecture <a href="https://plms.postech.ac.kr/local/ubion/course/syllabusV.php?id=1022">MATH532</a>  by Prof. Hwang at POSTECH.</p>
 <h2 id="what-is-gradient-descent-algorithm">What is Gradient Descent Algorithm</h2>
-<figure class="left">
-    <img src="https://munjungkim.github.io/static/images/POST/Gradient.png"
-         alt="image"/> <figcaption>
-            <p>figure-left</p>
-        </figcaption>
-</figure>
-
-<p>In machine learning, we usually have to find a way to minimize a traget function(e.g. MSE). How can we find the minimum of the target function if it is too dizzy to find the minimum? Think about the basic calculus which you learn in your freshman. There was a notion called &ldquo;Gradient&rdquo;. Gradient of a function points the dirction of the steepest slope. It&rsquo;s magnitude also mean the rate of increase or decrease of the function in that direction. Therefore, gradient is very of use to find minimum or maximum valu in that it point where we have to go to find our destination. Of course, we have to follow the direction where gradient points. This can be written as</p>
+<p>In machine learning, we usually have to find a way to minimize a traget function (e.g. MSE). How can we find the minimum of the target function if it is too dizzy to find the minimum? Think about the basic calculus which you learned in your freshman. There was a notion called &ldquo;Gradient,&rdquo; which points the dirction of the steepest slope. Its magnitude also means the rate of increase or decrease of the function in the direction. Therefore, gradient is very of use to find minimum or maximum valu in that it points where we have to go to find our destination. Of course, we have to follow the direction where gradient points. This can be written as</p>
 <p>$$
 w_k = w_{k-1} - \eta \cdot \nabla_w J(w_{k-1})
 = w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{N} L(w_{k-1};x_i,y_i)
 $$</p>
 <p>where \(J(w) = \sum_{i=1}^{N}L(y_i,\hat{f}(w;x_i))\) and \(L\) is a loss function.</p>
 <h4 id="limitations">Limitations</h4>
-<p><img src="/images/POST/Gradient.png" alt="limitation">{: width=&ldquo;100%&rdquo; height=&ldquo;100%&quot;}
-Simple gradient descent alogrithm has several limitations.</p>
+<p><img src="/images/POST/Gradient.png" alt="limitation"></p>
+<p>Simple gradient descent alogrithm has several limitations.</p>
 <ul>
 <li>
 <p>If the starting point for gradient descent was chosen inappropriately, the algorithm will only make it approach a local minimum, never reaching the global one.</p>
@@ -211,21 +204,82 @@ fit in memory.</p>
 </li>
 </ul>
 <h2 id="stochastic-gradient">Stochastic Gradient</h2>
-<p>The function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
-<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site&rsquo;s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
+<p>One method to overcome the limitations alluded before is the stochastic gradient descent. It is literally the stochastic approximation of gradient descent optimization.</p>
+<p>We select data size \(B\) from all sample size \(N\). Then we can iteratively calculate parameter \(w\) where the loss function is being minimized. This can reduce the computational burden. Also, there is a fluctuation in the objective function since we select the \(B\) data randomly. This fluctuation enables it to jump to new and potentially better local minima.</p>
+<p>$$
+w_k  = w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1};x_i,y_i)
+$$</p>
+<p><img src="/images/POST/SGD.png" alt="limitation"></p>
+<h3 id="momentum-methods">Momentum Methods</h3>
+<p>This is the most interesting algoritm in the class today! When we drop the ball on the complex loss function with a proper friction, the ball is likely to pass through the local minima and arrive at global minima.
+This is becuase as ball moves downward, its potential energy transform to the kinetic energy so that it gains the energy to pass through the local minima. Momentum Methods are made inspired by this physical phenomenon. The name momentum comes from the fact that the negative gradient is a force moving a particle through parameter space.</p>
+<p>The algorithm can be expressed with equations as below.</p>
+<p>$$
+v_k = \gamma v_{k-1} +  \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1};x_i,y_i)
+$$
+$$
+w_k  = w_{k-1} - v_k
+\newline= w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1};x_i,y_i)
+$$</p>
+<p>Here, \(\gamma\) plays a role as a friction. (Although not exactly same.)
+It is a method that helps acclerate SGD (Sotchasstic Gradient Descent) in the relevant direction and dempens oscillations. Also, it can hlep to escape local minima.</p>
+<h3 id="nestrov-accelerated-gradient">Nestrov Accelerated gradient</h3>
+<p>Momentum method adjusts the momentum based on current position \(w_{k-1}\). On the other hand, Nestrov Acclerated gradient based on approximated future position \(w_{k-1}-\gamma w_{k-1}\).</p>
+<p>$$
+v_k = \gamma v_{k-1} +  \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1}-\gamma w_{k-1};x_i,y_i)
+$$
+$$
+w_k  = w_{k-1} - v_k
+\newline= w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1}-\gamma w_{k-1};x_i,y_i)
+$$</p>
+<h2 id="adaptive-method">Adaptive Method</h2>
+<h4 id="adagrad">AdaGrad</h4>
+<p>As I alluded before, in order to arive at global minimum, not local minimum, we need to have appropriate parameter \(\eta \). Too small \(\eta \) can cause too slow convergence and too small \(\eta\) can cause too much fluctuation to converge. Also having a constant \(\eta\) is not suitable in the complex loss function.</p>
+<p>AdaGrad (Adaptive Gradient) is the algorithm that djust learning rate automatically. It updates more for infrequent parameter and less for frequent parameter. The algorithm can be written as
+$$
+g_{k-1,i} := \nabla_w J(w_{k-1})
+$$</p>
+<p>$$
+G_{k-1,i} = \sum_{t=0}^{k-1}|g_{t,i}|^2
+$$</p>
+<p>$$
+w_k  = w_{k-1} - \eta \cdot \nabla_w \frac{\eta}{\sqrt{G_{k-1.i+\epsilon}}}g_{k-1,i}
+$$</p>
+<p>As the accumulated gradient gets bigger, the learning rate gets smaller.</p>
+<h4 id="rmsprob">RMSProb</h4>
+<p>AdaGrad has some weakness because denominator \(G\). Since \(G\) increases monotonically, the learning rate becomes shrink and eventually become very small so the algorithm can not learn anymore. If we change the summation of \(g_{k-1,i}\) into the average of
+\(g_{k-1,i}\).</p>
+<p>$$
+g_{k-1,i} := \nabla_w J(w_{k-1})
+$$</p>
+<p>$$
+E[g^2]_{k-1} = \gamma E[g^2] _{k-1} + (1-\gamma) g^2 _{k-1}
+$$</p>
+<p>where
+$$
+E[g^2]_{k-1} = \sum^{k-1} _{i=0}(1-\gamma)\gamma^i g^2 _{k-1-i}
+$$</p>
+<p>$$
+w_k  = w_{k-1} - \eta \cdot \nabla_w \frac{\eta}{\sqrt{E[g^2]_{k-1}+\epsilon}}g_{k-1,i}
+$$</p>
+<h4 id="adadelta">AdaDelta</h4>
+<h4 id="adam">Adam</h4>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>
+<p>Hastie, T., Tibshirani, R., &amp; Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction, Second Edition. New York: Springer Series in Statistics</p>
+</li>
+<li>
+<p>James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2013). An introduction to statistical learning (Vol. 112). New York: springer.</p>
+</li>
+</ul>
 <!-- raw HTML omitted -->
-<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
-<hr>
-<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">.emoji {
-  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-}</code></pre></div>
-
+<!-- raw HTML omitted -->
 </div>
         <div class="post-footer">
             <div class="info">
                 
-                <span class="separator"><a class="tag" href="/tags/machine-learning/">Machine Learning</a><a class="tag" href="/tags/gradient-descent/">Gradient Descent</a></span>
+                <span class="separator"><a class="tag" href="/tags/machine-learning/">Machine Learning</a><a class="tag" href="/tags/gradient-descent/">Gradient Descent</a><a class="tag" href="/tags/momentum-method/">Momentum Method</a><a class="tag" href="/tags/nestrov-accelerated-gradient/">Nestrov Accelerated Gradient</a></span>
             </div>
         </div>
 
