@@ -185,8 +185,6 @@
 
             <p>This article is written based on the lecture <a href="https://plms.postech.ac.kr/local/ubion/course/syllabusV.php?id=1022">MATH532</a>  by Prof.Hwang at POSTECH.</p>
 <h2 id="what-is-gradient-descent-algorithm">What is Gradient Descent Algorithm</h2>
-<p><img src="/images/POST/Gradient.png" width="300" height="300" alt="Cat"></p>
-<p>{{ $image := resources.Get &ldquo;/images/POST/Gradient.png&rdquo; }}</p>
 <figure class="left">
     <img src="https://munjungkim.github.io/static/images/POST/Gradient.png"
          alt="image"/> <figcaption>
@@ -194,10 +192,6 @@
         </figcaption>
 </figure>
 
-<p>{{ define &ldquo;main&rdquo; }}</p>
-<p>{{ $image := resources.Get &ldquo;images/POST/Gradient.png&rdquo; }}
-<!-- raw HTML omitted --></p>
-<p>{{ end }}</p>
 <p>In machine learning, we usually have to find a way to minimize a traget function(e.g. MSE). How can we find the minimum of the target function if it is too dizzy to find the minimum? Think about the basic calculus which you learn in your freshman. There was a notion called &ldquo;Gradient&rdquo;. Gradient of a function points the dirction of the steepest slope. It&rsquo;s magnitude also mean the rate of increase or decrease of the function in that direction. Therefore, gradient is very of use to find minimum or maximum valu in that it point where we have to go to find our destination. Of course, we have to follow the direction where gradient points. This can be written as</p>
 <p>$$
 w_k = w_{k-1} - \eta \cdot \nabla_w J(w_{k-1})
@@ -205,7 +199,8 @@ w_k = w_{k-1} - \eta \cdot \nabla_w J(w_{k-1})
 $$</p>
 <p>where \(J(w) = \sum_{i=1}^{N}L(y_i,\hat{f}(w;x_i))\) and \(L\) is a loss function.</p>
 <h4 id="limitations">Limitations</h4>
-<p>Simple gradient descent alogrithm has several limitations.</p>
+<p><img src="/images/POST/Gradient.png" alt="limitation">{: width=&ldquo;100%&rdquo; height=&ldquo;100%&quot;}
+Simple gradient descent alogrithm has several limitations.</p>
 <ul>
 <li>
 <p>If the starting point for gradient descent was chosen inappropriately, the algorithm will only make it approach a local minimum, never reaching the global one.</p>
