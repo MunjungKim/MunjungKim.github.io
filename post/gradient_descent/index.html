@@ -178,7 +178,7 @@
                                                 3/5/2021
                                            </span>
                         <em class="fas fa-stopwatch"></em>
-                        <span class="reading-time">15-minute read</span>
+                        <span class="reading-time">5-minute read</span>
                     </div>
                 
             </div>
@@ -192,7 +192,13 @@ w_k = w_{k-1} - \eta \cdot \nabla_w J(w_{k-1})
 $$</p>
 <p>where \(J(w) = \sum_{i=1}^{N}L(y_i,\hat{f}(w;x_i))\) and \(L\) is a loss function.</p>
 <h4 id="limitations">Limitations</h4>
-<p><img src="/images/POST/Gradient.png" alt="limitation"></p>
+<figure>
+    <img src="https://i.redd.it/9euoe42zwj641.jpg"
+         alt="image"/> <figcaption>
+            <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/eez8al/gradient_descent/">https://www.reddit.com/r/ProgrammerHumor/comments/eez8al/gradient_descent/</a></p>
+        </figcaption>
+</figure>
+
 <p>Simple gradient descent alogrithm has several limitations.</p>
 <ul>
 <li>
@@ -212,7 +218,7 @@ $$</p>
 <p><img src="/images/POST/SGD.png" alt="limitation"></p>
 <h3 id="momentum-methods">Momentum Methods</h3>
 <p>This is the most interesting algoritm in the class today! When we drop the ball on the complex loss function with a proper friction, the ball is likely to pass through the local minima and arrive at global minima.
-This is becuase as ball moves downward, its potential energy transform to the kinetic energy so that it gains the energy to pass through the local minima. Momentum Methods are made inspired by this physical phenomenon. The name momentum comes from the fact that the negative gradient is a force moving a particle through parameter space.</p>
+This is becuase as ball moves downward, its potential energy transform to the kinetic energy so that it gains the energy to pass through the local minima. Momentum Methods are made inspired by this physical phenomenon. The name momentum comes from the fact that the negative gradient is a force moving a particle through parameter space. (although it is not exactly the same as that found in classical momentum.)</p>
 <p>The algorithm can be expressed with equations as below.</p>
 <p>$$
 v_k = \gamma v_{k-1} +  \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1};x_i,y_i)
@@ -247,8 +253,8 @@ w_k  = w_{k-1} - \eta \cdot \nabla_w \frac{\eta}{\sqrt{G_{k-1.i+\epsilon}}}g_{k-
 $$</p>
 <p>As the accumulated gradient gets bigger, the learning rate gets smaller.</p>
 <h4 id="rmsprob">RMSProb</h4>
-<p>AdaGrad has some weakness because denominator \(G\). Since \(G\) increases monotonically, the learning rate becomes shrink and eventually become very small so the algorithm can not learn anymore. If we change the summation of \(g_{k-1,i}\) into the average of
-\(g_{k-1,i}\).</p>
+<p>AdaGrad has some weaknesses because denominator \(G\). Since \(G\) increases monotonically, the learning rate becomes shrink and eventually becomes very small so the algorithm can not learn anymore. If we change the summation of \(g_{k-1,i}\) into the average of
+\(g_{k-1,i}\), the problem can be solved. RMSProb average previous \(g\) and current \(g\) with the weight \(1-\gamma \) and \(\gamma \) respectively.</p>
 <p>$$
 g_{k-1,i} := \nabla_w J(w_{k-1})
 $$</p>
@@ -259,11 +265,51 @@ $$</p>
 $$
 E[g^2]_{k-1} = \sum^{k-1} _{i=0}(1-\gamma)\gamma^i g^2 _{k-1-i}
 $$</p>
-<p>$$
+<p>and
+$$
 w_k  = w_{k-1} - \eta \cdot \nabla_w \frac{\eta}{\sqrt{E[g^2]_{k-1}+\epsilon}}g_{k-1,i}
 $$</p>
 <h4 id="adadelta">AdaDelta</h4>
+<p>AdaDelta is another extension of AdaGrad. AdaDelta not only focuses on the denomiantor but also numerator.</p>
+<p>$$
+g_{k-1,i} := \nabla_{w_k} J(w_{k-1})
+$$</p>
+<p>$$
+E[\Delta w^2]_{k-1} = \gamma_1 E[\Delta w^2] _{k-2} + (1-\gamma_1) \Delta w^2 _{k-1}
+$$</p>
+<p>$$
+E[g^2]_{k-1} = \gamma_2 E[g^2] _{k-1} + (1-\gamma_2) g^2 _{k-1}
+$$</p>
+<p>and
+$$
+w_k  = w_{k-1} - \eta \cdot \nabla_w \frac{\sqrt{E[\Delta w^2]_{k-1}+\epsilon}}{\sqrt{E[g^2]_{k-1}+\epsilon}}g_{k-1,i}
+$$</p>
 <h4 id="adam">Adam</h4>
+<p>Adam is the algorithm that mixes RMSProp and Momentum. It was proposed by KIngma &amp;Ba. It not only keeps the average of past squared gradients like Adadelta and RMSProp, but also keep the average of past gradients. Since inital average are biased towards zero, Adam adjusts initial averages to be unbiased.</p>
+<p>$$
+g_{k-1,i} := \nabla_{w_k} J(w_{k-1})
+$$</p>
+<p>$$
+m_{k-1} = \gamma_1 m_{k-2} + (1-\gamma_1)g_{k-1}
+$$</p>
+<p>$$
+v_{k-1} = \gamma_2 v_{k-2} + (1-\gamma_2)g^2_{l-1}
+$$</p>
+<p>$$
+\newline
+\newline
+\hat{m_{k-1}} = \frac{m_{k-1}}{1-\gamma^{k-1}_1}
+$$</p>
+<p>$$
+\hat{v_{k-1}} = \frac{v_{k-1}}{1-\gamma^{k-1}_2}
+$$</p>
+<p>and
+$$
+w_k  = w_{k-1} - \frac{\eta}{\sqrt{\hat{v}_{k-1}}+\eta} \hat{m} _{k-1}
+$$</p>
+<h2 id="code">Code</h2>
+<p>You can get the gradient descent code I wrote from scratch.</p>
+<p><a href="https://github.com/MunjungKim/Gradient-Descent-Algorithm">https://github.com/MunjungKim/Gradient-Descent-Algorithm</a></p>
 <h2 id="reference">Reference</h2>
 <ul>
 <li>
