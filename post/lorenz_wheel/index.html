@@ -178,7 +178,7 @@
                                                 6/5/2021
                                            </span>
                         <em class="fas fa-stopwatch"></em>
-                        <span class="reading-time">4-minute read</span>
+                        <span class="reading-time">6-minute read</span>
                     </div>
                 
             </div>
@@ -186,25 +186,46 @@
             <p>This term project is first inspired by the book <a href="https://en.wikipedia.org/wiki/Chaos:_Making_a_New_Science">Chaos</a> written by James Gleick.</p>
 <h1 id="mathematical-background">Mathematical Background</h1>
 <h2 id="malkus-lorenz-water-wheel">Malkus-Lorenz water wheel</h2>
-<p>I referred to the class <a href="https://www.youtube.com/watch?v=HljJv7Hf6Zo&amp;t=2163s">MAE5790-15</a> at Cornell University and the <a href="https://journals.aps.org/pra/pdf/10.1103/PhysRevA.45.626">paper</a> by Miroslav Kolar and Godfrey Gumbs.</p>
-<p>{{- $image := resources.Get &ldquo;images/waterwheel.png&rdquo; -}}</p>
-<p>Here, I&rsquo;m going to express the dynamics of waterwheel in a mathematical way and show how the movement of a waterwheel follows <a href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz Equation</a>.</p>
-<p>Before start the section, let&rsquo;s define some notations.</p>
+<p>I referred to the class <a href="https://www.youtube.com/watch?v=HljJv7Hf6Zo&amp;t=2163s">MAE5790-15</a>at Cornell University, <a href="https://documents.pub/document/modelling-the-chaotic-waterwheel.html">Modelling the Chaotic Waterwheel</a>, and <a href="https://journals.aps.org/pra/pdf/10.1103/PhysRevA.45.626">paper</a> by Miroslav Kolar and Godfrey Gumbs.</p>
+<figure>
+    <img src="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/images/Image4.gif"
+         alt="image"/> <figcaption>
+            <p>Discrete Water Wheel Model ( <a href="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/">http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/</a> )</p>
+        </figcaption>
+</figure>
+
+<p>The above figure is a discrete case of Malkus-Lorenz waterwheel. It has $N$ countable baskets, which have the same size with each other. In this case, water can not transport from one basket to another basket. ((a) in Fig.~\ref{fig:continuous})</p>
+<figure>
+    <img src="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/images/Image4.gif"
+         alt="image"/> <figcaption>
+            <p>Discrete Water Wheel Model ( <a href="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/">http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/</a> )</p>
+        </figcaption>
+</figure>
+
+<p>\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{Screen Shot 2021-05-07 at 1.10.35 AM.png}
+\caption{Continuous Water Wheel Model} \cite{contiuous}
+\label{fig:continuous}
+\end{figure}</p>
+<p>The notion of a discrete wheel can expand to a continuous version. In this case, water in specific section \(d\theta\) can move to other sections such that the frame of inference is fixed outside the rotation of the wheel.</p>
+<p>Here, I am going to express the dynamics of a waterwheel mathematically and show how the movement of a waterwheel follows <a href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz Equation</a></p>
+<p>Before we start the section, let us define some notations.</p>
 <ul>
 <li>
-<p>\(w \)=  angular velocity of the water wheel.</p>
+<p>\(w(t)\) : angular velocity of the water wheel.</p>
 </li>
 <li>
-<p>\(\theta\) = angle in lab frame where \theta = 0 indicates 12:00 direction.</p>
+<p>\(\theta\) : angle in lab frame where $\theta = 0$ indicates 12:00 direction.</p>
 </li>
 <li>
-<p>\(Q(\theta)\) = rate at which water is pumped in.</p>
+<p>\(Q(\theta)\) : The rate at which water is pumped in. (Not depend on $t$)</p>
 </li>
 <li>
-<p>\(r\) = radius of wheel</p>
+<p>\(r\) : radius of the wheel</p>
 </li>
 <li>
-<p>\(m(\theta,t)\) = mass distribution of water around rim.</p>
+<p>\(m(\theta,t)\) : mass distribution of water around rim.</p>
 </li>
 </ul>
 <h2 id="conservation-law">Conservation Law</h2>
@@ -213,121 +234,171 @@
 M = \int_{\theta_1}^{\theta_2} m(\theta,t)d\theta
 $$</p>
 <p>The conservation law of the mass of water in the wheel can be written as</p>
-<p>\begin{equation}
-\frac{\partial m}{\partial t} = Q - Km - w\frac{\partial m}{\partial \theta}
-\label{eq:mass}
-\end{equation}</p>
-<p>$Q$ is water in-flowing into the wheel, $Km$ and $w\frac{\partial m}{\partial \theta}$ is water leaking from the water wheel. Here, I assume that the rate at which water leaking form water wheel is</p>
-<p>Then, consider the sector where $\theta \in [\theta_1,\theta_2]$.</p>
-<p>The mass between this section $M$, can be expressed as</p>
-<p>\begin{equation}
-\Delta M =\Delta t \Big[ \int^{\theta_2}<em>{\theta_1} Q(\theta) d\theta - \int^{\theta_2}</em>{\theta_1} Km(\theta) d\theta -m(\theta_2) w+m(\theta_1)w\Big]
-\end{equation}</p>
-<p>\subsection{Newton&rsquo;s law}</p>
-<p>Suppose $I(t)$ is the moment of inertia of the wheel. Then, the torque can be expressed as</p>
-<p>\begin{equation}
-\frac{\partial (Iw)}{\partial t}
-\label{eq: torque_1}
-\end{equation}</p>
-<p>There is two source terms produce torque. One is damping term, and the other is the torque due to the gravity. If we assume that the damping torque is linear to the angular velocity,</p>
-<p>\begin{equation}
-\frac{\partial (Iw)}{\partial t} = -vw + gr\int^{2\pi}_{0}m(\theta,t)sin\theta d\theta
-\label{eq: torque_2}
-\end{equation}</p>
-<p>where $g$ is effective gravity.</p>
-<ol>
-<li>The wheel is much heavier than the water.</li>
-<li></li>
-</ol>
-<p>\subsection{}</p>
-<p>From Eq.(\ref{eq:mass}), we can get</p>
-<p>\begin{equation}
+<p>$$
+\frac{\partial m(\theta,t)}{\partial t} = Q - Km(\theta,t) - w\frac{\partial m(\theta,t)}{\partial \theta}
+$$</p>
+<p>where $Q$ is the amount of water in-flowing into the wheel and $Km$ is the amount of water leaking from the water wheel. \(w \frac{\partial m(\theta,t)}{\partial t}\) is the amount of water transport from $\theta$ to the adjacent part. Here, I assume that the rate at which water leaking from the water wheel is constant.</p>
+<p>Then, consider the sector where \(\theta \in [\theta_1,\theta_2]\).</p>
+<p>The mass between this section, \(M\) can be expressed as</p>
+<p>$$
+\Delta M =\Delta t \int_{\theta_1}^{\theta_2} \frac{\partial m(\theta,t)}{\partial t}d\theta= \Delta t \Big[ \int^{\theta_2}_{\theta_1} Q(\theta) d\theta - \int^{\theta_2}_{\theta_1} Km(\theta) d\theta -m(\theta_2) w+m(\theta_1)w\Big]
+$$</p>
+<p>Physical interpretation is as follows.</p>
+<p>\(\Delta t \int^{\theta_2}_{\theta_1} Q(\theta) d\theta\) is the amount of water inflowing to the section \([\theta_1,\theta_2]\).</p>
+<p>\(\Delta t \int^{\theta_2}_{\theta_1} Km(\theta) d\theta \) is the amount of water leaking from the section.</p>
+<p>\(m(\theta_2) w \Delta t\) is the amount of water carried out to the section and \(m(\theta_1) w \Delta t\) is carried into the section.</p>
+<p>If the section is \([0,2\pi]\)</p>
+<p>$$
 \frac{\partial M}{\partial t} = Q_{tot} -KM
-\end{equation}</p>
-<p>where $M$ is total mass of water on the wheel.</p>
-<p>\subsection{Fourier Series}</p>
-<p>Since $m(\theta,t)$ is $2\pi$ periodic in $\theta$, it can be represented as Fourier time series.</p>
-<p>\begin{equation}
+$$</p>
+<p>where $M$ is the total mass of water on the wheel and $Q_tot$ is the total rate at which water is pumped into the whole wheel.</p>
+<h2 id="newtons-law">Newton&rsquo;s law</h2>
+<p>Suppose \(I(t)\) is the moment of inertia of the wheel. Then, the torque can be expressed as</p>
+<p>$$
+\frac{\partial (Iw)}{\partial t}
+$$</p>
+<p>There are two source terms that produce torque. One is the damping term, and the other is the torque due to gravity. If we assume that the damping torque is linear to the angular velocity, we have</p>
+<p>$$
+\frac{\partial (Iw)}{\partial t} = -vw + gr\int^{2\pi}_{0}m(\theta,t)sin\theta d\theta
+$$</p>
+<p>,where \(v\) is the angular velocity of the wheel and $g$ is effective gravity.</p>
+<p>The moment of inertia $I$ can be treated as a constant provided that enough time has elapsed and reached the stable phase. Therefore,</p>
+<p>$$
+I\frac{dw}{dt} = -vw + gr\int^{2\pi}_{0}m(\theta,t)sin\theta d\theta
+$$</p>
+<h2 id="fourier-series">Fourier Series</h2>
+<p>Since \(m(\theta,t)\) is \(2\pi\) periodic in $\theta$, it can be represented as a Fourier time series.</p>
+<p>$$
 m(\theta,t) = \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)
-\label{eq:m_fourier}
-\end{equation}</p>
-<p>Similarly, $Q(\theta)$ also can be represented as Fourier series.</p>
-<p>\begin{equation}
+$$</p>
+<p>Similarly, \(Q(\theta)\) also can be represented as Fourier series.</p>
+<p>$$
 Q(\theta) = \sum_{n=0}^{\infty}q_n\cos(n\theta)
-\label{eq:Q_fourier}
-\end{equation}</p>
-<p>The reason why there is no $\sin$ term in $Q$ is because water fall into the wheel symmetrically at the top.</p>
-<p>Now, we can plug Eq.(\ref{eq:m_fourier}) and Eq.(\ref{eq:Q_fourier}) into Eq.(\ref{eq:mass}).</p>
-<p>\begin{equation}
-\begin{split}
-\frac{\partial }{\partial t} \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)&amp; = \sum_{n=0}^{\infty}q_n\cos(n\theta)
-\label{eq:Q_fourier} - K\Big[\sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)\Big] \<br>
-&amp;-w\frac{\partial}{\partial \theta}\sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)
-\end{split}
-\end{equation}
-\label{eq:fourier}</p>
-<p>Since $\sin$ and $\cos$ has orthogonality, we can calculate coefficient respectively.</p>
-<p>In terms of $\sin$,</p>
+$$</p>
+<p>The reason why there is no sine term in $Q$ is because water falls into the wheel symmetrically at the top.</p>
+<p>Now, we can plug Eqs.(\ref{eq:m_fourier}) and (\ref{eq:Q_fourier}) into Eq.(\ref{eq:mass}).</p>
+<p>$$
+\begin{aligned}
+\frac{\partial }{\partial t} \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta) &amp; = \sum_{n=0}^{\infty}q_n\cos(n\theta)- K\Big[\sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)\Big]  \
+&amp; -w\frac{\partial}{\partial \theta} \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)
+\end{aligned}
+$$</p>
+<p>$$\begin{aligned}
+\lim_{x \to \infty}\frac{2x-5}{4x^4}=0 \<br>
+\end{aligned}$$</p>
+<p>$$\begin{aligned}
+\frac{d}{dx}\left( \int_{0}^{x}f(u),du\right)=f(x)\<br>
+\end{aligned}$$</p>
+<p>Since sine and cosine functions have orthogonality, we can calculate the coefficients respectively,</p>
 <p>\begin{equation}
 \dot{a_n} = -Ka_n +w b_n
 \end{equation}</p>
-<p>and in terms of $cos$,</p>
 <p>\begin{equation}
 \dot{b_n} = q_n-Kb_n -w a_n
 \end{equation}</p>
 <p>Finally, we can plug Eq.(\ref{eq:m_fourier}) into Eq.(\ref{eq: torque_2}).</p>
 <p>\begin{equation}
 \begin{split}
-\frac{\partial (Iw)}{\partial t} &amp;= -vw + gr\int^{2\pi}<em>{0}[\sum</em>{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)]sin\theta d\theta \<br>
-&amp;= -vw + gr\int^{2\pi}_{0}[a_1(t)\sin(\theta)]sin\theta d\theta\<br>
+\frac{\partial (Iw)}{\partial t} &amp;= -vw + gr\int^{2\pi}<em>{0}[\sum</em>{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)]\sin\theta d\theta \<br>
+&amp;= -vw + gr\int^{2\pi}_{0}[a_1(t)\sin(\theta)]\sin\theta d\theta\<br>
 &amp;=-vw+gra_1\pi
 \end{split}
 \end{equation}</p>
 <p>Here, all the terms except $\sin\theta$ in $m(\theta,t)$ vanish because of the orthogonality.</p>
-<p>In summary we get three below equations.</p>
+<p>In summary we get three equations, where $n$ is a non negative integer.</p>
 <p>\begin{empheq}[box=\fbox]{align}
 \dot{a_n}&amp;= -Ka_n+w b_n\<br>
 \dot{b_n}&amp;=q_n-Kb_n-w a_n\<br>
 I\dot{w} &amp;=-vw+gra_1\pi
 \end{empheq}</p>
-<p>In the above equation, only $a_1$ ,$b_1$, and $w$ decouple. Therefore, we don&rsquo;t have to concentrate on $a_n$ and $b_n$ except $n=1$.</p>
+<p>In the above equation, only $a_1$ ,$b_1$, and $w$ are decoupled. Therefore,</p>
 <p>\begin{empheq}[box=\fbox]{align}
-\dot{a_1}&amp;= -Ka_n+w b_1\<br>
+\dot{a_1}&amp;= -Ka_1+w b_1\<br>
 \dot{b_1}&amp;=q_1-Kb_1-w a_1\<br>
 I\dot{w} &amp;=-vw+gra_1\pi
+\label{eq:last}
 \end{empheq}</p>
-<p>This is exactly same with Lorenz equation after introducing the following equations and change time coordinate from $t$ to $s = Kt$
+<p>This is exactly the same as the Lorenz equation after introducing the following equations and change of the time coordinate from $t$ to $s = Kt$
 \begin{align}
 \rho &amp;= \frac{\pi Agr^2q_1}{K^2v}\<br>
-\sigma &amp;= \frac{v}{KI}
+\sigma &amp;= \frac{v}{KI} \<br>
+\beta &amp;= 1
 \end{align}
-and</p>
-<p>\begin{align}
+and
+$
+\begin{align}
 x &amp;= \frac{w}{K}\<br>
 y &amp;= \frac{\rho K a_1}{q_1} \<br>
 z &amp;= \rho -\frac{\rho K b_1}{q_1}
-\end{align}</p>
-<p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
+\end{align}
+$</p>
+<p>\section{Lorenz Equation}
+\subsection{Properties}</p>
+<ol>
+<li>
+<p>Lorenz equations have a symmetric pair of solutions $(x,y,z)$ and $(-x,-y,z)$</p>
+</li>
+<li>
+<p>z-axis is invariant. The point on the z axis where $x=0,y=0$ remains on it.</p>
+</li>
+<li>
+<p>Stationary Point. (I used $r$ instead of $\rho$ here) (Fig.~\ref{fig:bifurcation})</p>
+</li>
+</ol>
+<p>$\bullet$  For $0&lt;r&lt;1$, Lorenz equation has only one stable fixed point.</p>
+<p>$\bullet$  At $r=1$, there is a bifurcation of a simple kind</p>
+<p>$\bullet$ For $r&gt;1$, the origin is non-stable. There are two other stationary points which we shall call $C_1$ and $C_2$.</p>
 <ul>
-<li>Create a partial under <code>/layouts/partials/math.html</code></li>
-<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
-<li>Include the partial in your templates like so:</li>
+<li>
+<p>For $\frac{(\sigma + \beta + 3)\sigma}{\sigma-b-1}&gt;r&gt;1$, $C_1$ and $C_2$ are stable.</p>
+</li>
+<li>
+<p>For $\frac{(\sigma + \beta + 3)\sigma}{\sigma-b-1}&lt;r$ , $C_1$ and $C_2$ are non-stable.</p>
+</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
-<span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
-<span class="o">{{</span> end <span class="o">}}</span>
-</code></pre></div><ul>
-<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
-<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files</li>
-</ul>
-<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">Supported TeX Functions</a></p>
-
-<h3 id="examples">Examples</h3>
-<p>Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)</p>
-<p>Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p>
+<p>\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{Screen Shot 2021-05-10 at 1.21.41 AM.png}
+\caption{$\sigma =10$ and $b=\frac{8}{3}$, \cite{diagram}}
+\label{fig:bifurcation}
+\end{figure}</p>
+<p>\section{Term Project Plan}</p>
+<p>\subsection{Goal}
+The goal of this term project is to observe different phases of the waterwheel system depending on its initial point in Eq.(\ref{eq:last}).</p>
+<ol>
+<li>
+<p>Draw a bifurcation diagram by calculating $x$ with respect to $r$.</p>
+</li>
+<li>
+<p>Check the sensitive dependence on the initial condition where $r&gt;r_{Hpof}$.</p>
+</li>
+<li>
+<p>Repeat 1) and 2) with various parameters.</p>
+</li>
+<li>
+<p>(If I have enough time) Repeat 1), 2) and 3) with a slightly different system (e.g. Two Malkus-Lorenz wheel)</p>
+</li>
+</ol>
+<p>\newpage
+\subsection{Expected Result}</p>
+<ol>
+<li></li>
+</ol>
+<p>\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.4]{Screen Shot 2021-05-11 at 9.28.05 AM.png}
+\caption{Bifurcation Diagram of Lorenz system \cite{bifurcation}.}
+\label{fig:bifurcation}
+\end{figure}</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{Screen Shot 2021-05-10 at 4.18.52 PM.png}
+\caption{Sensitive dependence on the initial condition. }
+\label{fig:bifurcation}
+\end{figure}</p>
 </div>
         <div class="post-footer">
             <div class="info">
