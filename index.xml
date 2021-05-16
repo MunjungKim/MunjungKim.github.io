@@ -6,7 +6,35 @@
     <description>Recent content on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using connectome-based predictive modeling to predict individual behavior from brain connectivity</title>
+      <link>https://MunjungKim.github.io/apad/cpm/</link>
+      <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/cpm/</guid>
+      <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
+&lt;p&gt;Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp;amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. &lt;a href=&#34;https://doi.org/10.1038/nprot.2016.178&#34;&gt;https://doi.org/10.1038/nprot.2016.178&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;A new model to predict behavioral data with the brain connectivity.&lt;/p&gt;
+&lt;p&gt;[Steps]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Feature selection&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Feature Summarization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Model Building&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Assessment of Prediction Significance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Interesting part : It only uses linear model.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Malkus-Lorenz Wheel (Mathematics &#43; Code)</title>
       <link>https://MunjungKim.github.io/post/lorenz_wheel/</link>
