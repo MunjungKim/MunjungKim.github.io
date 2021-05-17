@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme=""><head>
-    <title> MunJung Kim | Gradient Descent </title>
+    <title> MunJung Kim | Neural Network </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Guide to Gradient Descent">
+    <meta name="description" content="Guide to NN">
     
     
     
@@ -32,7 +32,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/post/gradient_descent/">
+    <link rel="canonical" href="/post/neural_network/">
 
     
     
@@ -55,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Gradient Descent"/>
-<meta name="twitter:description" content="Guide to Gradient Descent"/>
+<meta name="twitter:title" content="Neural Network"/>
+<meta name="twitter:description" content="Guide to NN"/>
 
 
     
@@ -170,12 +170,12 @@
         <div class="post-content">
             
             <div class="post-title">
-                <h3>Gradient Descent</h3>
+                <h3>Neural Network</h3>
                 
                     <div class="info">
                         <em class="fas fa-calendar-day"></em>
                         <span class="date"> 
-                                                3/5/2021
+                                                16/5/2021
                                            </span>
                         <em class="fas fa-stopwatch"></em>
                         <span class="reading-time">5-minute read</span>
@@ -184,14 +184,15 @@
             </div>
 
             <p>This article is written based on the lecture <a href="https://plms.postech.ac.kr/local/ubion/course/syllabusV.php?id=1022">MATH532</a>  by Prof. Hwang at POSTECH.</p>
-<h2 id="what-is-gradient-descent-algorithm">What is Gradient Descent Algorithm</h2>
-<p>In machine learning, we usually have to find a way to minimize a traget function (e.g. MSE). How can we find the minimum of the target function if it is too dizzy to find the minimum? Think about the basic calculus which you learned in your freshman. There was a notion called &ldquo;Gradient,&rdquo; which points the dirction of the steepest slope. Its magnitude also means the rate of increase or decrease of the function in the direction. Therefore, gradient is very of use to find minimum or maximum valu in that it points where we have to go to find our destination. Of course, we have to follow the direction where gradient points. This can be written as</p>
-<p>$$
-w_k = w_{k-1} - \eta \cdot \nabla_w J(w_{k-1})
-= w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{N} L(w_{k-1};x_i,y_i)
-$$</p>
-<p>where \(J(w) = \sum_{i=1}^{N}L(y_i,\hat{f}(w;x_i))\) and \(L\) is a loss function.</p>
-<h4 id="limitations">Limitations</h4>
+<h2 id="motivation-of-neural-network">Motivation of Neural Network</h2>
+<p>The motivation of neural network methodology at first hand, as we can easily find in its name, is the structure of brain and the way in which the brain performs. Brain consists of about \(10^11\) neurons and about \(10^15\) synapses. In early models, the neurons transmit its signal if the potential exceed a certain threshold.</p>
+<h3 id="neuron">Neuron</h3>
+<ul>
+<li>Units are each node of neural network which</li>
+<li>Units are connected by links.</li>
+<li>Each link has a numeric weight.</li>
+<li>Each</li>
+</ul>
 <figure>
     <img src="https://i.redd.it/9euoe42zwj641.jpg"
          alt="image"/> <figcaption>
@@ -325,7 +326,7 @@ $$</p>
         <div class="post-footer">
             <div class="info">
                 
-                <span class="separator"><a class="tag" href="/tags/machine-learning/">Machine Learning</a><a class="tag" href="/tags/gradient-descent/">Gradient Descent</a><a class="tag" href="/tags/momentum-method/">Momentum Method</a><a class="tag" href="/tags/nestrov-accelerated-gradient/">Nestrov Accelerated Gradient</a></span>
+                <span class="separator"><a class="tag" href="/tags/machine-learning/">Machine Learning</a><a class="tag" href="/tags/neural-network/">Neural Network</a><a class="tag" href="/tags/cnn/">CNN</a></span>
             </div>
         </div>
 

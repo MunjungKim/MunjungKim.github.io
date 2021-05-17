@@ -6,7 +6,16 @@
     <description>Recent content in Posts on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neural Network</title>
+      <link>https://MunjungKim.github.io/post/neural_network/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/post/neural_network/</guid>
+      <description>This article is written based on the lecture MATH532 by Prof.</description>
+    </item>
+    
     <item>
       <title>Malkus-Lorenz Wheel (Mathematics &#43; Code)</title>
       <link>https://MunjungKim.github.io/post/lorenz_wheel/</link>

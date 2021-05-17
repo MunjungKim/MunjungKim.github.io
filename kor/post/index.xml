@@ -5,6 +5,16 @@
     <link>https://MunjungKim.github.io/kor/post/</link>
     <description>Recent content in Posts on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://MunjungKim.github.io/kor/post/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/kor/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Granularity</title>
+      <link>https://MunjungKim.github.io/kor/post/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/kor/post/rich-content/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
