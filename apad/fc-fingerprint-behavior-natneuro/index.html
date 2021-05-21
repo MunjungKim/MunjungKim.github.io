@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme="light"><head>
-    <title> MunJung Kim | Math Typesetting </title>
+    <title> MunJung Kim | Using connectome-based predictive modeling to predict individual behavior from brain connectivity </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="A brief guide to setup KaTeX">
+    <meta name="description" content="Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. https://doi.org/10.1038/nprot.2016.178">
     
     
     
@@ -32,7 +32,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/project/math-typesetting/">
+    <link rel="canonical" href="/apad/fc-fingerprint-behavior-natneuro/">
 
     
     
@@ -55,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Math Typesetting"/>
-<meta name="twitter:description" content="A brief guide to setup KaTeX"/>
+<meta name="twitter:title" content="Using connectome-based predictive modeling to predict individual behavior from brain connectivity"/>
+<meta name="twitter:description" content="Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. https://doi.org/10.1038/nprot.2016.178"/>
 
 
     
@@ -68,7 +68,7 @@
             <img src="/images/My_picture.jpeg" alt="profile picture">
             <h3 title=""><a href="/">MJ&#39;s blog</a></h3>
             <div class="description">
-                <p>Hi, I'm undergraduate student from Physics department at POSTECH.</p>
+                <p>Hi, I'm an undergraduate student in Physics at Postech</p>
             </div>
         </div>
     </div>
@@ -115,7 +115,7 @@
         
             
             <li><a 
-                   href="/"
+                   href="/home/"
                         
                    title="">Home</a></li>
         
@@ -170,32 +170,123 @@
         <div class="post-content">
             
             <div class="post-title">
-                <h3>Math Typesetting</h3>
+                <h3>Using connectome-based predictive modeling to predict individual behavior from brain connectivity</h3>
                 
             </div>
 
-            <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
-<p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
+            <h1 id="paper">Paper</h1>
+<p>Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. <a href="https://doi.org/10.1038/nprot.2016.178">https://doi.org/10.1038/nprot.2016.178</a></p>
+<h1 id="summary">Summary</h1>
+<p>A new model to predict behavioral data with the brain connectivity.</p>
+<p>[Steps]</p>
+<ol>
+<li>
+<p>Feature selection</p>
+</li>
+<li>
+<p>Feature Summarization</p>
+</li>
+<li>
+<p>Model Building</p>
+</li>
+<li>
+<p>Assessment of Prediction Significance.</p>
+</li>
+</ol>
+<p>Interesting part : It only uses linear model.</p>
+<h2 id="introduction">Introduction</h2>
 <ul>
-<li>Create a partial under <code>/layouts/partials/math.html</code></li>
-<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
-<li>Include the partial in your templates like so:</li>
+<li>
+<p>Finding a relationship between individual brain structure and behavior is a major goal of modern neuroscience. (e.g. memory, intelligence, attention and so on &hellip;)</p>
+</li>
+<li>
+<p>The term &ldquo;pedicts&rdquo; is often used as a synonym for &ldquo;correlates with&rdquo; , but it should not. Correlation model fails to predict with novel data. Most of brain-behavior sutdies do not perform cross-validation. (&hellip;?!?!)</p>
+</li>
+<li>
+<p>Recently, the authors developed Connectome-Based Predictive modeling (CPM) with built-in cross validation. This is a method for extracting and summarizing the most relevant features from brain connectivity data for predicting behavior data by brain data. They proved that CPM can successfully predict fluid intelligence and sustained attention by fMRI-derived functional connectivity.</p>
+</li>
+<li>
+<p>It could be adapted to work with structural connectivity data measured with diffusion tensor imaging (DTI) or functional connectivity data derived by electroencephalography (EEG).</p>
+</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
-<span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
-<span class="o">{{</span> end <span class="o">}}</span>
-</code></pre></div><ul>
-<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
-<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files</li>
+<h2 id="methodology">Methodology</h2>
+<ul>
+<li>
+<p>Input data are FC (Functional Connectivity) and Behavioral data. Behavioral data should spread across subjects. Divide the data into train and test data set.</p>
+</li>
+<li>
+<p>In train data set, each element in FC is related to the behavioral data using linear regression.</p>
+</li>
+<li>
+<p>After linear regression, the most important edges are selected using some methods. Typical method is using significance testing or cut off the data whose correlation is below specific threshold.</p>
+</li>
+<li>
+<p>For each subject, selected elements in FC are summarized into a scalar data. Usually, data are simply summed.</p>
+</li>
+<li>
+<p>Build a predictive model simply using linear regression with summarized brain data and behavioral data.</p>
+</li>
+<li>
+<p>Apply the model to the test data set.</p>
+</li>
 </ul>
-<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">Supported TeX Functions</a></p>
-
-<h3 id="examples">Examples</h3>
-<p>Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)</p>
-<p>Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p></div>
+<h2 id="applications-of-the-method">Applications of the method.</h2>
+<ul>
+<li>Various open-source data (e.g. HCP, PNC ..) can be pooled or combined with local datasets to test whether a predictive model generalizes across different scanners, different subject populations, or different measures of phenotype.</li>
+</ul>
+<h2 id="comparison-with-other-methods">Comparison with other methods.</h2>
+<h4 id="advantages">Advantages</h4>
+<ul>
+<li>Linear Regression Model (Which is very very very simple)</li>
+<li>In the experiment, predictions using CPM are as good or better than those generated using SVR. (This is very interesting)</li>
+</ul>
+<h4 id="disadvatages">Disadvatages</h4>
+<ul>
+<li>
+<p>Linear regression model can be not suitable for non-linear relationships between connectivity and behavior.</p>
+</li>
+<li>
+<p>Other methods may outperform CPM in terms of prediction accuracy on certain data sets.</p>
+</li>
+</ul>
+<p>Therefore, researcher should carefully care cons and pros of this method and choose their priorities. Combining various methods can also be a solution.</p>
+<h2 id="experiment-design">Experiment Design</h2>
+<ul>
+<li>
+<p>These methods have the most utility in studies with moderate to large sample. (N &gt; 100)</p>
+</li>
+<li>
+<p>The correlation between predicted values and true values are calculated as a test statistic. However, it is unclear what null distribution is associated with this statistic and thus a permutation is needed.</p>
+</li>
+<li>
+<p>In addition to performing state-of-the-art preprocessing methods to minimize the effect from head motion, researchers need to ensure that motion is not correlated with the behavioral data.</p>
+</li>
+<li>
+<p>Potential variables that could be correlated with the behavior of interest include age, gender or IQ. The effects of these confounding factors could be removed using partial correlation.</p>
+</li>
+<li>
+<p>Projecting model features back into brain space facilitates interpretation based on known relationships between brain structure and function.</p>
+</li>
+</ul>
+<h3 id="visualization">Visualization</h3>
+<ul>
+<li>
+<p>First, choose a set of features to visualize and interpret. Good features should overlap across different iterations. The most conservative approach is to visualize only edges that were selected in all iterations of the analysis.</p>
+</li>
+<li>
+<p>Glass brain plots, circle plots, and matrix plots.</p>
+</li>
+</ul>
+<hr>
+<h2 id="my-review">My review</h2>
+<ul>
+<li>&quot; Although state-of-the-art brain parcellation methods typically divide the brain into ~300 regions resulting in ~45,000 unique connections, or edges, many hypothesis-driven approaches focus on a single edge, region, or network of interest. &quot;</li>
+</ul>
+<p>==&gt; Hmm&hellip; I have ~200 nodes, ~ 19,900 edges, and thus ~197985100 connections&hellip; I have to check whether this feature selection method is also suitable with our data scale.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<blockquote>
+</blockquote></div>
         <div class="post-footer">
             <div class="info">
                 

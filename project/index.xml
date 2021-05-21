@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on MJ&#39;s blog</title>
+    <title>Neural Embedding of Research Papers Reveals Characteristics of Policy Research Institute on MJ&#39;s blog</title>
     <link>https://MunjungKim.github.io/project/</link>
-    <description>Recent content in Projects on MJ&#39;s blog</description>
+    <description>Recent content in Neural Embedding of Research Papers Reveals Characteristics of Policy Research Institute on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Mar 2021 21:47:41 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The Figure Shortcode</title>
-      <link>https://MunjungKim.github.io/project/figure-shortcode/</link>
-      <pubDate>Sat, 13 Mar 2021 21:47:41 +0000</pubDate>
+      <title>Neural Embedding of Research Papers Reveals Characteristics of Policy Research Institute</title>
+      <link>https://MunjungKim.github.io/project/doc2vec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/project/figure-shortcode/</guid>
-      <description>Hugo has figure shortcode built-in, so you can easily add figure captions or hyperlink rel attributes to images.</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://MunjungKim.github.io/project/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/project/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+      <guid>https://MunjungKim.github.io/project/doc2vec/</guid>
+      <description>\(Munjung Kim^1, Jisung Yoon^2, Hyunuk Kim^3, Woo-Sung Jung^{1,2}\)
+\(^1\)Department of Physics, Pohang University of Science and Technology; \(^2\)Department of Industrial and Management Engineering,PohangUniversity of Science and Technology; \(^3\)Questrom School of Business, Boston University</description>
     </item>
     
   </channel>

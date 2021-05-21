@@ -59,10 +59,16 @@
     <loc>https://MunjungKim.github.io/apad/cpm/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://MunjungKim.github.io/apad/fc-fingerprint-behavior-natneuro/</loc>
+    <lastmod>2021-05-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://MunjungKim.github.io/post/lorenz_wheel/</loc>
     <lastmod>2021-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/apad/math-typesetting/</loc>
+    <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/apad/stack/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/tags/gradient-descent/</loc>
@@ -75,6 +81,9 @@
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/tags/nestrov-accelerated-gradient/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/project/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/about/</loc>
@@ -90,57 +99,6 @@
                 href="https://MunjungKim.github.io/about/"
                 />
   </url><url>
-    <loc>https://MunjungKim.github.io/tags/demo/</loc>
-    <lastmod>2021-03-13T21:47:41+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/project/</loc>
-    <lastmod>2021-03-13T21:47:41+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/shortcode/</loc>
-    <lastmod>2021-03-13T21:47:41+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/project/figure-shortcode/</loc>
-    <lastmod>2021-03-13T21:47:41+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/tags/privacy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/tags/privacy/"
-                />
-  </url><url>
-    <loc>https://MunjungKim.github.io/post/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/post/rich-content/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/post/rich-content/"
-                />
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/tags/shortcodes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/tags/shortcodes/"
-                />
-  </url><url>
     <loc>https://MunjungKim.github.io/contact/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -154,9 +112,6 @@
                 href="https://MunjungKim.github.io/contact/"
                 />
   </url><url>
-    <loc>https://MunjungKim.github.io/project/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://MunjungKim.github.io/archives/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -169,6 +124,8 @@
                 hreflang="en"
                 href="https://MunjungKim.github.io/archives/"
                 />
+  </url><url>
+    <loc>https://MunjungKim.github.io/home/</loc>
   </url><url>
     <loc>https://MunjungKim.github.io/categories/</loc>
     <xhtml:link
@@ -193,5 +150,7 @@
                 hreflang="en"
                 href="https://MunjungKim.github.io/tags/index/"
                 />
+  </url><url>
+    <loc>https://MunjungKim.github.io/project/doc2vec/</loc>
   </url>
 </urlset>
