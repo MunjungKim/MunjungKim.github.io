@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme="light"><head>
-    <title> MunJung Kim | Using connectome-based predictive modeling to predict individual behavior from brain connectivity </title>
+    <title> MunJung Kim | A neuromarker of sustained attention from whole-brain functional connectivity </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. https://doi.org/10.1038/nprot.2016.178">
+    <meta name="description" content="Finn, E., Shen, X., Scheinost, D. et al. Functional connectome fingerprinting:identifying individuals using patterns of brain connectivity. Nat Neurosci 18, 1664–1671 (2015). https://doi.org/10.1038/nn.4135">
     
     
     
@@ -55,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Using connectome-based predictive modeling to predict individual behavior from brain connectivity"/>
-<meta name="twitter:description" content="Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. https://doi.org/10.1038/nprot.2016.178"/>
+<meta name="twitter:title" content="A neuromarker of sustained attention from whole-brain functional connectivity"/>
+<meta name="twitter:description" content="Finn, E., Shen, X., Scheinost, D. et al. Functional connectome fingerprinting:identifying individuals using patterns of brain connectivity. Nat Neurosci 18, 1664–1671 (2015). https://doi.org/10.1038/nn.4135"/>
 
 
     
@@ -170,43 +170,32 @@
         <div class="post-content">
             
             <div class="post-title">
-                <h3>Using connectome-based predictive modeling to predict individual behavior from brain connectivity</h3>
+                <h3>A neuromarker of sustained attention from whole-brain functional connectivity</h3>
                 
             </div>
 
             <h1 id="paper">Paper</h1>
-<p>Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. <a href="https://doi.org/10.1038/nprot.2016.178">https://doi.org/10.1038/nprot.2016.178</a></p>
+<p>Rosenberg, M., Finn, E., Scheinost, D. et al. A neuromarker of sustained attention from whole-brain functional connectivity. Nat Neurosci 19, 165–171 (2016). <a href="https://doi.org/10.1038/nn.4179">https://doi.org/10.1038/nn.4179</a></p>
 <h1 id="summary">Summary</h1>
-<p>A new model to predict behavioral data with the brain connectivity.</p>
-<p>[Steps]</p>
 <ol>
 <li>
-<p>Feature selection</p>
+<p>The authors identified that functional brain netoworks whose strength during a sustained attention task predicted individual differences in attentional performance.</p>
 </li>
 <li>
-<p>Feature Summarization</p>
-</li>
-<li>
-<p>Model Building</p>
-</li>
-<li>
-<p>Assessment of Prediction Significance.</p>
+<p>Furthermorethe model suggested in the paper also be able to predict a clinical measure of attention (ADHD)
+from resting state connectivity in an independent sample of children and adolsecents.</p>
 </li>
 </ol>
-<p>Interesting part : It only uses linear model.</p>
-<h2 id="introduction">Introduction</h2>
+<h2 id="main">Main</h2>
 <ul>
 <li>
-<p>Finding a relationship between individual brain structure and behavior is a major goal of modern neuroscience. (e.g. memory, intelligence, attention and so on &hellip;)</p>
+<p>Synchronous fluctuations in the blood oxygenation level–dependent (BOLD) signal, measured with functional magnetic resonance imaging (fMRI), are thought to reflect functional connectivity in that they reveal regions engaging in common or related processing</p>
 </li>
 <li>
-<p>The term &ldquo;pedicts&rdquo; is often used as a synonym for &ldquo;correlates with&rdquo; , but it should not. Correlation model fails to predict with novel data. Most of brain-behavior sutdies do not perform cross-validation. (&hellip;?!?!)</p>
+<p>Since attention ability requires various ability such as selecting necessary information and inhibition of unselected information, it involves a wide variety of brain regions.</p>
 </li>
 <li>
-<p>Recently, the authors developed Connectome-Based Predictive modeling (CPM) with built-in cross validation. This is a method for extracting and summarizing the most relevant features from brain connectivity data for predicting behavior data by brain data. They proved that CPM can successfully predict fluid intelligence and sustained attention by fMRI-derived functional connectivity.</p>
-</li>
-<li>
-<p>It could be adapted to work with structural connectivity data measured with diffusion tensor imaging (DTI) or functional connectivity data derived by electroencephalography (EEG).</p>
+<p>The authors proved that the strength of FC networks predicts sustained attention.</p>
 </li>
 </ul>
 <h2 id="methodology">Methodology</h2>
