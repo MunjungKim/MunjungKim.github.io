@@ -6,7 +6,16 @@
     <description>Recent content on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gradient Descent</title>
+      <link>https://MunjungKim.github.io/post/clustering/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/post/clustering/</guid>
+      <description>This article is written based on the lecture MATH532 by Prof.</description>
+    </item>
+    
     <item>
       <title>Neural Network</title>
       <link>https://MunjungKim.github.io/post/neural_network/</link>
