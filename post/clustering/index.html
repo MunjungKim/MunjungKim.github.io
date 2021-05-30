@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme="light"><head>
-    <title> MunJung Kim | Gradient Descent </title>
+    <title> MunJung Kim | Clustering and Grphical Methods </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -55,7 +55,7 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Gradient Descent"/>
+<meta name="twitter:title" content="Clustering and Grphical Methods"/>
 <meta name="twitter:description" content="Guide to Gradient Descent"/>
 
 
@@ -170,7 +170,7 @@
         <div class="post-content">
             
             <div class="post-title">
-                <h3>Gradient Descent</h3>
+                <h3>Clustering and Grphical Methods</h3>
                 
                     <div class="info">
                         <em class="fas fa-calendar-day"></em>
@@ -208,7 +208,7 @@
 <li>Each node&rsquo;s weights \(w_i\) are initialized.</li>
 <li>A vector \(x_i\) is chosen at random from the set of training data.</li>
 <li>Every node is examined to calculate which one&rsquo;s weights are most close the input vector. The closet node \(n_m =\argmin_{n_i} d(x_j, W(n_j))\)is called the winning node.</li>
-<li>Pick a set of neurons for which we will adapt the weight vector given a neighborhood funcntion. It is important that the weight that should be updated are given by  \d(k_i,k_m\) where \(k_m\) is the position of the winning node.</li>
+<li>Pick a set of neurons for which we will adapt the weight vector given a neighborhood funcntion. It is important that the weight that should be updated are given by  \(d(k_i,k_m\) where \(k_m\) is the position of the winning node.</li>
 <li>The winner nonde and its topological neighborhood neurons are updated by flowing the update rule</li>
 </ol>
 <h4 id="update-rule">Update rule</h4>
@@ -226,6 +226,27 @@ $$
 $$</p>
 </li>
 </ul>
+<h2 id="graphical-methods">Graphical Methods</h2>
+<h3 id="motivation">Motivation</h3>
+<ul>
+<li>
+<p>Sometimes, we need to get the probability that each data would be included to specific cluster.</p>
+</li>
+<li>
+<p>Therefore, we would like to build models that contain various uncertanties.</p>
+</li>
+<li>
+<p>We need to find a way to formulate a probability model</p>
+</li>
+</ul>
+<h3 id="bayesian-network">Bayesian network</h3>
+<figure>
+    <img src="https://wiki.ubc.ca/images/3/35/Markov_networks_fig1.png"
+         alt="image"/> <figcaption>
+            <p><a href="https://wiki.ubc.ca/Course:CPSC522/Markov_Networks">https://wiki.ubc.ca/Course:CPSC522/Markov_Networks</a></p>
+        </figcaption>
+</figure>
+
 </div>
         <div class="post-footer">
             <div class="info">
