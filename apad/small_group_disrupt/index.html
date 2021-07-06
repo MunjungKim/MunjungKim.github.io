@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme="light"><head>
-    <title> MunJung Kim | Apads </title>
+    <title> MunJung Kim | Large teams develop and small teams disrupt science and technology </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Hi, I&#39;m an undergraduate student in Physics at Postech">
+    <meta name="description" content="Wu, L., Wang, D. &amp; Evans, J.A. Large teams develop and small teams disrupt science and technology. Nature 566, 378–382 (2019). https://doi.org/10.1038/s41586-019-0941-9">
     
     
     
@@ -32,10 +32,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/apad/">
+    <link rel="canonical" href="/apad/small_group_disrupt/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="/apad/index.xml" title="MJ's blog" />
     
     
     
@@ -56,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Apads"/>
-<meta name="twitter:description" content="Hi, I&#39;m an undergraduate student in Physics at Postech"/>
+<meta name="twitter:title" content="Large teams develop and small teams disrupt science and technology"/>
+<meta name="twitter:description" content="Wu, L., Wang, D. &amp; Evans, J.A. Large teams develop and small teams disrupt science and technology. Nature 566, 378–382 (2019). https://doi.org/10.1038/s41586-019-0941-9"/>
 
 
     
@@ -139,7 +138,7 @@
                    title="">Project</a></li>
         
             
-            <li><a class="current"
+            <li><a 
                    href="/apad/"
                         
                    title="">JCBM</a></li>
@@ -167,94 +166,126 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
             
-                <div class="listing-title">2021</div>
+            <div class="post-title">
+                <h3>Large teams develop and small teams disrupt science and technology</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/small_group_disrupt/" title="Large teams develop and small teams disrupt science and technology">Large teams develop and small teams disrupt science and technology</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            29/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
+            </div>
+
+            <h1 id="paper">Paper</h1>
+<p>Wu, L., Wang, D. &amp; Evans, J.A. Large teams develop and small teams disrupt science and technology. Nature 566, 378–382 (2019). <a href="https://doi.org/10.1038/s41586-019-0941-9">https://doi.org/10.1038/s41586-019-0941-9</a></p>
+<h1 id="summary">Summary</h1>
+<p>Small teams tend to disrupt science and technology with new ideas and opportunities while large teams tend to develop existing one.</p>
+<ol>
+<li>One of the most universal trends in science and technology is that team size the growth of the team size.</li>
+<li>New Question: Whether and how the character of the scienc and technology produced by large teams differs from that of small teams</li>
+<li>Work from larger teams builds on more-recent and popular developments, and attention to their work comes immediately.</li>
+<li>Contributions by smaller teams search more deeply into the past, are viewed as disruptive to science and technology and succeed further into the future—if at all.</li>
+</ol>
+<h2 id="main">Main</h2>
+<ul>
+<li>
+<p>Although much has been demonstrated about the professional and carrer benefits of team size for team members, there is little evidence that supports the notion that larger teams are optimized for knowledge discovery and technological invention.</p>
+</li>
+<li>
+<p>Experimental and observational resarch on groups reveals that individual in large groups think and act differently. They generated fewer ideas, recall less learned information, reject external perspectives more often, and tend to neutralize each other&rsquo;s viewpoint.</p>
+</li>
+<li>
+<p>There was the research which demontrates that large article and patent teams reveive slightly more citations. However, citation counts alone cannot capture distinct types of contribution. (I totally agree.)
+Ex) BTW model vs Bose-Einstein condensation</p>
+</li>
+</ul>
+<h2 id="quantifying-disruption">Quantifying disruption</h2>
+<ul>
+<li>
+<p>The authors built three citation networks comprising focal papers, references and subsequent work. The focal paper, which we are interested in, refer some references. Then some subsequent works may refer both focal paper and refereces that the focal paper refered (j) while some other subsequent works may refer only the focal paper (i). Also, there could be some subsequent works that refer only the references not the focal work (k).</p>
+</li>
+<li>
+<p>Then the distruption defined as</p>
+</li>
+</ul>
+<p>$$
+D = (n_i-n_j)/(n_i + n_j + n_k)
+$$</p>
+<h2 id="result">Result</h2>
+<ul>
+<li>
+<p>They found out that articles, patents and softwares by small teams is subastantially more disruptive than work by large teams.</p>
+</li>
+<li>
+<p>This tendency is magnified when the impact level of the paper is high.</p>
+</li>
+<li>
+<p>This tendency still exits for 90% of disciplines. Engineering and computer science belong to the 10% exception.</p>
+</li>
+<li></li>
+</ul>
+<h2 id="comparison-with-other-methods">Comparison with other methods.</h2>
+<h4 id="advantages">Advantages</h4>
+<ul>
+<li>Linear Regression Model (Which is very very very simple)</li>
+<li>In the experiment, predictions using CPM are as good or better than those generated using SVR. (This is very interesting)</li>
+</ul>
+<h4 id="disadvatages">Disadvatages</h4>
+<ul>
+<li>
+<p>Linear regression model can be not suitable for non-linear relationships between connectivity and behavior.</p>
+</li>
+<li>
+<p>Other methods may outperform CPM in terms of prediction accuracy on certain data sets.</p>
+</li>
+</ul>
+<p>Therefore, researcher should carefully care cons and pros of this method and choose their priorities. Combining various methods can also be a solution.</p>
+<h2 id="experiment-design">Experiment Design</h2>
+<ul>
+<li>
+<p>These methods have the most utility in studies with moderate to large sample. (N &gt; 100)</p>
+</li>
+<li>
+<p>The correlation between predicted values and true values are calculated as a test statistic. However, it is unclear what null distribution is associated with this statistic and thus a permutation is needed.</p>
+</li>
+<li>
+<p>In addition to performing state-of-the-art preprocessing methods to minimize the effect from head motion, researchers need to ensure that motion is not correlated with the behavioral data.</p>
+</li>
+<li>
+<p>Potential variables that could be correlated with the behavior of interest include age, gender or IQ. The effects of these confounding factors could be removed using partial correlation.</p>
+</li>
+<li>
+<p>Projecting model features back into brain space facilitates interpretation based on known relationships between brain structure and function.</p>
+</li>
+</ul>
+<h3 id="visualization">Visualization</h3>
+<ul>
+<li>
+<p>First, choose a set of features to visualize and interpret. Good features should overlap across different iterations. The most conservative approach is to visualize only edges that were selected in all iterations of the analysis.</p>
+</li>
+<li>
+<p>Glass brain plots, circle plots, and matrix plots.</p>
+</li>
+</ul>
+<hr>
+<h2 id="my-review">My review</h2>
+<ul>
+<li>&quot; Although state-of-the-art brain parcellation methods typically divide the brain into ~300 regions resulting in ~45,000 unique connections, or edges, many hypothesis-driven approaches focus on a single edge, region, or network of interest. &quot;</li>
+</ul>
+<p>==&gt; Hmm&hellip; I have ~200 nodes, ~ 19,900 edges, and thus ~197985100 connections&hellip; I have to check whether this feature selection method is also suitable with our data scale.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<blockquote>
+</blockquote></div>
+        <div class="post-footer">
+            <div class="info">
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/hunter-busybody/" title="Triadic closure in two-mode networks, Redefining the global and local clustering coefficients">Triadic closure in two-mode networks, Redefining the global and local clustering coefficients</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            22/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/small_group_disrupt-copy/" title="Topic diversity, A discipline scheme-free diversity measurement for journals">Topic diversity, A discipline scheme-free diversity measurement for journals</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            22/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/two_mode_network/" title="The Network Structure of Scientific Revolutions">The Network Structure of Scientific Revolutions</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            22/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/cpm/" title="Using connectome-based predictive modeling to predict individual behavior from brain connectivity">Using connectome-based predictive modeling to predict individual behavior from brain connectivity</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            15/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/fc-fingerprint-behavior-natneuro/" title="A neuromarker of sustained attention from whole-brain functional connectivity">A neuromarker of sustained attention from whole-brain functional connectivity</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            15/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/math-typesetting/" title="Hierarchical organization of cortical and thalamic connectivity">Hierarchical organization of cortical and thalamic connectivity</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            5/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/stack/" title="Paper queue">Paper queue</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            1/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+            </div>
+        </div>
+
+        
     </div>
+
+
 
         </div>
     </div>

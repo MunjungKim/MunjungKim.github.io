@@ -6,7 +6,79 @@
     <description>Recent content in Apads on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/apad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/apad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Large teams develop and small teams disrupt science and technology</title>
+      <link>https://MunjungKim.github.io/apad/small_group_disrupt/</link>
+      <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/small_group_disrupt/</guid>
+      <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
+&lt;p&gt;Wu, L., Wang, D. &amp;amp; Evans, J.A. Large teams develop and small teams disrupt science and technology. Nature 566, 378–382 (2019). &lt;a href=&#34;https://doi.org/10.1038/s41586-019-0941-9&#34;&gt;https://doi.org/10.1038/s41586-019-0941-9&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;Small teams tend to disrupt science and technology with new ideas and opportunities while large teams tend to develop existing one.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;One of the most universal trends in science and technology is that team size the growth of the team size.&lt;/li&gt;
+&lt;li&gt;New Question: Whether and how the character of the scienc and technology produced by large teams differs from that of small teams&lt;/li&gt;
+&lt;li&gt;Work from larger teams builds on more-recent and popular developments, and attention to their work comes immediately.&lt;/li&gt;
+&lt;li&gt;Contributions by smaller teams search more deeply into the past, are viewed as disruptive to science and technology and succeed further into the future—if at all.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Network Structure of Scientific Revolutions</title>
+      <link>https://MunjungKim.github.io/apad/two_mode_network/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/two_mode_network/</guid>
+      <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
+&lt;p&gt;Harang Ju, Dale Zhou, Ann S. Blevins, David M. Lydon-Staley, Judith Kaplan, Julio R. Tuma, Danielle S. Bassett. The Network Structure of Scientific Revolutions. &lt;a href=&#34;https://doi.org/10.1007/s11192-009-0041-y&#34;&gt;https://doi.org/10.1007/s11192-009-0041-y&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;A knoledge network grows not by expanding from their core but rather by creating and filling knowledge gaps&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Topic diversity, A discipline scheme-free diversity measurement for journals</title>
+      <link>https://MunjungKim.github.io/apad/small_group_disrupt-copy/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/small_group_disrupt-copy/</guid>
+      <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
+&lt;p&gt;ToreOpsahl (2013). Triadic closure in two-mode networks: Redefining the global and local clustering coefficients. Social Networks, 35(2), 159-167. &lt;a href=&#34;https://doi.org/10.1016/j.socnet.2011.07.001&#34;&gt;https://doi.org/10.1016/j.socnet.2011.07.001&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;It&amp;rsquo;s about the how to quantify journals&#39; diversity by utilizing the abstracts of scientfic pulciations in journals.&lt;/p&gt;
+&lt;p&gt;by making graph of words and using clustering dtection technique&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Word extraction&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;so they tokenize the abstracts and get some meaningful words from the abstracts. they said they used TextRank.. I don&amp;rsquo;t know much about it so I have to study further.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Network Construction
+they gathered synonym or cognate words into one set. and this same meaning word set becomes a one node of the network&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;then the edge connection weighted as their cooccurrence frequency.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Topic detection
+For topic detection step, they exploit Louvain method&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;they recursively exploit Louvain algorithm so that they can even get subfield of the first cluster.&lt;/p&gt;
+&lt;p&gt;So for validation tehy also repeat this steps several times and check how degree within the community is stable.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Diversity Calculation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In this step, they exploit diversity calulator developed by Leinseter.&lt;/p&gt;
+&lt;p&gt;Using their caclulcated function where input variables are words and out variables are the topics and the diversity calculator, they get diversity of&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Triadic closure in two-mode networks, Redefining the global and local clustering coefficients</title>
+      <link>https://MunjungKim.github.io/apad/hunter-busybody/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/hunter-busybody/</guid>
+      <description>Paper ToreOpsahl (2013). Triadic closure in two-mode networks: Redefining the global and local clustering coefficients.</description>
+    </item>
+    
     <item>
       <title>A neuromarker of sustained attention from whole-brain functional connectivity</title>
       <link>https://MunjungKim.github.io/apad/fc-fingerprint-behavior-natneuro/</link>

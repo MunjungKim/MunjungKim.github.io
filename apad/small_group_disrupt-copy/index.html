@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme="light"><head>
-    <title> MunJung Kim | Apads </title>
+    <title> MunJung Kim | Topic diversity, A discipline scheme-free diversity measurement for journals </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Hi, I&#39;m an undergraduate student in Physics at Postech">
+    <meta name="description" content="Yi Bu">
     
     
     
@@ -32,10 +32,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/apad/">
+    <link rel="canonical" href="/apad/small_group_disrupt-copy/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="/apad/index.xml" title="MJ's blog" />
     
     
     
@@ -56,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Apads"/>
-<meta name="twitter:description" content="Hi, I&#39;m an undergraduate student in Physics at Postech"/>
+<meta name="twitter:title" content="Topic diversity, A discipline scheme-free diversity measurement for journals"/>
+<meta name="twitter:description" content="Yi Bu"/>
 
 
     
@@ -139,7 +138,7 @@
                    title="">Project</a></li>
         
             
-            <li><a class="current"
+            <li><a 
                    href="/apad/"
                         
                    title="">JCBM</a></li>
@@ -167,94 +166,50 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
             
-                <div class="listing-title">2021</div>
+            <div class="post-title">
+                <h3>Topic diversity, A discipline scheme-free diversity measurement for journals</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/small_group_disrupt/" title="Large teams develop and small teams disrupt science and technology">Large teams develop and small teams disrupt science and technology</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            29/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
+            </div>
+
+            <h1 id="paper">Paper</h1>
+<p>ToreOpsahl (2013). Triadic closure in two-mode networks: Redefining the global and local clustering coefficients. Social Networks, 35(2), 159-167. <a href="https://doi.org/10.1016/j.socnet.2011.07.001">https://doi.org/10.1016/j.socnet.2011.07.001</a></p>
+<h1 id="summary">Summary</h1>
+<p>It&rsquo;s about the how to quantify journals' diversity by utilizing the abstracts of scientfic pulciations in journals.</p>
+<p>by making graph of words and using clustering dtection technique</p>
+<ol>
+<li>Word extraction</li>
+</ol>
+<p>so they tokenize the abstracts and get some meaningful words from the abstracts. they said they used TextRank.. I don&rsquo;t know much about it so I have to study further.</p>
+<ol start="2">
+<li>Network Construction
+they gathered synonym or cognate words into one set. and this same meaning word set becomes a one node of the network</li>
+</ol>
+<p>then the edge connection weighted as their cooccurrence frequency.</p>
+<ol start="3">
+<li>Topic detection
+For topic detection step, they exploit Louvain method</li>
+</ol>
+<p>they recursively exploit Louvain algorithm so that they can even get subfield of the first cluster.</p>
+<p>So for validation tehy also repeat this steps several times and check how degree within the community is stable.</p>
+<ol start="4">
+<li>Diversity Calculation</li>
+</ol>
+<p>In this step, they exploit diversity calulator developed by Leinseter.</p>
+<p>Using their caclulcated function where input variables are words and out variables are the topics and the diversity calculator, they get diversity of</p></div>
+        <div class="post-footer">
+            <div class="info">
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/hunter-busybody/" title="Triadic closure in two-mode networks, Redefining the global and local clustering coefficients">Triadic closure in two-mode networks, Redefining the global and local clustering coefficients</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            22/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/small_group_disrupt-copy/" title="Topic diversity, A discipline scheme-free diversity measurement for journals">Topic diversity, A discipline scheme-free diversity measurement for journals</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            22/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/two_mode_network/" title="The Network Structure of Scientific Revolutions">The Network Structure of Scientific Revolutions</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            22/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/cpm/" title="Using connectome-based predictive modeling to predict individual behavior from brain connectivity">Using connectome-based predictive modeling to predict individual behavior from brain connectivity</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            15/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/fc-fingerprint-behavior-natneuro/" title="A neuromarker of sustained attention from whole-brain functional connectivity">A neuromarker of sustained attention from whole-brain functional connectivity</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            15/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/math-typesetting/" title="Hierarchical organization of cortical and thalamic connectivity">Hierarchical organization of cortical and thalamic connectivity</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            5/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/stack/" title="Paper queue">Paper queue</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            1/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+            </div>
+        </div>
+
+        
     </div>
+
+
 
         </div>
     </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme="light"><head>
-    <title> MunJung Kim | Apads </title>
+    <title> MunJung Kim | The Network Structure of Scientific Revolutions </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -32,10 +32,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/apad/">
+    <link rel="canonical" href="/apad/two_mode_network/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="/apad/index.xml" title="MJ's blog" />
     
     
     
@@ -56,8 +55,11 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Apads"/>
-<meta name="twitter:description" content="Hi, I&#39;m an undergraduate student in Physics at Postech"/>
+<meta name="twitter:title" content="The Network Structure of Scientific Revolutions"/>
+<meta name="twitter:description" content="Paper
+Harang Ju, Dale Zhou, Ann S. Blevins, David M. Lydon-Staley, Judith Kaplan, Julio R. Tuma, Danielle S. Bassett. The Network Structure of Scientific Revolutions. https://doi.org/10.1007/s11192-009-0041-y
+Summary
+A knoledge network grows not by expanding from their core but rather by creating and filling knowledge gaps"/>
 
 
     
@@ -139,7 +141,7 @@
                    title="">Project</a></li>
         
             
-            <li><a class="current"
+            <li><a 
                    href="/apad/"
                         
                    title="">JCBM</a></li>
@@ -167,94 +169,119 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
             
-                <div class="listing-title">2021</div>
+            <div class="post-title">
+                <h3>The Network Structure of Scientific Revolutions</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/small_group_disrupt/" title="Large teams develop and small teams disrupt science and technology">Large teams develop and small teams disrupt science and technology</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            29/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
+            </div>
+
+            <h1 id="paper">Paper</h1>
+<p>Harang Ju, Dale Zhou, Ann S. Blevins, David M. Lydon-Staley, Judith Kaplan, Julio R. Tuma, Danielle S. Bassett. The Network Structure of Scientific Revolutions. <a href="https://doi.org/10.1007/s11192-009-0041-y">https://doi.org/10.1007/s11192-009-0041-y</a></p>
+<h1 id="summary">Summary</h1>
+<p>A knoledge network grows not by expanding from their core but rather by creating and filling knowledge gaps</p>
+<h2 id="introduction">Introduction</h2>
+<ul>
+<li>
+<p>The interdisciplinarity is often perceived as good research. This tendency leads to policies aimed at fostering interdisciplinarity. However there is no evidence that interdisciplinarity is realted with the quality of research. This is because it is hard to define scientific performance and intensity of interdisciplinarity.</p>
+</li>
+<li></li>
+<li>
+<p>Recently, the authors developed Connectome-Based Predictive modeling (CPM) with built-in cross validation. This is a method for extracting and summarizing the most relevant features from brain connectivity data for predicting behavior data by brain data. They proved that CPM can successfully predict fluid intelligence and sustained attention by fMRI-derived functional connectivity.</p>
+</li>
+<li>
+<p>It could be adapted to work with structural connectivity data measured with diffusion tensor imaging (DTI) or functional connectivity data derived by electroencephalography (EEG).</p>
+</li>
+</ul>
+<h2 id="methodology">Methodology</h2>
+<ul>
+<li>
+<p>Input data are FC (Functional Connectivity) and Behavioral data. Behavioral data should spread across subjects. Divide the data into train and test data set.</p>
+</li>
+<li>
+<p>In train data set, each element in FC is related to the behavioral data using linear regression.</p>
+</li>
+<li>
+<p>After linear regression, the most important edges are selected using some methods. Typical method is using significance testing or cut off the data whose correlation is below specific threshold.</p>
+</li>
+<li>
+<p>For each subject, selected elements in FC are summarized into a scalar data. Usually, data are simply summed.</p>
+</li>
+<li>
+<p>Build a predictive model simply using linear regression with summarized brain data and behavioral data.</p>
+</li>
+<li>
+<p>Apply the model to the test data set.</p>
+</li>
+</ul>
+<h2 id="applications-of-the-method">Applications of the method.</h2>
+<ul>
+<li>Various open-source data (e.g. HCP, PNC ..) can be pooled or combined with local datasets to test whether a predictive model generalizes across different scanners, different subject populations, or different measures of phenotype.</li>
+</ul>
+<h2 id="comparison-with-other-methods">Comparison with other methods.</h2>
+<h4 id="advantages">Advantages</h4>
+<ul>
+<li>Linear Regression Model (Which is very very very simple)</li>
+<li>In the experiment, predictions using CPM are as good or better than those generated using SVR. (This is very interesting)</li>
+</ul>
+<h4 id="disadvatages">Disadvatages</h4>
+<ul>
+<li>
+<p>Linear regression model can be not suitable for non-linear relationships between connectivity and behavior.</p>
+</li>
+<li>
+<p>Other methods may outperform CPM in terms of prediction accuracy on certain data sets.</p>
+</li>
+</ul>
+<p>Therefore, researcher should carefully care cons and pros of this method and choose their priorities. Combining various methods can also be a solution.</p>
+<h2 id="experiment-design">Experiment Design</h2>
+<ul>
+<li>
+<p>These methods have the most utility in studies with moderate to large sample. (N &gt; 100)</p>
+</li>
+<li>
+<p>The correlation between predicted values and true values are calculated as a test statistic. However, it is unclear what null distribution is associated with this statistic and thus a permutation is needed.</p>
+</li>
+<li>
+<p>In addition to performing state-of-the-art preprocessing methods to minimize the effect from head motion, researchers need to ensure that motion is not correlated with the behavioral data.</p>
+</li>
+<li>
+<p>Potential variables that could be correlated with the behavior of interest include age, gender or IQ. The effects of these confounding factors could be removed using partial correlation.</p>
+</li>
+<li>
+<p>Projecting model features back into brain space facilitates interpretation based on known relationships between brain structure and function.</p>
+</li>
+</ul>
+<h3 id="visualization">Visualization</h3>
+<ul>
+<li>
+<p>First, choose a set of features to visualize and interpret. Good features should overlap across different iterations. The most conservative approach is to visualize only edges that were selected in all iterations of the analysis.</p>
+</li>
+<li>
+<p>Glass brain plots, circle plots, and matrix plots.</p>
+</li>
+</ul>
+<hr>
+<h2 id="my-review">My review</h2>
+<ul>
+<li>How individual change his or her subject with collaboration.</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<blockquote>
+</blockquote></div>
+        <div class="post-footer">
+            <div class="info">
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/hunter-busybody/" title="Triadic closure in two-mode networks, Redefining the global and local clustering coefficients">Triadic closure in two-mode networks, Redefining the global and local clustering coefficients</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            22/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/small_group_disrupt-copy/" title="Topic diversity, A discipline scheme-free diversity measurement for journals">Topic diversity, A discipline scheme-free diversity measurement for journals</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            22/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/two_mode_network/" title="The Network Structure of Scientific Revolutions">The Network Structure of Scientific Revolutions</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            22/6/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/cpm/" title="Using connectome-based predictive modeling to predict individual behavior from brain connectivity">Using connectome-based predictive modeling to predict individual behavior from brain connectivity</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            15/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/fc-fingerprint-behavior-natneuro/" title="A neuromarker of sustained attention from whole-brain functional connectivity">A neuromarker of sustained attention from whole-brain functional connectivity</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            15/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/math-typesetting/" title="Hierarchical organization of cortical and thalamic connectivity">Hierarchical organization of cortical and thalamic connectivity</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            5/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/apad/stack/" title="Paper queue">Paper queue</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            1/5/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+            </div>
+        </div>
+
+        
     </div>
+
+
 
         </div>
     </div>

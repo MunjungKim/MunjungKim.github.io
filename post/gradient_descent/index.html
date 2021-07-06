@@ -216,9 +216,6 @@ fit in memory.</p>
 w_k  = w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1};x_i,y_i)
 $$</p>
 <p><img src="/images/POST/SGD.png" alt="limitation"></p>
-<ul>
-<li><a href="http://www.lohninger.com/helpcsuite/kohonen_network_-_background_information.htm">http://www.lohninger.com/helpcsuite/kohonen_network_-_background_information.htm</a> *</li>
-</ul>
 <h3 id="momentum-methods">Momentum Methods</h3>
 <p>This is the most interesting algoritm in the class today! When we drop the ball on the complex loss function with a proper friction, the ball is likely to pass through the local minima and arrive at global minima.
 This is becuase as ball moves downward, its potential energy transform to the kinetic energy so that it gains the energy to pass through the local minima. Momentum Methods are made inspired by this physical phenomenon. The name momentum comes from the fact that the negative gradient is a force moving a particle through parameter space. (although it is not exactly the same as that found in classical momentum.)</p>
