@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme="light"><head>
-    <title> MunJung Kim | Hunters, busybodies, and the knowledge network building associated with curiosity </title>
+    <title> MunJung Kim | Topic diversity, A discipline scheme-free diversity measurement for journals </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. https://doi.org/10.1038/nprot.2016.178">
+    <meta name="description" content="Yi Bu">
     
     
     
@@ -32,7 +32,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/apad/hunter-busybody/">
+    <link rel="canonical" href="/apad/topic_diversity/">
 
     
     
@@ -55,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Hunters, busybodies, and the knowledge network building associated with curiosity"/>
-<meta name="twitter:description" content="Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. https://doi.org/10.1038/nprot.2016.178"/>
+<meta name="twitter:title" content="Topic diversity, A discipline scheme-free diversity measurement for journals"/>
+<meta name="twitter:description" content="Yi Bu"/>
 
 
     
@@ -170,18 +170,35 @@
         <div class="post-content">
             
             <div class="post-title">
-                <h3>Hunters, busybodies, and the knowledge network building associated with curiosity</h3>
+                <h3>Topic diversity, A discipline scheme-free diversity measurement for journals</h3>
                 
             </div>
 
             <h1 id="paper">Paper</h1>
-<p>Lydon-Staley, D. M., Zhou, D., Blevins, A. S., Zurn, P., &amp; Bassett, D. S. (2019, June 8). Hunters, busybodies, and the knowledge network building associated with curiosity. <a href="https://doi.org/10.31234/osf.io/undy4">https://doi.org/10.31234/osf.io/undy4</a></p>
+<p>ToreOpsahl (2013). Triadic closure in two-mode networks: Redefining the global and local clustering coefficients. Social Networks, 35(2), 159-167. <a href="https://doi.org/10.1016/j.socnet.2011.07.001">https://doi.org/10.1016/j.socnet.2011.07.001</a></p>
 <h1 id="summary">Summary</h1>
-<p>It&rsquo;s about characterizing of information seeking nautre of people,
-According to the paper, people can be devided into busy-body and hunters based on historico-0philoshophical studies.
-Hunters usually sample closely connected concepts while busy-body seek diverse concpets.</p>
-<p>So they examined about 150 people</p>
-</div>
+<p>It&rsquo;s about the how to quantify journals' diversity by utilizing the abstracts of scientfic pulciations in journals.</p>
+<p>by making graph of words and using clustering dtection technique</p>
+<ol>
+<li>Word extraction</li>
+</ol>
+<p>so they tokenize the abstracts and get some meaningful words from the abstracts. they said they used TextRank.. I don&rsquo;t know much about it so I have to study further.</p>
+<ol start="2">
+<li>Network Construction
+they gathered synonym or cognate words into one set. and this same meaning word set becomes a one node of the network</li>
+</ol>
+<p>then the edge connection weighted as their cooccurrence frequency.</p>
+<ol start="3">
+<li>Topic detection
+For topic detection step, they exploit Louvain method</li>
+</ol>
+<p>they recursively exploit Louvain algorithm so that they can even get subfield of the first cluster.</p>
+<p>So for validation tehy also repeat this steps several times and check how degree within the community is stable.</p>
+<ol start="4">
+<li>Diversity Calculation</li>
+</ol>
+<p>In this step, they exploit diversity calulator developed by Leinseter.</p>
+<p>Using their caclulcated function where input variables are words and out variables are the topics and the diversity calculator, they get diversity of</p></div>
         <div class="post-footer">
             <div class="info">
                 

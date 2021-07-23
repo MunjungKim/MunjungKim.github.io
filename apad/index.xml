@@ -6,13 +6,22 @@
     <description>Recent content in Apads on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/apad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/apad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Element-centric clustering comparison unifies overlaps and hierarchy</title>
+      <link>https://MunjungKim.github.io/apad/element-centric-clustring/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/element-centric-clustring/</guid>
+      <description>Paper Gates, A.J., Wood, I.B., Hetrick, W.P. et al. Element-centric clustering comparison unifies overlaps and hierarchy.</description>
+    </item>
+    
     <item>
       <title>Large teams develop and small teams disrupt science and technology</title>
-      <link>https://MunjungKim.github.io/apad/small_group_disrupt/</link>
+      <link>https://MunjungKim.github.io/apad/small_group_distrupt/</link>
       <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/apad/small_group_disrupt/</guid>
+      <guid>https://MunjungKim.github.io/apad/small_group_distrupt/</guid>
       <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
 &lt;p&gt;Wu, L., Wang, D. &amp;amp; Evans, J.A. Large teams develop and small teams disrupt science and technology. Nature 566, 378–382 (2019). &lt;a href=&#34;https://doi.org/10.1038/s41586-019-0941-9&#34;&gt;https://doi.org/10.1038/s41586-019-0941-9&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
@@ -23,6 +32,15 @@
 &lt;li&gt;Work from larger teams builds on more-recent and popular developments, and attention to their work comes immediately.&lt;/li&gt;
 &lt;li&gt;Contributions by smaller teams search more deeply into the past, are viewed as disruptive to science and technology and succeed further into the future—if at all.&lt;/li&gt;
 &lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hunters, busybodies, and the knowledge network building associated with curiosity</title>
+      <link>https://MunjungKim.github.io/apad/hunter-busybody/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/hunter-busybody/</guid>
+      <description>Paper Lydon-Staley, D. M., Zhou, D., Blevins, A. S., Zurn, P.</description>
     </item>
     
     <item>
@@ -38,11 +56,20 @@
     </item>
     
     <item>
-      <title>Topic diversity, A discipline scheme-free diversity measurement for journals</title>
-      <link>https://MunjungKim.github.io/apad/small_group_disrupt-copy/</link>
+      <title>The network structure of scientific revolutions</title>
+      <link>https://MunjungKim.github.io/apad/hunter-busybody-copy/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/apad/small_group_disrupt-copy/</guid>
+      <guid>https://MunjungKim.github.io/apad/hunter-busybody-copy/</guid>
+      <description>Paper ToreOpsahl (2013). Triadic closure in two-mode networks: Redefining the global and local clustering coefficients.</description>
+    </item>
+    
+    <item>
+      <title>Topic diversity, A discipline scheme-free diversity measurement for journals</title>
+      <link>https://MunjungKim.github.io/apad/topic_diversity/</link>
+      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/topic_diversity/</guid>
       <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
 &lt;p&gt;ToreOpsahl (2013). Triadic closure in two-mode networks: Redefining the global and local clustering coefficients. Social Networks, 35(2), 159-167. &lt;a href=&#34;https://doi.org/10.1016/j.socnet.2011.07.001&#34;&gt;https://doi.org/10.1016/j.socnet.2011.07.001&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
@@ -68,24 +95,6 @@ For topic detection step, they exploit Louvain method&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In this step, they exploit diversity calulator developed by Leinseter.&lt;/p&gt;
 &lt;p&gt;Using their caclulcated function where input variables are words and out variables are the topics and the diversity calculator, they get diversity of&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Triadic closure in two-mode networks, Redefining the global and local clustering coefficients</title>
-      <link>https://MunjungKim.github.io/apad/hunter-busybody-copy/</link>
-      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/hunter-busybody-copy/</guid>
-      <description>Paper ToreOpsahl (2013). Triadic closure in two-mode networks: Redefining the global and local clustering coefficients.</description>
-    </item>
-    
-    <item>
-      <title>Triadic closure in two-mode networks, Redefining the global and local clustering coefficients</title>
-      <link>https://MunjungKim.github.io/apad/hunter-busybody/</link>
-      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/hunter-busybody/</guid>
-      <description>Paper ToreOpsahl (2013). Triadic closure in two-mode networks: Redefining the global and local clustering coefficients.</description>
     </item>
     
     <item>
