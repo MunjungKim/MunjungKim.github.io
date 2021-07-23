@@ -101,9 +101,6 @@
     <loc>https://MunjungKim.github.io/project/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/apad/stack/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://MunjungKim.github.io/about/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -170,5 +167,7 @@
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/project/doc2vec/</loc>
+  </url><url>
+    <loc>https://MunjungKim.github.io/apad/stack/</loc>
   </url>
 </urlset>
