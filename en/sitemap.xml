@@ -113,9 +113,6 @@
     <loc>https://MunjungKim.github.io/posting/gradient_descent/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/project/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://MunjungKim.github.io/about/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -156,6 +153,8 @@
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/home/</loc>
+  </url><url>
+    <loc>https://MunjungKim.github.io/project/</loc>
   </url><url>
     <loc>https://MunjungKim.github.io/tags/index/</loc>
     <xhtml:link
