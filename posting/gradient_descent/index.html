@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme="light"><head>
+    <title> MunJung Kim | Gradient Descent </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Guide to Gradient Descent">
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/style.min.7ec96a07e10b60a6997be730fc5d4d3467a225c68515a7df6ae17ac2500f828c.css"
+        integrity="sha256-fslqB&#43;ELYKaZe&#43;cw/F1NNGeiJcaFFaffauF6wlAPgow="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/posting/gradient_descent/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Gradient Descent"/>
+<meta name="twitter:description" content="Guide to Gradient Descent"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/My_picture.jpeg" alt="profile picture">
+            <h3 title=""><a href="/">MJ&#39;s blog</a></h3>
+            <div class="description">
+                <p>Hi, I'm an undergraduate student in Physics at Postech</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/MunjungKim" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/jennymunjung/" rel="me" aria-label="instagram">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://twitter.com/snetsMJ" rel="me" aria-label="twitter">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:jennymunjung@postech.ac.kr" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; MunJung Kim  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+            
+                
+                <li><a 
+                   href="/home/"
+                        
+                   title="">Home</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/about/"
+                        
+                   title="">CV</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/posting/"
+                        
+                   title="">Posts</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/project/"
+                        
+                   title="">Project</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/apad/"
+                        
+                   title="">JCBM</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/pr/"
+                        
+                   title=""></a></li>
+            
+        
+        
+            
+                <li><a href="/"
+                       title="EN">EN</a>
+                </li>
+            
+                <li><a href="/kor/"
+                       title="KOR">KOR</a>
+                </li>
+            
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Gradient Descent</h3>
+                
+            </div>
+
+            <p>This article is written based on the lecture <a href="https://plms.postech.ac.kr/local/ubion/course/syllabusV.php?id=1022">MATH532</a>  by Prof. Hwang at POSTECH.</p>
+<h2 id="what-is-gradient-descent-algorithm">What is Gradient Descent Algorithm</h2>
+<p>In machine learning, we usually have to find a way to minimize a traget function (e.g. MSE). How can we find the minimum of the target function if it is too dizzy to find the minimum? Think about the basic calculus which you learned in your freshman. There was a notion called &ldquo;Gradient,&rdquo; which points the dirction of the steepest slope. Its magnitude also means the rate of increase or decrease of the function in the direction. Therefore, gradient is very of use to find minimum or maximum valu in that it points where we have to go to find our destination. Of course, we have to follow the direction where gradient points. This can be written as</p>
+<p>$$
+w_k = w_{k-1} - \eta \cdot \nabla_w J(w_{k-1})
+= w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{N} L(w_{k-1};x_i,y_i)
+$$</p>
+<p>where \(J(w) = \sum_{i=1}^{N}L(y_i,\hat{f}(w;x_i))\) and \(L\) is a loss function.</p>
+<h4 id="limitations">Limitations</h4>
+<figure>
+    <img src="https://i.redd.it/9euoe42zwj641.jpg"
+         alt="image"/> <figcaption>
+            <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/eez8al/gradient_descent/">https://www.reddit.com/r/ProgrammerHumor/comments/eez8al/gradient_descent/</a></p>
+        </figcaption>
+</figure>
+
+<p>Simple gradient descent alogrithm has several limitations.</p>
+<ul>
+<li>
+<p>If the starting point for gradient descent was chosen inappropriately, the algorithm will only make it approach a local minimum, never reaching the global one.</p>
+</li>
+<li>
+<p>We need to compute  \(\nabla_w L(w_{k-1};x_i,y_i) \)for all \(i\) to perform one update. Hence, it can be very slow and is intractable for datasets that don’t
+fit in memory.</p>
+</li>
+</ul>
+<h2 id="stochastic-gradient">Stochastic Gradient</h2>
+<p>One method to overcome the limitations alluded before is the stochastic gradient descent. It is literally the stochastic approximation of gradient descent optimization.</p>
+<p>We select data size \(B\) from all sample size \(N\). Then we can iteratively calculate parameter \(w\) where the loss function is being minimized. This can reduce the computational burden. Also, there is a fluctuation in the objective function since we select the \(B\) data randomly. This fluctuation enables it to jump to new and potentially better local minima.</p>
+<p>$$
+w_k  = w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1};x_i,y_i)
+$$</p>
+<p><img src="/images/POST/SGD.png" alt="limitation"></p>
+<h3 id="momentum-methods">Momentum Methods</h3>
+<p>This is the most interesting algoritm in the class today! When we drop the ball on the complex loss function with a proper friction, the ball is likely to pass through the local minima and arrive at global minima.
+This is becuase as ball moves downward, its potential energy transform to the kinetic energy so that it gains the energy to pass through the local minima. Momentum Methods are made inspired by this physical phenomenon. The name momentum comes from the fact that the negative gradient is a force moving a particle through parameter space. (although it is not exactly the same as that found in classical momentum.)</p>
+<p>The algorithm can be expressed with equations as below.</p>
+<p>$$
+v_k = \gamma v_{k-1} +  \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1};x_i,y_i)
+$$
+$$
+w_k  = w_{k-1} - v_k
+\newline= w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1};x_i,y_i)
+$$</p>
+<p>Here, \(\gamma\) plays a role as a friction. (Although not exactly same.)
+It is a method that helps acclerate SGD (Sotchasstic Gradient Descent) in the relevant direction and dempens oscillations. Also, it can hlep to escape local minima.</p>
+<h3 id="nestrov-accelerated-gradient">Nestrov Accelerated gradient</h3>
+<p>Momentum method adjusts the momentum based on current position \(w_{k-1}\). On the other hand, Nestrov Acclerated gradient based on approximated future position \(w_{k-1}-\gamma w_{k-1}\).</p>
+<p>$$
+v_k = \gamma v_{k-1} +  \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1}-\gamma w_{k-1};x_i,y_i)
+$$
+$$
+w_k  = w_{k-1} - v_k
+\newline= w_{k-1} - \eta \cdot \nabla_w \sum_{i=1}^{B} L(w_{k-1}-\gamma w_{k-1};x_i,y_i)
+$$</p>
+<h2 id="adaptive-method">Adaptive Method</h2>
+<h4 id="adagrad">AdaGrad</h4>
+<p>As I alluded before, in order to arive at global minimum, not local minimum, we need to have appropriate parameter \(\eta \). Too small \(\eta \) can cause too slow convergence and too small \(\eta\) can cause too much fluctuation to converge. Also having a constant \(\eta\) is not suitable in the complex loss function.</p>
+<p>AdaGrad (Adaptive Gradient) is the algorithm that djust learning rate automatically. It updates more for infrequent parameter and less for frequent parameter. The algorithm can be written as
+$$
+g_{k-1,i} := \nabla_w J(w_{k-1})
+$$</p>
+<p>$$
+G_{k-1,i} = \sum_{t=0}^{k-1}|g_{t,i}|^2
+$$</p>
+<p>$$
+w_k  = w_{k-1} - \eta \cdot \nabla_w \frac{\eta}{\sqrt{G_{k-1.i+\epsilon}}}g_{k-1,i}
+$$</p>
+<p>As the accumulated gradient gets bigger, the learning rate gets smaller.</p>
+<h4 id="rmsprob">RMSProb</h4>
+<p>AdaGrad has some weaknesses because denominator \(G\). Since \(G\) increases monotonically, the learning rate becomes shrink and eventually becomes very small so the algorithm can not learn anymore. If we change the summation of \(g_{k-1,i}\) into the average of
+\(g_{k-1,i}\), the problem can be solved. RMSProb average previous \(g\) and current \(g\) with the weight \(1-\gamma \) and \(\gamma \) respectively.</p>
+<p>$$
+g_{k-1,i} := \nabla_w J(w_{k-1})
+$$</p>
+<p>$$
+E[g^2]_{k-1} = \gamma E[g^2] _{k-1} + (1-\gamma) g^2 _{k-1}
+$$</p>
+<p>where
+$$
+E[g^2]_{k-1} = \sum^{k-1} _{i=0}(1-\gamma)\gamma^i g^2 _{k-1-i}
+$$</p>
+<p>and
+$$
+w_k  = w_{k-1} - \eta \cdot \nabla_w \frac{\eta}{\sqrt{E[g^2]_{k-1}+\epsilon}}g_{k-1,i}
+$$</p>
+<h4 id="adadelta">AdaDelta</h4>
+<p>AdaDelta is another extension of AdaGrad. AdaDelta not only focuses on the denomiantor but also numerator.</p>
+<p>$$
+g_{k-1,i} := \nabla_{w_k} J(w_{k-1})
+$$</p>
+<p>$$
+E[\Delta w^2]_{k-1} = \gamma_1 E[\Delta w^2] _{k-2} + (1-\gamma_1) \Delta w^2 _{k-1}
+$$</p>
+<p>$$
+E[g^2]_{k-1} = \gamma_2 E[g^2] _{k-1} + (1-\gamma_2) g^2 _{k-1}
+$$</p>
+<p>and
+$$
+w_k  = w_{k-1} - \eta \cdot \nabla_w \frac{\sqrt{E[\Delta w^2]_{k-1}+\epsilon}}{\sqrt{E[g^2]_{k-1}+\epsilon}}g_{k-1,i}
+$$</p>
+<h4 id="adam">Adam</h4>
+<p>Adam is the algorithm that mixes RMSProp and Momentum. It was proposed by KIngma &amp;Ba. It not only keeps the average of past squared gradients like Adadelta and RMSProp, but also keep the average of past gradients. Since inital average are biased towards zero, Adam adjusts initial averages to be unbiased.</p>
+<p>$$
+g_{k-1,i} := \nabla_{w_k} J(w_{k-1})
+$$</p>
+<p>$$
+m_{k-1} = \gamma_1 m_{k-2} + (1-\gamma_1)g_{k-1}
+$$</p>
+<p>$$
+v_{k-1} = \gamma_2 v_{k-2} + (1-\gamma_2)g^2_{l-1}
+$$</p>
+<p>$$
+\newline
+\newline
+\hat{m_{k-1}} = \frac{m_{k-1}}{1-\gamma^{k-1}_1}
+$$</p>
+<p>$$
+\hat{v_{k-1}} = \frac{v_{k-1}}{1-\gamma^{k-1}_2}
+$$</p>
+<p>and
+$$
+w_k  = w_{k-1} - \frac{\eta}{\sqrt{\hat{v}_{k-1}}+\eta} \hat{m} _{k-1}
+$$</p>
+<h2 id="code">Code</h2>
+<p>You can get the gradient descent code I wrote from scratch.</p>
+<p><a href="https://github.com/MunjungKim/Gradient-Descent-Algorithm">https://github.com/MunjungKim/Gradient-Descent-Algorithm</a></p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>
+<p>Hastie, T., Tibshirani, R., &amp; Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction, Second Edition. New York: Springer Series in Statistics</p>
+</li>
+<li>
+<p>James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2013). An introduction to statistical learning (Vol. 112). New York: springer.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/machine-learning/">Machine Learning</a><a class="tag" href="/tags/gradient-descent/">Gradient Descent</a><a class="tag" href="/tags/momentum-method/">Momentum Method</a><a class="tag" href="/tags/nestrov-accelerated-gradient/">Nestrov Accelerated Gradient</a></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
+        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        crossorigin="anonymous"></script><link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css"
+              integrity="sha384-t5CR&#43;zwDAROtph0PXGte6ia8heboACF9R5l/DiY&#43;WZ3P2lxNgvJkQk5n7GPvLMYw"
+              crossorigin="anonymous"><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js"
+                integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8&#43;w2LAIftJEULZABrF9PPFv&#43;tVkH"
+                crossorigin="anonymous"></script><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js"
+                integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB&#43;w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v"
+                crossorigin="anonymous"
+                onload="renderMathInElement(document.body);"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5R2XSNTPG9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5R2XSNTPG9');
+</script></body>
+
+</html>

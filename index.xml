@@ -6,7 +6,16 @@
     <description>Recent content on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper queue</title>
+      <link>https://MunjungKim.github.io/apad/stack/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/stack/</guid>
+      <description>Posted papers  Hierarchical organization of cortical and thalamic connectivity, Nature Using connectome-based predictive modeling to predict individual behavior from brain connectivity, Nature protocols   Paper queue Papers that I want to read</description>
+    </item>
+    
     <item>
       <title>Element-centric clustering comparison unifies overlaps and hierarchy</title>
       <link>https://MunjungKim.github.io/apad/element-centric-clustring/</link>
@@ -53,6 +62,16 @@
     </item>
     
     <item>
+      <title>Neural Embedding of Research Papers Reveals Characteristics of Policy Research Institute</title>
+      <link>https://MunjungKim.github.io/pr/doc2vec/</link>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/pr/doc2vec/</guid>
+      <description>\(Munjung Kim^1, Jisung Yoon^2, Hyunuk Kim^3, Woo-Sung Jung^{1,2}\)
+\(^1\)Department of Physics, Pohang University of Science and Technology; \(^2\)Department of Industrial and Management Engineering,PohangUniversity of Science and Technology; \(^3\)Questrom School of Business, Boston University</description>
+    </item>
+    
+    <item>
       <title>Topic diversity, A discipline scheme-free diversity measurement for journals</title>
       <link>https://MunjungKim.github.io/apad/topic_diversity/</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
@@ -87,19 +106,19 @@ For topic detection step, they exploit Louvain method&lt;/li&gt;
     
     <item>
       <title>Clustering and Grphical Methods</title>
-      <link>https://MunjungKim.github.io/post/clustering/</link>
+      <link>https://MunjungKim.github.io/posting/clustering/</link>
       <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/post/clustering/</guid>
+      <guid>https://MunjungKim.github.io/posting/clustering/</guid>
       <description>This article is written based on the lecture MATH532 by Prof.</description>
     </item>
     
     <item>
       <title>Neural Network</title>
-      <link>https://MunjungKim.github.io/post/neural_network/</link>
+      <link>https://MunjungKim.github.io/posting/neural_network/</link>
       <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/post/neural_network/</guid>
+      <guid>https://MunjungKim.github.io/posting/neural_network/</guid>
       <description>This article is written based on the lecture MATH532 by Prof.</description>
     </item>
     
@@ -153,10 +172,10 @@ from resting state connectivity in an independent sample of children and adolsec
     
     <item>
       <title>Malkus-Lorenz Wheel (Mathematics &#43; Code)</title>
-      <link>https://MunjungKim.github.io/post/lorenz_wheel/</link>
+      <link>https://MunjungKim.github.io/posting/lorenz_wheel/</link>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/post/lorenz_wheel/</guid>
+      <guid>https://MunjungKim.github.io/posting/lorenz_wheel/</guid>
       <description>This term project is first inspired by the book Chaos written by James Gleick.</description>
     </item>
     
@@ -171,11 +190,20 @@ from resting state connectivity in an independent sample of children and adolsec
     
     <item>
       <title>Gradient Descent</title>
-      <link>https://MunjungKim.github.io/post/gradient_descent/</link>
+      <link>https://MunjungKim.github.io/posting/gradient_descent/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/post/gradient_descent/</guid>
+      <guid>https://MunjungKim.github.io/posting/gradient_descent/</guid>
       <description>This article is written based on the lecture MATH532 by Prof.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://MunjungKim.github.io/project/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/project/</guid>
+      <description>Science of Science and Networks, Brain Networks(Correlation between behavior and connectivity)</description>
     </item>
     
     <item>
@@ -213,25 +241,6 @@ from resting state connectivity in an independent sample of children and adolsec
       <guid>https://MunjungKim.github.io/home/</guid>
       <description>Thank you for visiting my website!
 (My website is not fully prepared yet.</description>
-    </item>
-    
-    <item>
-      <title>Neural Embedding of Research Papers Reveals Characteristics of Policy Research Institute</title>
-      <link>https://MunjungKim.github.io/project/doc2vec/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/project/doc2vec/</guid>
-      <description>\(Munjung Kim^1, Jisung Yoon^2, Hyunuk Kim^3, Woo-Sung Jung^{1,2}\)
-\(^1\)Department of Physics, Pohang University of Science and Technology; \(^2\)Department of Industrial and Management Engineering,PohangUniversity of Science and Technology; \(^3\)Questrom School of Business, Boston University</description>
-    </item>
-    
-    <item>
-      <title>Paper queue</title>
-      <link>https://MunjungKim.github.io/apad/stack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/stack/</guid>
-      <description>Paper I&amp;rsquo;ve read and posted  Hierarchical organization of cortical and thalamic connectivity, Nature Using connectome-based predictive modeling to predict individual behavior from brain connectivity, Nature protocols   Paper queue Papers that I want to read</description>
     </item>
     
   </channel>

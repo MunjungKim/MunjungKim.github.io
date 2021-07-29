@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme="light"><head>
+    <title> MunJung Kim | Malkus-Lorenz Wheel (Mathematics &#43; Code) </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Mathematics and Code">
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/style.min.7ec96a07e10b60a6997be730fc5d4d3467a225c68515a7df6ae17ac2500f828c.css"
+        integrity="sha256-fslqB&#43;ELYKaZe&#43;cw/F1NNGeiJcaFFaffauF6wlAPgow="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/posting/lorenz_wheel/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Malkus-Lorenz Wheel (Mathematics &#43; Code)"/>
+<meta name="twitter:description" content="Mathematics and Code"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/My_picture.jpeg" alt="profile picture">
+            <h3 title=""><a href="/">MJ&#39;s blog</a></h3>
+            <div class="description">
+                <p>Hi, I'm an undergraduate student in Physics at Postech</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/MunjungKim" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/jennymunjung/" rel="me" aria-label="instagram">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://twitter.com/snetsMJ" rel="me" aria-label="twitter">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:jennymunjung@postech.ac.kr" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; MunJung Kim  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+            
+                
+                <li><a 
+                   href="/home/"
+                        
+                   title="">Home</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/about/"
+                        
+                   title="">CV</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/posting/"
+                        
+                   title="">Posts</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/project/"
+                        
+                   title="">Project</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/apad/"
+                        
+                   title="">JCBM</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/pr/"
+                        
+                   title=""></a></li>
+            
+        
+        
+            
+                <li><a href="/"
+                       title="EN">EN</a>
+                </li>
+            
+                <li><a href="/kor/"
+                       title="KOR">KOR</a>
+                </li>
+            
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Malkus-Lorenz Wheel (Mathematics &#43; Code)</h3>
+                
+            </div>
+
+            <p>This term project is first inspired by the book <a href="https://en.wikipedia.org/wiki/Chaos:_Making_a_New_Science">Chaos</a> written by James Gleick.</p>
+<h1 id="mathematical-background">Mathematical Background</h1>
+<h2 id="malkus-lorenz-water-wheel">Malkus-Lorenz water wheel</h2>
+<p>I referred to the class <a href="https://www.youtube.com/watch?v=HljJv7Hf6Zo&amp;t=2163s">MAE5790-15</a>at Cornell University, <a href="https://documents.pub/document/modelling-the-chaotic-waterwheel.html">Modelling the Chaotic Waterwheel</a>, and <a href="https://journals.aps.org/pra/pdf/10.1103/PhysRevA.45.626">paper</a> by Miroslav Kolar and Godfrey Gumbs.</p>
+<figure>
+    <img src="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/images/Image4.gif"
+         alt="image"/> <figcaption>
+            <p>Discrete Water Wheel Model ( <a href="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/">http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/</a> )</p>
+        </figcaption>
+</figure>
+
+<p>The above figure is a discrete case of Malkus-Lorenz waterwheel. It has $N$ countable baskets, which have the same size with each other. In this case, water can not transport from one basket to another basket. ((a) in Fig.~\ref{fig:continuous})</p>
+<figure>
+    <img src="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/images/Image4.gif"
+         alt="image"/> <figcaption>
+            <p>Discrete Water Wheel Model ( <a href="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/">http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/</a> )</p>
+        </figcaption>
+</figure>
+
+<p>\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{Screen Shot 2021-05-07 at 1.10.35 AM.png}
+\caption{Continuous Water Wheel Model} \cite{contiuous}
+\label{fig:continuous}
+\end{figure}</p>
+<p>The notion of a discrete wheel can expand to a continuous version. In this case, water in specific section \(d\theta\) can move to other sections such that the frame of inference is fixed outside the rotation of the wheel.</p>
+<p>Here, I am going to express the dynamics of a waterwheel mathematically and show how the movement of a waterwheel follows <a href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz Equation</a></p>
+<p>Before we start the section, let us define some notations.</p>
+<ul>
+<li>
+<p>\(w(t)\) : angular velocity of the water wheel.</p>
+</li>
+<li>
+<p>\(\theta\) : angle in lab frame where $\theta = 0$ indicates 12:00 direction.</p>
+</li>
+<li>
+<p>\(Q(\theta)\) : The rate at which water is pumped in. (Not depend on $t$)</p>
+</li>
+<li>
+<p>\(r\) : radius of the wheel</p>
+</li>
+<li>
+<p>\(m(\theta,t)\) : mass distribution of water around rim.</p>
+</li>
+</ul>
+<h2 id="conservation-law">Conservation Law</h2>
+<p>The mass of water between \(\theta_1\) and \(\theta_2\) is</p>
+<p>\begin{equation}
+M = \int_{\theta_1}^{\theta_2} m(\theta,t)d\theta
+\end{equation}</p>
+<p>The conservation law of the mass of water in the wheel can be written as</p>
+<p>\begin{equation}
+\frac{\partial m(\theta,t)}{\partial t} = Q - Km(\theta,t) - w\frac{\partial m(\theta,t)}{\partial \theta}
+\end{equation}</p>
+<p>where $Q$ is the amount of water in-flowing into the wheel and $Km$ is the amount of water leaking from the water wheel. \(w \frac{\partial m(\theta,t)}{\partial t}\) is the amount of water transport from $\theta$ to the adjacent part. Here, I assume that the rate at which water leaking from the water wheel is constant.</p>
+<p>Then, consider the sector where \(\theta \in [\theta_1,\theta_2]\).</p>
+<p>The mass between this section, \(M\) can be expressed as</p>
+<p>\begin{equation}
+\Delta M =\Delta t \int_{\theta_1}^{\theta_2} \frac{\partial m(\theta,t)}{\partial t}d\theta= \Delta t \Big[ \int^{\theta_2}_{\theta_1} Q(\theta) d\theta - \int^{\theta_2}_{\theta_1} Km(\theta) d\theta -m(\theta_2) w+m(\theta_1)w\Big]
+\end{equation}</p>
+<p>Physical interpretation is as follows.</p>
+<p>\(\Delta t \int^{\theta_2}_{\theta_1} Q(\theta) d\theta\) is the amount of water inflowing to the section \([\theta_1,\theta_2]\).</p>
+<p>\(\Delta t \int^{\theta_2}_{\theta_1} Km(\theta) d\theta \) is the amount of water leaking from the section.</p>
+<p>\(m(\theta_2) w \Delta t\) is the amount of water carried out to the section and \(m(\theta_1) w \Delta t\) is carried into the section.</p>
+<p>If the section is \([0,2\pi]\)</p>
+<p>\begin{equation}
+\frac{\partial M}{\partial t} = Q_{tot} -KM
+\end{equation}</p>
+<p>where $M$ is the total mass of water on the wheel and $Q_tot$ is the total rate at which water is pumped into the whole wheel.</p>
+<h2 id="newtons-law">Newton&rsquo;s law</h2>
+<p>Suppose \(I(t)\) is the moment of inertia of the wheel. Then, the torque can be expressed as</p>
+<p>\begin{equation}
+\frac{\partial (Iw)}{\partial t}
+\end{equation}</p>
+<p>There are two source terms that produce torque. One is the damping term, and the other is the torque due to gravity. If we assume that the damping torque is linear to the angular velocity, we have</p>
+<p>\begin{equation}
+\frac{\partial (Iw)}{\partial t} = -vw + gr\int^{2\pi}_{0}m(\theta,t)sin\theta d\theta
+\end{equation}</p>
+<p>,where \(v\) is the angular velocity of the wheel and $g$ is effective gravity.</p>
+<p>The moment of inertia $I$ can be treated as a constant provided that enough time has elapsed and reached the stable phase. Therefore,</p>
+<p>\begin{equation}
+I\frac{dw}{dt} = -vw + gr\int^{2\pi}_{0}m(\theta,t)sin\theta d\theta
+\end{equation}</p>
+<h2 id="fourier-series">Fourier Series</h2>
+<p>Since \(m(\theta,t)\) is \(2\pi\) periodic in $\theta$, it can be represented as a Fourier time series.</p>
+<p>\begin{equation}
+m(\theta,t) = \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)
+\end{equation}</p>
+<p>Similarly, \(Q(\theta)\) also can be represented as Fourier series.</p>
+<p>\begin{equation}
+Q(\theta) = \sum_{n=0}^{\infty}q_n\cos(n\theta)
+\end{equation}</p>
+<p>The reason why there is no sine term in $Q$ is because water falls into the wheel symmetrically at the top.</p>
+<p>Now, we can plug Eqs.(8) and (9) into Eq.(2).</p>
+<p>\begin{equation}
+\begin{split}
+\frac{\partial }{\partial t} \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta) &amp; = \sum_{n=0}^{\infty}q_n\cos(n\theta)- K\Big[\sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)\Big] \\
+&amp; - w\frac{\partial}{\partial \theta} \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)
+\end{split}
+\end{equation}</p>
+<p>Since sine and cosine functions have orthogonality, we can calculate the coefficients respectively,</p>
+<p>\begin{equation}
+\dot{a_n} = -Ka_n +w b_n
+\end{equation}</p>
+<p>\begin{equation}
+\dot{b_n} = q_n-Kb_n -w a_n
+\end{equation}</p>
+<p>Finally, we can plug Eq.(9) into Eq.(7).</p>
+<p>\begin{equation}
+\begin{split}
+\frac{\partial (Iw)}{\partial t} &amp;= -vw + gr \int_{0}^{2\pi} \Big[ \sum_{n=0}^{\infty} a_n(t) \sin(n\theta) + b_n(t)\cos(n\theta)\Big]\sin\theta d\theta\\
+&amp; -vw + gr \int_{0}^{2\pi} \Big[a_1(t) \sin(\theta) \Big] \sin(\theta) d\theta =-vw+gra_1\pi
+\end{split}
+\end{equation}</p>
+<p>Here, all the terms except \(\sin\theta\) in \(m(\theta,t)\) vanish because of the orthogonality.</p>
+<p>In summary we get three equations, where \(n\) is a non negative integer.</p>
+<p>\begin{equation}
+\dot{a_n}= -Ka_n+w b_n
+\end{equation}
+\begin{equation}
+\dot{b_n}=q_n-Kb_n-w a_n
+\end{equation}
+\begin{equation}
+I\dot{w} =-vw+gra_1\pi
+\end{equation}</p>
+<p>In the above equation, only \(a_1\),\(b_1\), and \(w\) are decoupled. Therefore,</p>
+<hr>
+<p>\begin{equation}
+\dot{a_1} = -K a_1  + w b_1
+\end{equation}
+\begin{equation}
+\dot{b_1} = q_1 - K b_1 - wa_1
+\end{equation}
+\begin{equation}
+I\dot{w} = -vw +gra_1 \pi
+\end{equation}</p>
+<hr>
+<p>This is exactly the same as the Lorenz equation after introducing the following equations and change of the time coordinate from \(t\) to \(s = Kt\)</p>
+<p>$$
+\sigma = \frac{v}{KI}
+$$</p>
+<p>\begin{equation}
+\begin{split}
+\rho &amp;= \frac{v}{KI}\\
+\beta &amp;= 1
+\end{split}
+\end{equation}</p>
+<p>and</p>
+<p>$$
+x = \frac{w}{K}
+$$</p>
+<p>\begin{equation}
+\begin{split}
+y &amp;= \frac{\rho K a_1}{q_1}\\
+z &amp;= \rho - \frac{\rho K b_1}{q_1}
+\end{split}
+\end{equation}</p>
+<h1 id="lorenz-equation">Lorenz Equation</h1>
+<h2 id="properties">Properties</h2>
+<ol>
+<li>
+<p>Lorenz equations have a symmetric pair of solutions \((x,y,z)\) and \((-x,-y,z)\)</p>
+</li>
+<li>
+<p>z-axis is invariant. The point on the z axis where \(x=0,y=0\) remains on it.</p>
+</li>
+<li>
+<p>Stationary Point. (I used \(r\) instead of \(\rho\) here)</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>For \(0&lt;r&lt;1 \), Lorenz equation has only one stable fixed point.</p>
+</li>
+<li>
+<p>At \(r=1\), there is a bifurcation of a simple kind</p>
+</li>
+<li>
+<p>For \(r&gt;1\), the origin is non-stable. There are two other stationary points which we shall call \(C_1\) and \(C_2\).</p>
+<ul>
+<li>
+<p>For \(\frac{(\sigma + \beta + 3)\sigma}{\sigma-b-1}&gt;r&gt;1\), \(C_1\) and \(C_2\) are stable.</p>
+</li>
+<li>
+<p>For \(\frac{(\sigma + \beta + 3)\sigma}{\sigma-b-1}&lt;r\) , \(C_1\) and \(C_2\) are non-stable.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{Screen Shot 2021-05-10 at 1.21.41 AM.png}
+\caption{$\sigma =10$ and $b=\frac{8}{3}$, \cite{diagram}}
+\label{fig:bifurcation}
+\end{figure}</p>
+<h1 id="term-project-plan">Term Project Plan</h1>
+<h2 id="goal">Goal</h2>
+<p>The goal of this term project is to observe different phases of the waterwheel system depending on its initial point in Eq.(\ref{eq:last}).</p>
+<ol>
+<li>
+<p>Draw a bifurcation diagram by calculating $x$ with respect to \(r\).</p>
+</li>
+<li>
+<p>Check the sensitive dependence on the initial condition where \(r&gt;r_{Hpof}\).</p>
+</li>
+<li>
+<p>Repeat 1) and 2) with various parameters.</p>
+</li>
+<li>
+<p>(If I have enough time) Repeat 1), 2) and 3) with a slightly different system (e.g. Two Malkus-Lorenz wheel)</p>
+</li>
+</ol>
+<p>\newpage
+\subsection{Expected Result}</p>
+<ol>
+<li></li>
+</ol>
+<p>\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.4]{Screen Shot 2021-05-11 at 9.28.05 AM.png}
+\caption{Bifurcation Diagram of Lorenz system \cite{bifurcation}.}
+\label{fig:bifurcation}
+\end{figure}</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{Screen Shot 2021-05-10 at 4.18.52 PM.png}
+\caption{Sensitive dependence on the initial condition. }
+\label{fig:bifurcation}
+\end{figure}</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
+        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        crossorigin="anonymous"></script><link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css"
+              integrity="sha384-t5CR&#43;zwDAROtph0PXGte6ia8heboACF9R5l/DiY&#43;WZ3P2lxNgvJkQk5n7GPvLMYw"
+              crossorigin="anonymous"><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js"
+                integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8&#43;w2LAIftJEULZABrF9PPFv&#43;tVkH"
+                crossorigin="anonymous"></script><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js"
+                integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB&#43;w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v"
+                crossorigin="anonymous"
+                onload="renderMathInElement(document.body);"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5R2XSNTPG9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5R2XSNTPG9');
+</script></body>
+
+</html>

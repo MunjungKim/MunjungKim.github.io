@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme="light"><head>
+    <title> MunJung Kim | Clustering and Grphical Methods </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Guide to Gradient Descent">
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/style.min.7ec96a07e10b60a6997be730fc5d4d3467a225c68515a7df6ae17ac2500f828c.css"
+        integrity="sha256-fslqB&#43;ELYKaZe&#43;cw/F1NNGeiJcaFFaffauF6wlAPgow="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/posting/clustering/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Clustering and Grphical Methods"/>
+<meta name="twitter:description" content="Guide to Gradient Descent"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/My_picture.jpeg" alt="profile picture">
+            <h3 title=""><a href="/">MJ&#39;s blog</a></h3>
+            <div class="description">
+                <p>Hi, I'm an undergraduate student in Physics at Postech</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/MunjungKim" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/jennymunjung/" rel="me" aria-label="instagram">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://twitter.com/snetsMJ" rel="me" aria-label="twitter">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:jennymunjung@postech.ac.kr" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; MunJung Kim  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+            
+                
+                <li><a 
+                   href="/home/"
+                        
+                   title="">Home</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/about/"
+                        
+                   title="">CV</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/posting/"
+                        
+                   title="">Posts</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/project/"
+                        
+                   title="">Project</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/apad/"
+                        
+                   title="">JCBM</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/pr/"
+                        
+                   title=""></a></li>
+            
+        
+        
+            
+                <li><a href="/"
+                       title="EN">EN</a>
+                </li>
+            
+                <li><a href="/kor/"
+                       title="KOR">KOR</a>
+                </li>
+            
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Clustering and Grphical Methods</h3>
+                
+            </div>
+
+            <p>This article is written based on the lecture <a href="https://plms.postech.ac.kr/local/ubion/course/syllabusV.php?id=1022">MATH532</a>  by Prof. Hwang at POSTECH.</p>
+<h2 id="clustering">Clustering</h2>
+<h3 id="k-means-clustering">K means clustering</h3>
+<ol>
+<li>Initialize the center of k clusters</li>
+<li>Each data belongs to the cluster with the nearest mean</li>
+<li>Update the average value of the data beloning to each cluster to the center of the new cluster</li>
+<li>Interate 2) and 3)</li>
+</ol>
+<h4 id="weaknesses-of-k-means-clustering">Weaknesses of K means clustering</h4>
+<ol>
+<li>The performance depends on the number of clusters.</li>
+<li>The performance also depends on the inital points.</li>
+</ol>
+<h3 id="som-self-organizing-mapping">SOM (Self-Organizing Mapping)</h3>
+<p><img src="/images/POST/SOM.gif" alt="limitation"></p>
+<p><em><a href="http://www.lohninger.com/helpcsuite/kohonen_network_-_background_information.htm">http://www.lohninger.com/helpcsuite/kohonen_network_-_background_information.htm</a></em></p>
+<p>ANN is usually used for classification but it also can used for clustering. SOM is a type of ANN (Artificial Neural Network) clustering. Therefore, it both reduces the dimension of the input data. Also, they apply competitive learning instead of error-correction learning. It produces a low-dimensional discretized representation of the input space of the training samples, called a map. A Map consists of nodes and each node</p>
+<p>It is well explained in <a href="http://users.ics.aalto.fi/jhollmen/dippa/node9.html">here </a> and <a href="https://datascience.stackexchange.com/questions/18384/how-are-the-positions-of-the-output-nodes-determined-in-the-kohonen-self-organ">here</a>.</p>
+<h4 id="algorithm-of-som">Algorithm of SOM</h4>
+<p>SOM needs 2-D neurons. Each neurons has position and weight. Denote each neuron as \(n_i = (w_i,k_i)\).</p>
+<ol>
+<li>Each node&rsquo;s weights \(w_i\) are initialized.</li>
+<li>A vector \(x_i\) is chosen at random from the set of training data.</li>
+<li>Every node is examined to calculate which one&rsquo;s weights are most close the input vector. The closet node \(n_m =\argmin_{n_i} d(x_j, W(n_j))\)is called the winning node.</li>
+<li>Pick a set of neurons for which we will adapt the weight vector given a neighborhood funcntion. It is important that the weight that should be updated are given by  \(d(k_i,k_m\) where \(k_m\) is the position of the winning node.</li>
+<li>The winner nonde and its topological neighborhood neurons are updated by flowing the update rule</li>
+</ol>
+<h4 id="update-rule">Update rule</h4>
+<p>$$
+n_{i}(t+1) = n_{i} (t) + \sum_x \eta(t) \cdot h(||n_m(x) - n_i||,t) \cdot [x - n_i(t)]
+$$</p>
+<ul>
+<li>
+<p>\(h()\) is the neighborhood function. A variety of neighborhood functions can be usued.</p>
+</li>
+<li>
+<p>\(\eta\) is the learning rate. It is the factor that how much the node will move at time \(t\). \(\eta \in (0,1]\) and \(\eta(t+1)&lt;\eta(t)\). Typically the exponential function is used.
+$$
+\eta(t) = \eta_0 k^{-t/t_{max}(\log \eta_f/\eta_0)/(1/logK)}
+$$</p>
+</li>
+</ul>
+<h2 id="graphical-methods">Graphical Methods</h2>
+<h3 id="motivation">Motivation</h3>
+<ul>
+<li>
+<p>Sometimes, we need to get the probability that each data would be included to specific cluster.</p>
+</li>
+<li>
+<p>Therefore, we would like to build models that contain various uncertanties.</p>
+</li>
+<li>
+<p>We need to find a way to formulate a probability model</p>
+</li>
+</ul>
+<figure>
+    <img src="https://wiki.ubc.ca/images/3/35/Markov_networks_fig1.png"
+         alt="image"/> <figcaption>
+            <p><a href="https://wiki.ubc.ca/Course:CPSC522/Markov_Networks">https://wiki.ubc.ca/Course:CPSC522/Markov_Networks</a></p>
+        </figcaption>
+</figure>
+
+<h3 id="bayesian-network">Bayesian network</h3>
+<p>Bayesian network represents a set of variables and their conditional dependencies via a directed acyclic graph. Each node in the graph is a random variable and each edge represents the conditional dependency between two variables.</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>
+<p><a href="http://retiredparkingguard.com/notes/machine_learning/restricted_boltzmann_machines.html">http://retiredparkingguard.com/notes/machine_learning/restricted_boltzmann_machines.html</a></p>
+</li>
+<li>
+<p><a href="https://angeloyeo.github.io/2020/10/02/RBM.html">https://angeloyeo.github.io/2020/10/02/RBM.html</a></p>
+</li>
+</ul>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/machine-learning/">Machine Learning</a><a class="tag" href="/tags/gradient-descent/">Gradient Descent</a><a class="tag" href="/tags/momentum-method/">Momentum Method</a><a class="tag" href="/tags/nestrov-accelerated-gradient/">Nestrov Accelerated Gradient</a></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
+        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        crossorigin="anonymous"></script><link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css"
+              integrity="sha384-t5CR&#43;zwDAROtph0PXGte6ia8heboACF9R5l/DiY&#43;WZ3P2lxNgvJkQk5n7GPvLMYw"
+              crossorigin="anonymous"><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js"
+                integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8&#43;w2LAIftJEULZABrF9PPFv&#43;tVkH"
+                crossorigin="anonymous"></script><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js"
+                integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB&#43;w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v"
+                crossorigin="anonymous"
+                onload="renderMathInElement(document.body);"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5R2XSNTPG9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5R2XSNTPG9');
+</script></body>
+
+</html>

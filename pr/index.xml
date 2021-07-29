@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MJ&#39;s blog</title>
+    <link>https://MunjungKim.github.io/pr/</link>
+    <description>Recent content on MJ&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/pr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neural Embedding of Research Papers Reveals Characteristics of Policy Research Institute</title>
+      <link>https://MunjungKim.github.io/pr/doc2vec/</link>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/pr/doc2vec/</guid>
+      <description>\(Munjung Kim^1, Jisung Yoon^2, Hyunuk Kim^3, Woo-Sung Jung^{1,2}\)
+\(^1\)Department of Physics, Pohang University of Science and Technology; \(^2\)Department of Industrial and Management Engineering,PohangUniversity of Science and Technology; \(^3\)Questrom School of Business, Boston University</description>
+    </item>
+    
+  </channel>
+</rss>

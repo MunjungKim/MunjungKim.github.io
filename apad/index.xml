@@ -6,7 +6,16 @@
     <description>Recent content in Apads on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/apad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/apad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper queue</title>
+      <link>https://MunjungKim.github.io/apad/stack/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/stack/</guid>
+      <description>Posted papers  Hierarchical organization of cortical and thalamic connectivity, Nature Using connectome-based predictive modeling to predict individual behavior from brain connectivity, Nature protocols   Paper queue Papers that I want to read</description>
+    </item>
+    
     <item>
       <title>Element-centric clustering comparison unifies overlaps and hierarchy</title>
       <link>https://MunjungKim.github.io/apad/element-centric-clustring/</link>
@@ -140,15 +149,6 @@ from resting state connectivity in an independent sample of children and adolsec
       
       <guid>https://MunjungKim.github.io/apad/math-typesetting/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;</description>
-    </item>
-    
-    <item>
-      <title>Paper queue</title>
-      <link>https://MunjungKim.github.io/apad/stack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/stack/</guid>
-      <description>Paper I&amp;rsquo;ve read and posted  Hierarchical organization of cortical and thalamic connectivity, Nature Using connectome-based predictive modeling to predict individual behavior from brain connectivity, Nature protocols   Paper queue Papers that I want to read</description>
     </item>
     
   </channel>

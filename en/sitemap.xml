@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://MunjungKim.github.io/</loc>
-    <lastmod>2021-07-09T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="kor"
@@ -16,7 +16,10 @@
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/apad/</loc>
-    <lastmod>2021-07-09T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/apad/stack/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/apad/element-centric-clustring/</loc>
     <lastmod>2021-07-09T00:00:00+00:00</lastmod>
@@ -30,10 +33,29 @@
     <loc>https://MunjungKim.github.io/apad/small_group_distrupt/</loc>
     <lastmod>2021-06-29T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://MunjungKim.github.io/categories/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://MunjungKim.github.io/categories/conference/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/pr/doc2vec/</loc>
+    <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://MunjungKim.github.io/apad/topic_diversity/</loc>
     <lastmod>2021-06-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/post/clustering/</loc>
+    <loc>https://MunjungKim.github.io/posting/clustering/</loc>
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/tags/gradient-descent/</loc>
@@ -48,18 +70,8 @@
     <loc>https://MunjungKim.github.io/tags/nestrov-accelerated-gradient/</loc>
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/post/</loc>
+    <loc>https://MunjungKim.github.io/posting/</loc>
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/post/"
-                />
   </url><url>
     <loc>https://MunjungKim.github.io/tags/</loc>
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
@@ -80,7 +92,7 @@
     <loc>https://MunjungKim.github.io/tags/neural-network/</loc>
     <lastmod>2021-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/post/neural_network/</loc>
+    <loc>https://MunjungKim.github.io/posting/neural_network/</loc>
     <lastmod>2021-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/apad/fc-fingerprint-behavior-natneuro/</loc>
@@ -89,17 +101,20 @@
     <loc>https://MunjungKim.github.io/apad/cpm/</loc>
     <lastmod>2021-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/post/lorenz_wheel/</loc>
+    <loc>https://MunjungKim.github.io/posting/lorenz_wheel/</loc>
     <lastmod>2021-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/apad/math-typesetting/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/post/gradient_descent/</loc>
+    <loc>https://MunjungKim.github.io/pr/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/posting/gradient_descent/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/project/</loc>
-    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/about/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
@@ -142,18 +157,6 @@
   </url><url>
     <loc>https://MunjungKim.github.io/home/</loc>
   </url><url>
-    <loc>https://MunjungKim.github.io/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/categories/"
-                />
-  </url><url>
     <loc>https://MunjungKim.github.io/tags/index/</loc>
     <xhtml:link
                 rel="alternate"
@@ -165,9 +168,5 @@
                 hreflang="en"
                 href="https://MunjungKim.github.io/tags/index/"
                 />
-  </url><url>
-    <loc>https://MunjungKim.github.io/project/doc2vec/</loc>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/stack/</loc>
   </url>
 </urlset>

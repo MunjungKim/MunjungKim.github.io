@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on MJ&#39;s blog</title>
+    <link>https://MunjungKim.github.io/posting/</link>
+    <description>Recent content in Posts on MJ&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/posting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clustering and Grphical Methods</title>
+      <link>https://MunjungKim.github.io/posting/clustering/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/posting/clustering/</guid>
+      <description>This article is written based on the lecture MATH532 by Prof.</description>
+    </item>
+    
+    <item>
+      <title>Neural Network</title>
+      <link>https://MunjungKim.github.io/posting/neural_network/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/posting/neural_network/</guid>
+      <description>This article is written based on the lecture MATH532 by Prof.</description>
+    </item>
+    
+    <item>
+      <title>Malkus-Lorenz Wheel (Mathematics &#43; Code)</title>
+      <link>https://MunjungKim.github.io/posting/lorenz_wheel/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/posting/lorenz_wheel/</guid>
+      <description>This term project is first inspired by the book Chaos written by James Gleick.</description>
+    </item>
+    
+    <item>
+      <title>Gradient Descent</title>
+      <link>https://MunjungKim.github.io/posting/gradient_descent/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/posting/gradient_descent/</guid>
+      <description>This article is written based on the lecture MATH532 by Prof.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" data-theme="light"><head>
+    <title> MunJung Kim | Neural Network </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Guide to NN">
+    
+    
+    
+    <link rel="stylesheet"
+        href="/css/style.min.7ec96a07e10b60a6997be730fc5d4d3467a225c68515a7df6ae17ac2500f828c.css"
+        integrity="sha256-fslqB&#43;ELYKaZe&#43;cw/F1NNGeiJcaFFaffauF6wlAPgow="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    
+    <link rel="stylesheet"
+        href="/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css"
+        integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS&#43;yuWSR4="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="/posting/neural_network/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="/js/anatole-header.min.0c05c0a90d28c968a1cad4fb31abd0b8e1264e788ccefed022ae1d3b6f627514.js"
+            integrity="sha256-DAXAqQ0oyWihytT7MavQuOEmTniMzv7QIq4dO29idRQ="
+            crossorigin="anonymous"></script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js"
+                integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
+
+<meta name="twitter:title" content="Neural Network"/>
+<meta name="twitter:description" content="Guide to NN"/>
+
+
+    
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="/images/My_picture.jpeg" alt="profile picture">
+            <h3 title=""><a href="/">MJ&#39;s blog</a></h3>
+            <div class="description">
+                <p>Hi, I'm an undergraduate student in Physics at Postech</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://github.com/MunjungKim" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.instagram.com/jennymunjung/" rel="me" aria-label="instagram">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://twitter.com/snetsMJ" rel="me" aria-label="twitter">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:jennymunjung@postech.ac.kr" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; MunJung Kim  2021 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+            
+                
+                <li><a 
+                   href="/home/"
+                        
+                   title="">Home</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/about/"
+                        
+                   title="">CV</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/posting/"
+                        
+                   title="">Posts</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/project/"
+                        
+                   title="">Project</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/apad/"
+                        
+                   title="">JCBM</a></li>
+            
+        
+            
+                
+                <li><a 
+                   href="/pr/"
+                        
+                   title=""></a></li>
+            
+        
+        
+            
+                <li><a href="/"
+                       title="EN">EN</a>
+                </li>
+            
+                <li><a href="/kor/"
+                       title="KOR">KOR</a>
+                </li>
+            
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            
+            <div class="post-title">
+                <h3>Neural Network</h3>
+                
+            </div>
+
+            <p>This article is written based on the lecture <a href="https://plms.postech.ac.kr/local/ubion/course/syllabusV.php?id=1022">MATH532</a>  by Prof. Hwang at POSTECH.</p>
+<h2 id="introduction">Introduction</h2>
+<h3 id="motivation-of-neural-network">Motivation of Neural Network</h3>
+<p>The motivation of neural network methodology at first hand, as we can easily find in its name, is the structure of brain and the way in which the brain performs. Brain consists of about \(10^11\) neurons and about \(10^15\) synapses. In early models, the neurons transmit its signal if the potential exceed a certain threshold.</p>
+<h3 id="unitsperceptron">Units(Perceptron)</h3>
+<ul>
+<li>Units are each node of neural network.</li>
+<li>Units are connected by links.</li>
+<li>Each link has a numeric weight.</li>
+<li>Each unit can be a machine learning model.</li>
+<li>In the unit, the input variables are multiplied with weights while passing through the dendrite. Inside the cell body, output variable is calculated.</li>
+</ul>
+<h3 id="activation-function">Activation Function</h3>
+<ul>
+<li>
+<p>Whether pass the output variable from one unit to the next unit is determined by the activation function. It represent the rate of potential firing in the cell.</p>
+</li>
+<li>
+<p>Ex) Sigmoid: \( (1+e^{-x})^{-1} \) , ReLU: \(max(0,x)\) &hellip;</p>
+</li>
+</ul>
+<h3 id="neural-network">Neural Network</h3>
+<ul>
+<li>Neural networks are modeled as collections of units.
+<ul>
+<li>Units are connected in an acyclic graph.</li>
+</ul>
+</li>
+</ul>
+<h4 id="fully-connected-layer">Fully-connected layer</h4>
+<ul>
+<li>
+<p>Fully-connected layer is the layer of the neural network such that units between two adjacent layers are fully pairwise connected and units within a single layer share no connections.</p>
+</li>
+<li>
+<p>Fully-connected layer is the most common layer type.</p>
+</li>
+<li>
+<p>Limitations</p>
+<ul>
+<li>It requires too many parameters. For example, if we have \(32\) by \(32\) fixels with \(3\) channels(RGB) data, the size of the input layer becomes \( 32 \times 32 \times 3 \). Then, the neural network with only one hidden layer has \( (32 \times 32 \times 3)^2 \), which is about \(~ 10^6\) scale. This can cause overfitting and huge amount of comutational cost.</li>
+<li>Putting all data into the input layer can makes the problem of curse of dimensionality. Also, in terms of image data, this does not consider the position of the object we are interested in.</li>
+</ul>
+</li>
+</ul>
+<h2 id="convolution-neural-networks-cnn">Convolution Neural Networks (CNN)</h2>
+<h3 id="cnn">CNN</h3>
+<ul>
+<li>
+<p>It consists of three main types of layers : Convolutional layer, Pooling layer, Fully-connected layer.</p>
+</li>
+<li>
+<p>LeNet, AlexNet, VGG, GoogleNet, ResNeet, etc &hellip;</p>
+</li>
+</ul>
+<h3 id="convolutional-layer">Convolutional Layer</h3>
+<ul>
+<li>
+<p>Local connectivity</p>
+<ul>
+<li>Only</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>Spatial arrangement</p>
+<ul>
+<li>Depth of the output volume is the number of feature maps</li>
+<li>Stride is the distance of the filter slides on feature maps.</li>
+<li>Zero-padding :</li>
+</ul>
+</li>
+</ul>
+<h2 id="well-known-cnn-architechture">Well-known CNN architechture</h2>
+<h3 id="lenet">LeNet</h3>
+<h3 id="alexnet">AlexNet</h3>
+<ul>
+<li>Max Pooling</li>
+<li>ReLU function</li>
+<li>Dropout regularization (reduce overfitting)</li>
+</ul>
+<h3 id="googlenet">GoogLeNet</h3>
+<h3 id="resnet">ResNet</h3>
+<ul>
+<li>152 layers (!!)</li>
+<li>The error rate of ResNet is only 3.57 %.</li>
+<li>Used &lsquo;Residual Model&rsquo;
+<ul>
+<li>If we need to find \(H(x)\), then learn \(F(x)=H(x)-x\), then add \(x\).</li>
+<li>The reason why this performs better is an open problem.</li>
+</ul>
+</li>
+</ul>
+<h2 id="recurrent-neural-network-rnn">Recurrent Neural Network (RNN)</h2>
+<h3 id="motivation">Motivation</h3>
+<ul>
+<li>
+<p>Previous neural networks are all have fixed size of input nodes. However, there are some data whose size or length may not be fixed. (e.g. Text data, Time series data, &hellip;)</p>
+</li>
+<li>
+<p>Previous inputs were not considered when the model generates the current output but previous one may affect the current output in real data.</p>
+</li>
+</ul>
+<h3 id="rnn">RNN</h3>
+<ul>
+<li>
+<p>The RNN is called recurrent becuase it applies the same task to every element of a sequence, an the output is affected by the previous computation.</p>
+</li>
+<li>
+<p>Hidden state at time \(t\) is \(h_t = \sigma (W(x_t,h_{t-1})+b)\). This is also called the memory of the network, since it contains the history of the networks.</p>
+</li>
+</ul>
+<h3 id="back-propogation-through-time-bptt">Back Propogation Through Time, BPTT</h3>
+<ul>
+<li>
+<p>Back propogation means that parameters are updated based on its outcome in order to minimize the loss function.</p>
+</li>
+<li>
+<p>We can use gradient descent method.</p>
+</li>
+<li>
+<p>Limitation</p>
+<ul>
+<li>If there are too many layers, gradient descent method requires a lot of matrix multiplications. Gradient contributions from &ldquo;far away&rdquo; steps become zero or exploding.</li>
+</ul>
+</li>
+</ul>
+<h2 id="long-short-term-memory">Long Short Term Memory</h2>
+<h2 id="code">Code</h2>
+<p>You can get the gradient descent code I wrote from scratch.</p>
+<p><a href="https://github.com/MunjungKim/Gradient-Descent-Algorithm">https://github.com/MunjungKim/Gradient-Descent-Algorithm</a></p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>
+<p>Hastie, T., Tibshirani, R., &amp; Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction, Second Edition. New York: Springer Series in Statistics</p>
+</li>
+<li>
+<p>James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2013). An introduction to statistical learning (Vol. 112). New York: springer.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/machine-learning/">Machine Learning</a><a class="tag" href="/tags/neural-network/">Neural Network</a><a class="tag" href="/tags/cnn/">CNN</a></span>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="/js/medium-zoom.min.2d6fd0be87fa98f0c9b4dc2536b312bbca48757f584f6ea1f394abc9bcc38fbc.js"
+        integrity="sha256-LW/Qvof6mPDJtNwlNrMSu8pIdX9YT26h85SrybzDj7w="
+        crossorigin="anonymous"></script><link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css"
+              integrity="sha384-t5CR&#43;zwDAROtph0PXGte6ia8heboACF9R5l/DiY&#43;WZ3P2lxNgvJkQk5n7GPvLMYw"
+              crossorigin="anonymous"><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js"
+                integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8&#43;w2LAIftJEULZABrF9PPFv&#43;tVkH"
+                crossorigin="anonymous"></script><script defer
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js"
+                integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB&#43;w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v"
+                crossorigin="anonymous"
+                onload="renderMathInElement(document.body);"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5R2XSNTPG9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5R2XSNTPG9');
+</script></body>
+
+</html>
