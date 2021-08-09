@@ -188,15 +188,76 @@
             <h1 id="paper">Paper</h1>
 <p>Lydon-Staley, D. M., Zhou, D., Blevins, A. S., Zurn, P., &amp; Bassett, D. S. (2019, June 8). Hunters, busybodies, and the knowledge network building associated with curiosity. <a href="https://doi.org/10.31234/osf.io/undy4">https://doi.org/10.31234/osf.io/undy4</a></p>
 <h1 id="summary">Summary</h1>
-<p>It&rsquo;s about characterizing of information seeking nautre of people,
-According to the paper, people can be devided into busy-body and hunters based on historico-0philoshophical studies.
-Hunters usually sample closely connected concepts while busy-body seek diverse concpets.</p>
-<p>So they examined about 150 people</p>
+<ol>
+<li>
+<p>Deprivation sensitivity is positively associated with average edge weight in knowledge network. (Also, joyous exploration is negatively associated with average edge weight while stress tolerance is positively associated with average edge weight. However, social curiosity and thirll seeking are not. )</p>
+</li>
+<li>
+<p>There was a negative Pearson corelation between the average clustering coefficient and the characteristic path length in the participant-specific networks. ==&gt; small-world..?</p>
+</li>
+<li>
+<p>The average small-world propensity value was 0.88 (SD=0.08). Therefore, participants' knowledge network building exhibits a priority for exploiting similar concepts (higher clustering) while efficiently spanning the chosen space of concpets than would be expected in random and lattice graphs (shorter path length). Clustering coefficient has an even distribution while path length has heavier tailed distribution of deviation. Therefore, the deviation in clustering play a greater role in the differences in the small-world. Deviations in clustering and deviations in path length are negatively correlated (ρ=-0.23, p=0.004), indicating a balance between exploiting neighboring concepts in knowledge networks and efficiently traversing the concept space as a whole.</p>
+<ul>
+<li>
+<p><a href="https://www.nature.com/articles/srep22057">What is small world propensity?</a></p>
+<p>The metric to quantify the extent to which a network displays small-world structure. This is defined as</p>
+<p>$$
+\phi = 1-\sqrt{\frac{\Delta^2 C+\Delta^2 L}{2}}
+$$</p>
+<p>where
+$$
+\Delta C = \frac{C_{latt}-C_{obs}}{C_{latt}-C_{ramd}}
+$$
+and
+$$
+\Delta L = \frac{L_{obs}-L_{rand}}{L_{latt}-C_{ramd}}
+$$</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Deprivation sensitivity is positively associated with the average clustering coefficient.</p>
+<p>==&gt; Participants high in deprivation sensitivity examine closely
+related concepts during information seeking.</p>
+<p>Deprivation sensitivity is negatively associated with the characteristic path length.</p>
+<p>==&gt; Participants high in deprivation sensitivity while exploiting local information, also have networks that are easily traversable from one end to the next.</p>
+</li>
+<li>
+<p>The modularity quality index Q of observed networks were significantly higher than the Q of randomized versions networks.</p>
+<p>==&gt; The observed knowledge networks shows non-trivial community structure.</p>
+</li>
+<li>
+<p>The dperivation sensitivity is possitively associated with the number of communities.</p>
+</li>
+<li>
+<p>Priciples of Knowledge network growth</p>
+<p>Tight networks could emerge from a greater tendency to revisit similar concepts, a lesser proepensity to make large conceptual leaps when moving from page to peage, or combination of both.</p>
+<p>=&gt; motivate two rules</p>
+<p>i) reinforcement: a participant strengthening the weights of traversed edges (high weighted edge)</p>
+<p>ii) regularity: the willingness of the agent to take short versus long topological steps. (short path length)</p>
+<h4 id="generative-model">Generative model</h4>
+<h4 id="pareto-distribution">Pareto distribution</h4>
+</li>
+<li>
+<p>Deprivation sensitivity is positively assoicated with reinforcement.</p>
+<p>==&gt; Participants with high values of deprivation sensitivity have a greater tendency to return to previously visited concpepts</p>
+</li>
+</ol>
+<h1 id="method">Method</h1>
+<ol>
+<li>
+<p>Network Construction</p>
+<p>Using TF-IDF</p>
+</li>
+</ol>
+<h1 id="인터넷-중독자들과-아닌-사람들의-패턴">인터넷 중독자들과 아닌 사람들의 패턴?</h1>
+<h1 id="다른-분야의-적용">다른 분야의 적용</h1>
+<h1 id="heading"></h1>
 </div>
         <div class="post-footer">
             <div class="info">
                 
-                
+                <span class="separator"><a class="tag" href="/tags/d%2e-bassett/">D. Bassett</a><a class="tag" href="/tags/knowledge-network/">Knowledge network</a><a class="tag" href="/tags/curiosity/">Curiosity</a></span>
             </div>
         </div>
 

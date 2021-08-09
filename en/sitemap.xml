@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://MunjungKim.github.io/</loc>
-    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="kor"
@@ -13,6 +13,49 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://MunjungKim.github.io/"
+                />
+  </url><url>
+    <loc>https://MunjungKim.github.io/posting/various-properties-of-network/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/clustering-coefficient/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/community-structure/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/degree-correlations/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/mixing-patterns/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/modularity/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/network-navigation/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/network-resilience/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/network-science/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/posting/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/</loc>
+    <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/tags/"
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/apad/</loc>
@@ -27,7 +70,16 @@
     <loc>https://MunjungKim.github.io/apad/the_network_structure_of_scientific_revolution/</loc>
     <lastmod>2021-07-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://MunjungKim.github.io/tags/curiosity/</loc>
+    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/d.-bassett/</loc>
+    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://MunjungKim.github.io/apad/hunter-busybody/</loc>
+    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/knowledge-network/</loc>
     <lastmod>2021-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/apad/small_group_distrupt/</loc>
@@ -69,22 +121,6 @@
   </url><url>
     <loc>https://MunjungKim.github.io/tags/nestrov-accelerated-gradient/</loc>
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/posting/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/tags/"
-                />
   </url><url>
     <loc>https://MunjungKim.github.io/tags/cnn/</loc>
     <lastmod>2021-05-16T00:00:00+00:00</lastmod>
