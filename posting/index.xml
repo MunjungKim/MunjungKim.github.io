@@ -52,5 +52,14 @@
       <description>This article is written based on the lecture MATH532 by Prof.</description>
     </item>
     
+    <item>
+      <title>How to use BERT in python</title>
+      <link>https://MunjungKim.github.io/posting/bert/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/posting/bert/</guid>
+      <description>This article explains an &amp;ldquo;implementation&amp;rdquo; of BERT (Bidirectional Encoder Representations from Transformers) in a nutshell.</description>
+    </item>
+    
   </channel>
 </rss>
