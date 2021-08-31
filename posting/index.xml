@@ -6,14 +6,24 @@
     <description>Recent content in Posts on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/posting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/posting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network Controllability</title>
+      <link>https://MunjungKim.github.io/posting/network_controllability/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/posting/network_controllability/</guid>
+      <description>Laplacian matrix \(L = D - A\) , where \(L\) is laplacian matrix, \(D\) is Degree matrix and \(A\) is the adjacency matrix.</description>
+    </item>
+    
     <item>
       <title>Brief Explanations of Network&#39;s Various Properties</title>
-      <link>https://MunjungKim.github.io/posting/various-properties-of-network/</link>
+      <link>https://MunjungKim.github.io/posting/network_properties/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/posting/various-properties-of-network/</guid>
-      <description>Small-world Network A small-world network is a type of mathematical graph where most nodes are not neighbors of one another, but the neighbors of any given node are likely to be neighbors of each other.</description>
+      <guid>https://MunjungKim.github.io/posting/network_properties/</guid>
+      <description>[This Article is not yet completed.]
+Random networks  Erdős and Rényi model contrived in 1960.</description>
     </item>
     
     <item>
@@ -40,7 +50,7 @@
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://MunjungKim.github.io/posting/lorenz_wheel/</guid>
-      <description>This term project is first inspired by the book Chaos written by James Gleick.</description>
+      <description>[This article is not yet completed. You can find the full pdf version in here] This term project is first inspired by the book Chaos written by James Gleick.</description>
     </item>
     
     <item>
@@ -58,7 +68,8 @@
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://MunjungKim.github.io/posting/bert/</guid>
-      <description>This article explains an &amp;ldquo;implementation&amp;rdquo; of BERT (Bidirectional Encoder Representations from Transformers) in a nutshell.</description>
+      <description>[This article is not yet completed.]
+This article explains an &amp;ldquo;implementation&amp;rdquo; of BERT (Bidirectional Encoder Representations from Transformers) in a nutshell.</description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://MunjungKim.github.io/kor/</loc>
-    <lastmod>2021-05-06T00:00:00+09:00</lastmod>
+    <lastmod>2021-08-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,27 @@
                 href="https://MunjungKim.github.io/kor/"
                 />
   </url><url>
+    <loc>https://MunjungKim.github.io/kor/tags/journaling/</loc>
+    <lastmod>2021-08-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://MunjungKim.github.io/kor/post/</loc>
-    <lastmod>2021-05-06T00:00:00+09:00</lastmod>
+    <lastmod>2021-08-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/kor/tags/</loc>
+    <lastmod>2021-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/tags/"
+                />
+  </url><url>
+    <loc>https://MunjungKim.github.io/kor/post/depression/</loc>
+    <lastmod>2021-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/kor/post/moulin/</loc>
     <lastmod>2021-05-06T00:00:00+09:00</lastmod>
@@ -82,18 +101,6 @@
                 rel="alternate"
                 hreflang="kor"
                 href="https://MunjungKim.github.io/kor/tags/index/"
-                />
-  </url><url>
-    <loc>https://MunjungKim.github.io/kor/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/tags/"
                 />
   </url>
 </urlset>

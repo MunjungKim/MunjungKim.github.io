@@ -9,11 +9,12 @@
     <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/tags/modularity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Brief Explanations of Network&#39;s Various Properties</title>
-      <link>https://MunjungKim.github.io/posting/various-properties-of-network/</link>
+      <link>https://MunjungKim.github.io/posting/network_properties/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://MunjungKim.github.io/posting/various-properties-of-network/</guid>
-      <description>Small-world Network A small-world network is a type of mathematical graph where most nodes are not neighbors of one another, but the neighbors of any given node are likely to be neighbors of each other.</description>
+      <guid>https://MunjungKim.github.io/posting/network_properties/</guid>
+      <description>[This Article is not yet completed.]
+Random networks  Erdős and Rényi model contrived in 1960.</description>
     </item>
     
   </channel>

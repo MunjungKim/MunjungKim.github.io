@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Controllability on MJ&#39;s blog</title>
+    <link>https://MunjungKim.github.io/tags/controllability/</link>
+    <description>Recent content in Controllability on MJ&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/tags/controllability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network Controllability</title>
+      <link>https://MunjungKim.github.io/posting/network_controllability/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/posting/network_controllability/</guid>
+      <description>Laplacian matrix \(L = D - A\) , where \(L\) is laplacian matrix, \(D\) is Degree matrix and \(A\) is the adjacency matrix.</description>
+    </item>
+    
+  </channel>
+</rss>
