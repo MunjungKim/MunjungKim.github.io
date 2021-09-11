@@ -6,7 +6,16 @@
     <description>Recent content on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Link</title>
+      <link>https://MunjungKim.github.io/wandering/beforecovid2-copy/</link>
+      <pubDate>Sat, 04 Sep 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://MunjungKim.github.io/wandering/beforecovid2-copy/</guid>
+      <description>*https://app.wordtune.com/editor</description>
+    </item>
+    
     <item>
       <title>Before COVID-1</title>
       <link>https://MunjungKim.github.io/wandering/beforecovid/</link>
@@ -250,6 +259,16 @@ from resting state connectivity in an independent sample of children and adolsec
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://MunjungKim.github.io/posting/bert/</guid>
+      <description>[This article is not yet completed.]
+This article explains an &amp;ldquo;implementation&amp;rdquo; of BERT (Bidirectional Encoder Representations from Transformers) in a nutshell.</description>
+    </item>
+    
+    <item>
+      <title>How to use BERT in python</title>
+      <link>https://MunjungKim.github.io/posting/diversity/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/posting/diversity/</guid>
       <description>[This article is not yet completed.]
 This article explains an &amp;ldquo;implementation&amp;rdquo; of BERT (Bidirectional Encoder Representations from Transformers) in a nutshell.</description>
     </item>
