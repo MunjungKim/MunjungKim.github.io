@@ -21,32 +21,16 @@
     <loc>https://MunjungKim.github.io/apad/contributor-roles/</loc>
     <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/wandering/links/</loc>
+    <loc>https://MunjungKim.github.io/personal/links/</loc>
     <lastmod>2021-09-04T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/tags/link/</loc>
+    <loc>https://MunjungKim.github.io/personal/</loc>
     <lastmod>2021-09-04T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/tags/</loc>
-    <lastmod>2021-09-04T00:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://MunjungKim.github.io/wandering/</loc>
-    <lastmod>2021-09-04T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/wandering/beforecovid/</loc>
+    <loc>https://MunjungKim.github.io/personal/beforecovid/</loc>
     <lastmod>2021-09-01T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/wandering/beforecovid2/</loc>
+    <loc>https://MunjungKim.github.io/personal/beforecovid2/</loc>
     <lastmod>2021-09-01T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/tags/journaling/</loc>
@@ -60,6 +44,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://MunjungKim.github.io/tags/journaling/"
+                />
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/</loc>
+    <lastmod>2021-09-01T00:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/tags/"
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/apad/the_network_structure_of_scientific_revolution/</loc>
@@ -103,6 +100,12 @@
   </url><url>
     <loc>https://MunjungKim.github.io/tags/network-resilience/</loc>
     <lastmod>2021-08-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/link/</loc>
+    <lastmod>2021-08-04T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/personal/moulin/</loc>
+    <lastmod>2021-08-04T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/apad/stack/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
