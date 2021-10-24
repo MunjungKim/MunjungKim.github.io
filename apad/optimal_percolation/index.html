@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme="light"><head>
-    <title> MunJung Kim | Toulouse lautrec </title>
+    <title> MunJung Kim | Multiplex network and percolation theory </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Hi! :-)  I&#39;m an undergraduate student in the Department of Physics at POSTECH.I am broadly interested in how people construct their knowledge networks and collaborate to enhance scientific progress. I hope to explore this through the application of natural language processing, network science, and machine learning.">
+    <meta name="description" content="Nature communication">
     
     
     
@@ -32,7 +32,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/personal/moulin/">
+    <link rel="canonical" href="/apad/optimal_percolation/">
 
     
     
@@ -55,9 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Toulouse lautrec"/>
-<meta name="twitter:description" content="[This page is not completed yet.]
-This is about my favorite artist, Henri de Toulouse-Lautrec"/>
+<meta name="twitter:title" content="Multiplex network and percolation theory"/>
+<meta name="twitter:description" content="Nature communication"/>
 
 
     
@@ -190,45 +189,92 @@ This is about my favorite artist, Henri de Toulouse-Lautrec"/>
         <div class="post-content">
             
             <div class="post-title">
-                <h3>Toulouse lautrec</h3>
+                <h3>Multiplex network and percolation theory</h3>
                 
             </div>
 
-            <p><strong>[This page is not completed yet.]</strong></p>
-<p>This is about my favorite artist, <a href="https://en.wikipedia.org/wiki/Henri_de_Toulouse-Lautrec">Henri de Toulouse-Lautrec</a></p>
+            <h2 id="paper">Paper</h2>
+<p>Osat, S., Faqeeh, A. &amp; Radicchi, F. Optimal percolation on multiplex networks. Nat Commun 8, 1540 (2017). <a href="https://doi.org/10.1038/s41467-017-01442-2">https://doi.org/10.1038/s41467-017-01442-2</a></p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>This paper consider the percolation process as an optimization problem.</li>
+<li>&ldquo;The smallest set of nodes (structural nodes) in a multiplex network is removed such that the network is fragmented into many disconnected clusters when the these nodes are removed. (i.e. the cheapest way to dismantle network.)&rdquo;</li>
+<li>This paper show that neglecting the nature of multiple layers can occur different outcomes: overestimation of the true robustness of the system mostly due to the identification of very high number of false structural nodes.</li>
+</ul>
+<h2 id="results">Results</h2>
+<h4 id="identifying-structural-nodes-in-multiplex-networks">Identifying structural nodes in multiplex networks</h4>
+<p>Goal: to find the minimal set of nodes such that, if removed from the multiplex, no mutual cluster with a size greater than \(N^{1/2}\) is found in the network.</p>
+<ul>
+<li>
+<p>Finding approximate solution is not trivial. For instance, in the greedy search which many researchers have been used, node degrees is used to calculate the score for each node. Howeer, in the multiplex network, it is not easy to assign one score into one node.</p>
+</li>
+<li>
+<p>Using various algorithms, the authors find optimal percolation solution with two layer multiplex network with \(N=10,000 \). Each network made through Erodoss-Renyi model with average k=5.</p>
+</li>
+<li>
+<p>As a result, simulated annealing optimization strategy was the best. SA has variou advantages but it also has drawbacks such as computation cost</p>
+</li>
+</ul>
+<h3 id="the-size-of-the-set-of-sns">The size of the set of SNs</h3>
+<ul>
+<li>
+<p>Relative error for optimal percolation behaves more or less in the same way as that of ordinary percolation. (inverse proportion)</p>
+</li>
+<li>
+<p>Generally, multiplex networks have considerably smaller sets of SNs compared to the SN sets of their single-layer based network representations.</p>
+</li>
+</ul>
+<h3 id="edge-overlap-and-degree-correlations">Edge overlap and degree correlations</h3>
+<ul>
+<li>Checked the dependence of the size of the SNs on overlap and layer to layer degree correlation.</li>
+<li>The size of SNs deviates immediately after \(\alpha\) becomes bigger than 0. As soon as there is a finite fraction of edges that are not shared by the two layers, the system behaves exactly as a multiplex</li>
+<li>The error committed when relying on single-layer representations of the multiplex does not regard only the size of the SN sets, but also the identity of the SNs.</li>
+</ul>
+<h3 id="self-consistency">Self Consistency</h3>
+<ul>
+<li>
+<p>\(S = \sum_i p_{i}^2 /\sum_i p_{i} \) . Multiplex network with small overlap and correlation has small S</p>
+</li>
+<li>
+<p>\(p_{i}\) is the probability that node \(i\) is found within the set of SNs of multiplex network. \(w_{i}\) is the probability that node \(i\) is found within the set of SNs of a specific single layer representation of that multiplex network.</p>
+</li>
+<li>
+<p>Precision \(P = \sum_i p_{i} w_{i} /\sum_i w_{i} \). (i.e. the ratio of the expected number of correctly detected SNs by single layer to the to the expected total number of detected SNs.   \(P\)  deteriorates as the edge overlap and inter layer degree correlation decrease.</p>
+</li>
+<li>
+<p>Recall \(R = \sum_i p_{i} w_{i} /\sum_i p_{i} \).</p>
+</li>
+<li>
+<p>\(F_{1} = 2/(1/P +1/R) \)</p>
+</li>
+</ul>
 <hr>
-<p>If you search &lsquo;Moulin Rouge&rsquo; on Google, most pages talk about the movie &lsquo;Moulin Rouge!&rsquo; filmed in 2001.</p>
-<h3 id="moulin-rouge2001">Moulin Rouge(2001)</h3>
-<p><img src="/images/POST/nicole-kidman-moulin-rouge.jpeg" alt="limitation"></p>
-<p>The short guy sitting at the right in the video is <a href="https://en.wikipedia.org/wiki/Henri_de_Toulouse-Lautrec">Toulouse-Lautrec</a>, my favorite artist.</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/O_6g9-yldIA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<p>He was a painter who made a living by painting posters of Moulin Rouge. He contributed a lot to making Moulin Rouge famous. In 1952, there was also a movie called &lsquo;Moulin Rouge&rsquo; about this dwarf artist, directed by John Houston.</p>
-<h3 id="moulin-rouge-1952-john-huston">Moulin Rouge (1952)-John Huston</h3>
-<p><img src="/images/POST/zsazsagabor.png" alt="limitation"></p>
-<p>Zsa zsa gabor</p>
-<p>I started to watch this movie since I was crazy about old movies at that time (before I started preparing gradschool.. haha&hellip;.) and also the appearance of zsa zsa gabor in the thumbnail was sooooo beautiful. Zazar Gabor played the role of Jane Avril in the movie. Jane Avril was good at peculiar and dynamic movements, and people at that time called her an Explosive (&hellip;?). She became very famous thanks to the poster painted by Toulouse Lautrec, the main character of the movie. She was a famous cancan dancer, but in John Houston&rsquo;s movie, she just kept singing without dancing.</p>
-<p><img src="/images/POST/Jane-Avril.jpeg" alt="jane"></p>
-<p><img src="/images/POST/toulouse.jpeg" alt="toulouse"></p>
-<p><img src="/images/POST/toulouse_movie.jpeg" alt="toulouse_movie"></p>
-<p><img src="/images/POST/gogh.jpeg" alt="gogh"></p>
-<p><img src="/images/POST/lagoulue.jpeg" alt="lagoulue"></p>
-<p><img src="/images/POST/lagoulue_mv.png" alt="lagoulue"></p>
-<p><img src="/images/POST/moulin.jpeg" alt="lagoulue"></p>
-<p><img src="/images/POST/moulin_past.jpeg" alt="lagoulue"></p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/exrcnq6Uac4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
+<h4 id="multiplex-network">Multiplex network</h4>
+<p>Multiplex network is a subset of multilayer network.
+Multiplex network has two properties.</p>
+<ol>
+<li>all layers share the same nodes.</li>
+<li>all nodes are connected themselves in the different layers.
+e.g.) diseases spreading when two pathogens each of which enhances or impairs the spreading of the other.</li>
+</ol>
+<h4 id="percolation-theory">Percolation theory</h4>
+<p>Percolation indicates the phenomenon that the network is fragmented into small clusters when the critical fraction of nodes or links are randomly removed (node/edge isolation).</p>
+<ul>
+<li>The size of connected components within a graph can be used to examine the robustests of the system to node damage or failure</li>
+<li>Examine the capacity of the graph to maintain its connextedness under different kinds of topological attacks (graph topological perturbation).</li>
+<li>At percolation threshold, the network is fragmented.(phase transition)</li>
+</ul>
+<h4 id="simulated-aneealing-optimization">Simulated aneealing optimization</h4>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://cosnet.bifi.es/network-theory/multiplex-networks/">https://cosnet.bifi.es/network-theory/multiplex-networks/</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Percolation_theory">https://en.wikipedia.org/wiki/Percolation_theory</a></li>
+</ul>
 </div>
         <div class="post-footer">
             <div class="info">
                 
-                <span class="separator"><a class="tag" href="/tags/link/">link</a></span>
+                
             </div>
         </div>
 

@@ -6,7 +6,16 @@
     <description>Recent content on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multiplex network and percolation theory</title>
+      <link>https://MunjungKim.github.io/apad/optimal_percolation/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://MunjungKim.github.io/apad/optimal_percolation/</guid>
+      <description>Paper Osat, S., Faqeeh, A. &amp;amp; Radicchi, F. Optimal percolation on multiplex networks.</description>
+    </item>
+    
     <item>
       <title>Investigating the division of scientific labor using the Contributor Roles Taxonomy (CRediT)</title>
       <link>https://MunjungKim.github.io/apad/contributor-roles/</link>
