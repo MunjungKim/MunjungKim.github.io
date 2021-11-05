@@ -9,11 +9,20 @@
     <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://MunjungKim.github.io/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Links</title>
-      <link>https://MunjungKim.github.io/personal/links/</link>
+      <link>https://MunjungKim.github.io/personal/links-life/</link>
       <pubDate>Sat, 04 Sep 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://MunjungKim.github.io/personal/links/</guid>
+      <guid>https://MunjungKim.github.io/personal/links-life/</guid>
       <description>PhD life  Why Pursue A Ph.D.? 3 qualities of successful Ph.</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://MunjungKim.github.io/personal/links-research/</link>
+      <pubDate>Sat, 04 Sep 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://MunjungKim.github.io/personal/links-research/</guid>
+      <description>GPU  How to free gpu memory by deleting tensor?</description>
     </item>
     
     <item>
