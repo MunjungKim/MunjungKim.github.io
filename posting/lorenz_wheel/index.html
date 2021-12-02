@@ -194,34 +194,18 @@
             </div>
 
             <p><br>
-<strong>[This article is not yet completed. You can find the full pdf version in <a href="https://drive.google.com/file/d/1WipKcrNHCvPbAvwMHbHp-_0rUc4hppLk/view?usp=sharing">here</a>]</strong>
+<strong>You can check the pdf version of this post in <a href="https://drive.google.com/file/d/1WipKcrNHCvPbAvwMHbHp-_0rUc4hppLk/view?usp=sharing">here</a></strong>
 <br>
 <br>
 This term project is first inspired by the book <a href="https://en.wikipedia.org/wiki/Chaos:_Making_a_New_Science">Chaos</a> written by James Gleick.</p>
 <h1 id="mathematical-background">Mathematical Background</h1>
 <h2 id="malkus-lorenz-water-wheel">Malkus-Lorenz water wheel</h2>
 <p>I referred to the class <a href="https://www.youtube.com/watch?v=HljJv7Hf6Zo&amp;t=2163s">MAE5790-15</a>at Cornell University, <a href="https://documents.pub/document/modelling-the-chaotic-waterwheel.html">Modelling the Chaotic Waterwheel</a>, and <a href="https://journals.aps.org/pra/pdf/10.1103/PhysRevA.45.626">paper</a> by Miroslav Kolar and Godfrey Gumbs.</p>
-<figure>
-    <img src="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/images/Image4.gif"
-         alt="image"/> <figcaption>
-            <p>Discrete Water Wheel Model ( <a href="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/">http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/</a> )</p>
-        </figcaption>
-</figure>
-
-<p>The above figure is a discrete case of Malkus-Lorenz waterwheel. It has $N$ countable baskets, which have the same size with each other. In this case, water can not transport from one basket to another basket. ((a) in Fig.~\ref{fig:continuous})</p>
-<figure>
-    <img src="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/images/Image4.gif"
-         alt="image"/> <figcaption>
-            <p>Discrete Water Wheel Model ( <a href="http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/">http://www.ace.gatech.edu/experiments2/2413/lorenz/fall02/</a> )</p>
-        </figcaption>
-</figure>
-
-<p>\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5]{Screen Shot 2021-05-07 at 1.10.35 AM.png}
-\caption{Continuous Water Wheel Model} \cite{contiuous}
-\label{fig:continuous}
-\end{figure}</p>
+<p><img src="/images/POST/Lorenz.gif" alt="limitation">
+<em>Discrete Water Wheel Model</em></p>
+<p>The above figure is a discrete case of Malkus-Lorenz waterwheel. It has \(N\) countable baskets, which have the same size with each other. In this case, water can not transport from one basket to another basket.</p>
+<p><img src="/images/POST/continuous.png" alt="limitation">
+<em>Continuous Water Wheel Model</em></p>
 <p>The notion of a discrete wheel can expand to a continuous version. In this case, water in specific section \(d\theta\) can move to other sections such that the frame of inference is fixed outside the rotation of the wheel.</p>
 <p>Here, I am going to express the dynamics of a waterwheel mathematically and show how the movement of a waterwheel follows <a href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz Equation</a></p>
 <p>Before we start the section, let us define some notations.</p>
@@ -251,7 +235,7 @@ M = \int_{\theta_1}^{\theta_2} m(\theta,t)d\theta
 <p>\begin{equation}
 \frac{\partial m(\theta,t)}{\partial t} = Q - Km(\theta,t) - w\frac{\partial m(\theta,t)}{\partial \theta}
 \end{equation}</p>
-<p>where $Q$ is the amount of water in-flowing into the wheel and $Km$ is the amount of water leaking from the water wheel. \(w \frac{\partial m(\theta,t)}{\partial t}\) is the amount of water transport from $\theta$ to the adjacent part. Here, I assume that the rate at which water leaking from the water wheel is constant.</p>
+<p>where \(Q\) is the amount of water in-flowing into the wheel and \(Km\) is the amount of water leaking from the water wheel. \(w \frac{\partial m(\theta,t)}{\partial t}\) is the amount of water transport from \(\theta\) to the adjacent part. Here, I assume that the rate at which water leaking from the water wheel is constant.</p>
 <p>Then, consider the sector where \(\theta \in [\theta_1,\theta_2]\).</p>
 <p>The mass between this section, \(M\) can be expressed as</p>
 <p>\begin{equation}
@@ -265,7 +249,7 @@ M = \int_{\theta_1}^{\theta_2} m(\theta,t)d\theta
 <p>\begin{equation}
 \frac{\partial M}{\partial t} = Q_{tot} -KM
 \end{equation}</p>
-<p>where $M$ is the total mass of water on the wheel and $Q_tot$ is the total rate at which water is pumped into the whole wheel.</p>
+<p>where \(M\) is the total mass of water on the wheel and $Q_tot$ is the total rate at which water is pumped into the whole wheel.</p>
 <h2 id="newtons-law">Newton&rsquo;s law</h2>
 <p>Suppose \(I(t)\) is the moment of inertia of the wheel. Then, the torque can be expressed as</p>
 <p>\begin{equation}
@@ -275,8 +259,8 @@ M = \int_{\theta_1}^{\theta_2} m(\theta,t)d\theta
 <p>\begin{equation}
 \frac{\partial (Iw)}{\partial t} = -vw + gr\int^{2\pi}_{0}m(\theta,t)sin\theta d\theta
 \end{equation}</p>
-<p>,where \(v\) is the angular velocity of the wheel and $g$ is effective gravity.</p>
-<p>The moment of inertia $I$ can be treated as a constant provided that enough time has elapsed and reached the stable phase. Therefore,</p>
+<p>,where \(v\) is the angular velocity of the wheel and \(g\) is effective gravity.</p>
+<p>The moment of inertia \(I\) can be treated as a constant provided that enough time has elapsed and reached the stable phase. Therefore,</p>
 <p>\begin{equation}
 I\frac{dw}{dt} = -vw + gr\int^{2\pi}_{0}m(\theta,t)sin\theta d\theta
 \end{equation}</p>
@@ -289,7 +273,7 @@ m(\theta,t) = \sum_{n=0}^{\infty}a_n(t)\sin(n\theta) + b_n(t)\cos(n\theta)
 <p>\begin{equation}
 Q(\theta) = \sum_{n=0}^{\infty}q_n\cos(n\theta)
 \end{equation}</p>
-<p>The reason why there is no sine term in $Q$ is because water falls into the wheel symmetrically at the top.</p>
+<p>The reason why there is no sine term in \(Q\) is because water falls into the wheel symmetrically at the top.</p>
 <p>Now, we can plug Eqs.(8) and (9) into Eq.(2).</p>
 <p>\begin{equation}
 \begin{split}
@@ -312,26 +296,22 @@ Q(\theta) = \sum_{n=0}^{\infty}q_n\cos(n\theta)
 \end{split}
 \end{equation}</p>
 <p>Here, all the terms except \(\sin\theta\) in \(m(\theta,t)\) vanish because of the orthogonality.</p>
-<p>In summary we get three equations, where \(n\) is a non negative integer.</p>
-<p>\begin{equation}
-\dot{a_n}= -Ka_n+w b_n
-\end{equation}
+<p>In summary we get three equations, where \(n\) is a non negative integer.
 \begin{equation}
-\dot{b_n}=q_n-Kb_n-w a_n
-\end{equation}
-\begin{equation}
-I\dot{w} =-vw+gra_1\pi
+\begin{split}
+\dot{a_n}= -Ka_n+w b_n \\
+\dot{b_n}=q_n-Kb_n-w a_n\\
+\dot{w} =-vw+gra_1\pi \pi
+\end{split}
 \end{equation}</p>
 <p>In the above equation, only \(a_1\),\(b_1\), and \(w\) are decoupled. Therefore,</p>
 <hr>
 <p>\begin{equation}
-\dot{a_1} = -K a_1  + w b_1
-\end{equation}
-\begin{equation}
-\dot{b_1} = q_1 - K b_1 - wa_1
-\end{equation}
-\begin{equation}
-I\dot{w} = -vw +gra_1 \pi
+\begin{split}
+\dot{a_1} = -K a_1  + w b_1 \\
+\dot{b_1} = q_1 - K b_1 - wa_1\\
+\dot{w} = -vw +gra_1 \pi
+\end{split}
 \end{equation}</p>
 <hr>
 <p>This is exactly the same as the Lorenz equation after introducing the following equations and change of the time coordinate from \(t\) to \(s = Kt\)</p>
@@ -386,49 +366,107 @@ z &amp;= \rho - \frac{\rho K b_1}{q_1}
 </ul>
 </li>
 </ul>
-<p>\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5]{Screen Shot 2021-05-10 at 1.21.41 AM.png}
-\caption{$\sigma =10$ and $b=\frac{8}{3}$, \cite{diagram}}
-\label{fig:bifurcation}
-\end{figure}</p>
+<!-- raw HTML omitted -->
+<p><img src="/images/POST/Hoff.png" alt="Hoff">
+<em>\(\rho = 10\) and \(\beta = \frac{8}{3}\)</em></p>
+<h1 id="numerical-analysis">Numerical Analysis</h1>
+<h2 id="euler-method">Euler Method</h2>
+<p>The Euler method is a first-order numerical method for solving the intial-value problems of differential equations. It can be driven by Taylor&rsquo;s Theorem. Suppose that an initial value problem is given by</p>
+<p>\begin{equation}
+\frac{dy}{dt} = f(t,y)  \text{ and }  y(t_0) = y_0
+\end{equation}</p>
+<p>Then</p>
+<p>\begin{equation}
+y(t+h) = y(t) + hf(t,y(t)) +\frac{h^2}{2}y''(\xi)
+\end{equation}</p>
+<p>where \(\xi\) is some number in (t,t+h)</p>
+<p>The Euler&rsquo;s method constructs \(w_i \approx y(t_i)\), where\(t_i = t_0 + ih\). Therefore, Euler&rsquo;s method is</p>
+<p>\begin{equation}
+\begin{split}
+w_0 &amp;= \alpha \\
+w_{i+1} &amp;= w_i + hf(t_i,w_i)
+\end{split}
+\end{equation}</p>
+<p>Since this method is first-order method,, the local error is \(O(h^2)\) and the global error is \(O(h)\)</p>
+<h2 id="runge-kutta-method">Runge-Kutta Method</h2>
+<p>Runge-Kutta method is a numerical method for solving the initial-value problems of differential equations.</p>
+<p>Suppose that an initial value problem is given by</p>
+<p>\begin{equation}
+\frac{dy}{dt} = f(t,y) \text{ and } y(t_0) = y_0
+\end{equation}</p>
+<p>Then the general Runge-Kutta method of order \(m\) is</p>
+<p>\begin{equation}
+\begin{split}
+w_0 &amp;= y_0 \\
+w_{n+1} &amp;= w_{n} +\sum_{i=1}^{m}c_i k_i \\
+k_i &amp;= hf(t_n + \alpha_i h, w_n + \sum_{j=1}^{i-1}\beta_ij k_j)
+\end{split}
+\end{equation}</p>
+<p>where\(c_i)\) is constant \(\alpha_1 =0\) and \(\beta_i\) are determined by expanding \(y_{n+1}\) and \(y_{n}\) about \(t_{n}\) and \(y_n\) and expanding \(k_i\) about \(t_n\).</p>
+<p>The most well-known Runge-Kutta method is Runge 4th order (RK4) emthod. When \(\alpha_2 = \alpha_3 \),</p>
+<p>\begin{equation}
+\begin{split}
+\alpha_2 &amp;= \alpha_3 = \frac{1}{2}, \alpha_4 = 1 \\
+c_1 &amp;= \frac{1}{6},\text{    } c_2 + c_3 = \frac{2}{3},\text{  } c_4 = {1}{6} \\
+\beta_{32} &amp;= \frac{1}{6c_3}\text{  } ,\beta_{42} = 1-3c_{3} \text{  },\beta_43 = 3c_3
+\end{split}
+\end{equation}</p>
+<p>We can choose \(w_2 = w_3 = \frac{1}{6}\) and this makes the solution</p>
+<p>\begin{equation}
+\begin{split}
+w_0 = y_0 \\
+k_1 = hf(t_n,w_n) \\
+k_2 = hf(t_n + \frac{h}{2},w_n + \frac{1}{2}k_1) \\
+k_3 = hf(t_n + \frac{h}{2},w_n + \frac{1}{2}k_2) \\
+k_4 = hf(t_n,w_n+k_3)) \\
+w_{n+1}  = w_n + \frac{1}{6}(k_1 + k_2 + k_3 + k_4)
+\end{split}
+\end{equation}</p>
+<p>Since this method is a 4th order method, the local error is \(O(h^5)\) and the global error is \(O(h^4)\)</p>
 <h1 id="term-project-plan">Term Project Plan</h1>
 <h2 id="goal">Goal</h2>
-<p>The goal of this term project is to observe different phases of the waterwheel system depending on its initial point in Eq.(\ref{eq:last}).</p>
 <ol>
-<li>
-<p>Draw a bifurcation diagram by calculating $x$ with respect to \(r\).</p>
-</li>
-<li>
-<p>Check the sensitive dependence on the initial condition where \(r&gt;r_{Hpof}\).</p>
-</li>
-<li>
-<p>Repeat 1) and 2) with various parameters.</p>
-</li>
-<li>
-<p>(If I have enough time) Repeat 1), 2) and 3) with a slightly different system (e.g. Two Malkus-Lorenz wheel)</p>
-</li>
+<li>Solve Lorenz system with Euler and RK4. Check the sensitive dependence on the initial condition where \(r&gt;r_{H_pof}\). Check whether we can be convinced with the numerical solution in a nonlinear system.</li>
+<li>Solve Eq.(15) using 4th order Runge-Kutta method and check whether the Malkus-Lorenz water wheel follows the Lorenz system.</li>
 </ol>
-<p>\newpage
-\subsection{Expected Result}</p>
-<ol>
-<li></li>
-</ol>
-<p>\begin{figure}[!h]
-\centering
-\includegraphics[scale=0.4]{Screen Shot 2021-05-11 at 9.28.05 AM.png}
-\caption{Bifurcation Diagram of Lorenz system \cite{bifurcation}.}
-\label{fig:bifurcation}
-\end{figure}</p>
-<ol start="2">
-<li></li>
-</ol>
-<p>\begin{figure}[h]
-\centering
-\includegraphics[scale=0.4]{Screen Shot 2021-05-10 at 4.18.52 PM.png}
-\caption{Sensitive dependence on the initial condition. }
-\label{fig:bifurcation}
-\end{figure}</p>
+<h2 id="result">Result</h2>
+<h3 id="lorenz-system">Lorenz System</h3>
+<p>Before directly calculating Eq.(15), I first solved Lorenz equation</p>
+<h4 id="rk4"><em>RK4</em></h4>
+<p>The numerical solution of the Lorenz system with RK4 is plotted in the figure below. Two Lorenz attractors appear in teh graph because \(r&gt;r_{Hopf}\). The \(r_{Hpof}\) in the figure is \(15\).</p>
+<p><img src="/images/POST/Picture_lorenz.png" alt="Lorenz">
+<em>Solution with RK4. \(\sigma = 5,\rho = 20, \beta=1\)</em></p>
+<p>I slightly changed the initial condition from \(\rho = 20\) to \(\rho=20.00001 \). The result is shown in the figure below. After \(t\) becomes \(35\), the difference between two \(x\) values becomes very large.</p>
+<p><img src="/images/POST/waterwheel_plot.png" alt="Lorenz"></p>
+<p><em>Initial condition sensitivity. Orange: \(\sigma = 5, \rho = 20, \beta = 1\) Blue: \(\sigma =5, \rho = 20 + 0.00001, \beta = 1 \).</em></p>
+<p><img src="/images/POST/ics_difference.png" alt="Lorenz"></p>
+<p><em>The difference between \(z\) values with same \(\rho\) and \(\beta\) but different \(\rho\): \(\rho = 20\) and \(\rho = 20.00001\)</em></p>
+<h4 id="euler"><em>Euler</em></h4>
+<p>The numerical solution with the Euler&rsquo;s method is shown in the figure below. Two Lorenz attractors appear with appropriate parameters.</p>
+<p><img src="/images/POST/euler_picture_lorenz.png" alt="Euler"></p>
+<p>*Initial condition sensitivity with Eluer method. Left: numerical solutions with slightly different parameters. Right: Difference between two solutions. The difference diverge after about t=25. *</p>
+<h4 id="timestep-sensitivity"><em>Timestep sensitivity</em></h4>
+<p>It is well known that numerical solutions are affected by the scale of a time step.
+I calculated the solutions with three different time steps with RK4, and the result is shown in the figure below.</p>
+<p><img src="/images/POST/Timestep_sensitivity.png" alt="tts"></p>
+<p><em>Numerical solutions of RK4 with three different time steps</em></p>
+<p>After \(t\) becomes about 35, numerical solution for a time step \(10^{-2}\) diverges from other solutions. All solutions diverge after \(t\) is about 60. As shown in the figure below, the two solutions look completely different after some extent of time passes.</p>
+<p><img src="/images/POST/Lorenz_RK4_different_phase.png" alt="rk4">
+<em>Numerical solutions for two different time steps with the same initial points become completely different in \(95 \le1 t \leq 100\). Two dots represent where \(t=95\)</em></p>
+<p>I also repeated the same procedure with Euler&rsquo;s method. As shown in the figure below, the solutions diverge much earlier than the solutions with RK4.</p>
+<p><img src="/images/POST/Timestep_sensitivity_euler.png" alt="rk4"></p>
+<h3 id="malkus-lorenz-waterwheel">Malkus-Lorenz waterwheel</h3>
+<h4 id="rk4-1"><em>RK4</em></h4>
+<p>The numerical solution of Malkus-Lorenz waterwheel with RK4 is shown in the figure below. The graph is sparser than the solution of the Lorenz system. This is because time coordinate $s$ in Lorenz system is \(K\) times \(t\), where \(t\) is time coordinate in Malkus-Lorenz wheel system and \(K&lt;1\).</p>
+<p><img src="/images/POST/malkus_lorenz_wheel_time.png" alt="rk4"></p>
+<h4 id="bifurcation"><em>Bifurcation</em></h4>
+<p>Numerical solution is affected by time step scale. This also can be observed in bifurcation diagram.</p>
+<p><img src="/images/POST/bifurcation_wheel.png" alt="rk4"></p>
+<p>I zoomed in on the figure above to see how the bifurcation point changes when the time step changes. The bifurcation point is about 0.125 when \(h=0.1\), while the points are smaller when \(h=0.01\) or \(h=0.001\). Therefore, when \(q_1\) is in \((0.1,0.125)\), chaotic phenomenon appears with the time step is \(0.01\) and \(0.001\), but not with the time step is \(0.1\).</p>
+<p><img src="/images/POST/bifurcation_close.png" alt="rk4"></p>
+<h1 id="code-availability">Code Availability</h1>
+<p>You can check the code in</p>
+<p><a href="https://github.com/MunjungKim/Malkus-wheel">https://github.com/MunjungKim/Malkus-wheel</a></p>
 </div>
         <div class="post-footer">
             <div class="info">
