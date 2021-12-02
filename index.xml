@@ -6,34 +6,7 @@
     <description>Recent content on MJ&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Measurement and Fairness</title>
-      <link>https://MunjungKim.github.io/apad/measurement_fairness/</link>
-      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/measurement_fairness/</guid>
-      <description>Paper Osat, S., Faqeeh, A. &amp;amp; Radicchi, F. Optimal percolation on multiplex networks.</description>
-    </item>
-    
-    <item>
-      <title>Multiplex network and percolation theory</title>
-      <link>https://MunjungKim.github.io/apad/optimal_percolation/</link>
-      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/optimal_percolation/</guid>
-      <description>Paper Osat, S., Faqeeh, A. &amp;amp; Radicchi, F. Optimal percolation on multiplex networks.</description>
-    </item>
-    
-    <item>
-      <title>Investigating the division of scientific labor using the Contributor Roles Taxonomy (CRediT)</title>
-      <link>https://MunjungKim.github.io/apad/contributor-roles/</link>
-      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/contributor-roles/</guid>
-      <description>Paper Vincent Larivière, David Pontille, Cassidy R. Sugimoto; Investigating the division of scientific labor using the Contributor Roles Taxonomy (CRediT).</description>
-    </item>
-    
+    <lastBuildDate>Sat, 04 Sep 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://MunjungKim.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Links</title>
       <link>https://MunjungKim.github.io/personal/links-life/</link>
@@ -71,25 +44,6 @@
     </item>
     
     <item>
-      <title>The network structure of scientific revolutions</title>
-      <link>https://MunjungKim.github.io/apad/the_network_structure_of_scientific_revolution/</link>
-      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/the_network_structure_of_scientific_revolution/</guid>
-      <description>Paper
-Philosophy of science   Karl Popper: the development of scientific ideas as a sequence in which previous theories are falsified.</description>
-    </item>
-    
-    <item>
-      <title>Network neuroscience</title>
-      <link>https://MunjungKim.github.io/apad/network-neuroscience/</link>
-      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/network-neuroscience/</guid>
-      <description>Paper Bassett, D., Sporns, O. Network neuroscience. Nat Neurosci 20, 353–364 (2017).</description>
-    </item>
-    
-    <item>
       <title>Toulouse lautrec</title>
       <link>https://MunjungKim.github.io/personal/moulin/</link>
       <pubDate>Wed, 04 Aug 2021 00:00:00 +0900</pubDate>
@@ -100,51 +54,6 @@ Korean version of this post is here</description>
     </item>
     
     <item>
-      <title>Paper queue</title>
-      <link>https://MunjungKim.github.io/apad/stack/</link>
-      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/stack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Element-centric clustering comparison unifies overlaps and hierarchy</title>
-      <link>https://MunjungKim.github.io/apad/element-centric-clustring/</link>
-      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/element-centric-clustring/</guid>
-      <description>Paper Gates, A.J., Wood, I.B., Hetrick, W.P. et al. Element-centric clustering comparison unifies overlaps and hierarchy.</description>
-    </item>
-    
-    <item>
-      <title>Hunters, busybodies, and the knowledge network building associated with curiosity</title>
-      <link>https://MunjungKim.github.io/apad/hunter-busybody/</link>
-      <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/hunter-busybody/</guid>
-      <description>Paper Lydon-Staley, D. M., Zhou, D., Blevins, A. S., Zurn, P.</description>
-    </item>
-    
-    <item>
-      <title>Large teams develop and small teams disrupt science and technology</title>
-      <link>https://MunjungKim.github.io/apad/small_group_distrupt/</link>
-      <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/small_group_distrupt/</guid>
-      <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
-&lt;p&gt;Wu, L., Wang, D. &amp;amp; Evans, J.A. Large teams develop and small teams disrupt science and technology. Nature 566, 378–382 (2019). &lt;a href=&#34;https://doi.org/10.1038/s41586-019-0941-9&#34;&gt;https://doi.org/10.1038/s41586-019-0941-9&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
-&lt;p&gt;Small teams tend to disrupt science and technology with new ideas and opportunities while large teams tend to develop existing one.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;One of the most universal trends in science and technology is that team size the growth of the team size.&lt;/li&gt;
-&lt;li&gt;New Question: Whether and how the character of the scienc and technology produced by large teams differs from that of small teams&lt;/li&gt;
-&lt;li&gt;Work from larger teams builds on more-recent and popular developments, and attention to their work comes immediately.&lt;/li&gt;
-&lt;li&gt;Contributions by smaller teams search more deeply into the past, are viewed as disruptive to science and technology and succeed further into the future—if at all.&lt;/li&gt;
-&lt;/ol&gt;</description>
-    </item>
-    
-    <item>
       <title>Neural Embedding of Research Papers Reveals Characteristics of Policy Research Institute</title>
       <link>https://MunjungKim.github.io/pr/doc2vec/</link>
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
@@ -152,39 +61,6 @@ Korean version of this post is here</description>
       <guid>https://MunjungKim.github.io/pr/doc2vec/</guid>
       <description>\(Munjung Kim^1, Jisung Yoon^2, Hyunuk Kim^3, Woo-Sung Jung^{1,2}\)
 \(^1\)Department of Physics, Pohang University of Science and Technology; \(^2\)Department of Industrial and Management Engineering,PohangUniversity of Science and Technology; \(^3\)Questrom School of Business, Boston University</description>
-    </item>
-    
-    <item>
-      <title>Topic diversity, A discipline scheme-free diversity measurement for journals</title>
-      <link>https://MunjungKim.github.io/apad/topic_diversity/</link>
-      <pubDate>Tue, 22 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/topic_diversity/</guid>
-      <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
-&lt;p&gt;ToreOpsahl (2013). Triadic closure in two-mode networks: Redefining the global and local clustering coefficients. Social Networks, 35(2), 159-167. &lt;a href=&#34;https://doi.org/10.1016/j.socnet.2011.07.001&#34;&gt;https://doi.org/10.1016/j.socnet.2011.07.001&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
-&lt;p&gt;It&amp;rsquo;s about the how to quantify journals&#39; diversity by utilizing the abstracts of scientfic pulciations in journals.&lt;/p&gt;
-&lt;p&gt;by making graph of words and using clustering dtection technique&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Word extraction&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;so they tokenize the abstracts and get some meaningful words from the abstracts. they said they used TextRank.. I don&amp;rsquo;t know much about it so I have to study further.&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Network Construction
-they gathered synonym or cognate words into one set. and this same meaning word set becomes a one node of the network&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;then the edge connection weighted as their cooccurrence frequency.&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Topic detection
-For topic detection step, they exploit Louvain method&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;they recursively exploit Louvain algorithm so that they can even get subfield of the first cluster.&lt;/p&gt;
-&lt;p&gt;So for validation tehy also repeat this steps several times and check how degree within the community is stable.&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Diversity Calculation&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In this step, they exploit diversity calulator developed by Leinseter.&lt;/p&gt;
-&lt;p&gt;Using their caclulcated function where input variables are words and out variables are the topics and the diversity calculator, they get diversity of&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -206,69 +82,12 @@ For topic detection step, they exploit Louvain method&lt;/li&gt;
     </item>
     
     <item>
-      <title>A neuromarker of sustained attention from whole-brain functional connectivity</title>
-      <link>https://MunjungKim.github.io/apad/fc-fingerprint-behavior-natneuro/</link>
-      <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/fc-fingerprint-behavior-natneuro/</guid>
-      <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
-&lt;p&gt;Rosenberg, M., Finn, E., Scheinost, D. et al. A neuromarker of sustained attention from whole-brain functional connectivity. Nat Neurosci 19, 165–171 (2016). &lt;a href=&#34;https://doi.org/10.1038/nn.4179&#34;&gt;https://doi.org/10.1038/nn.4179&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;The authors identified that functional brain netoworks whose strength during a sustained attention task predicted individual differences in attentional performance.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Furthermorethe model suggested in the paper also be able to predict a clinical measure of attention (ADHD)
-from resting state connectivity in an independent sample of children and adolsecents.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description>
-    </item>
-    
-    <item>
-      <title>Using connectome-based predictive modeling to predict individual behavior from brain connectivity</title>
-      <link>https://MunjungKim.github.io/apad/cpm/</link>
-      <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/cpm/</guid>
-      <description>&lt;h1 id=&#34;paper&#34;&gt;Paper&lt;/h1&gt;
-&lt;p&gt;Shen, X., Finn, E. S., Scheinost, D., Rosenberg, M. D., Chun, M. M., Papademetris, X., &amp;amp; Constable, R. T. (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. Nature protocols, 12(3), 506–518. &lt;a href=&#34;https://doi.org/10.1038/nprot.2016.178&#34;&gt;https://doi.org/10.1038/nprot.2016.178&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
-&lt;p&gt;A new model to predict behavioral data with the brain connectivity.&lt;/p&gt;
-&lt;p&gt;[Steps]&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Feature selection&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Feature Summarization&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Model Building&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Assessment of Prediction Significance.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Interesting part : It only uses linear model.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Malkus-Lorenz Wheel (Mathematics &#43; Code)</title>
       <link>https://MunjungKim.github.io/posting/lorenz_wheel/</link>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://MunjungKim.github.io/posting/lorenz_wheel/</guid>
       <description>You can check the pdf version of this post in here This term project is first inspired by the book Chaos written by James Gleick.</description>
-    </item>
-    
-    <item>
-      <title>Hierarchical organization of cortical and thalamic connectivity</title>
-      <link>https://MunjungKim.github.io/apad/math-typesetting/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/apad/math-typesetting/</guid>
-      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;</description>
     </item>
     
     <item>

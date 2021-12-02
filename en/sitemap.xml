@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://MunjungKim.github.io/</loc>
-    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-04T00:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="kor"
@@ -14,18 +14,6 @@
                 hreflang="en"
                 href="https://MunjungKim.github.io/"
                 />
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/</loc>
-    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/measurement_fairness/</loc>
-    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/optimal_percolation/</loc>
-    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/contributor-roles/</loc>
-    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/personal/links-life/</loc>
     <lastmod>2021-09-04T00:00:00+09:00</lastmod>
@@ -68,38 +56,11 @@
                 href="https://MunjungKim.github.io/tags/"
                 />
   </url><url>
-    <loc>https://MunjungKim.github.io/apad/the_network_structure_of_scientific_revolution/</loc>
-    <lastmod>2021-08-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/network-neuroscience/</loc>
-    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://MunjungKim.github.io/tags/link/</loc>
     <lastmod>2021-08-04T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/personal/moulin/</loc>
     <lastmod>2021-08-04T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/stack/</loc>
-    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/element-centric-clustring/</loc>
-    <lastmod>2021-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/curiosity/</loc>
-    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/d.-bassett/</loc>
-    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/hunter-busybody/</loc>
-    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/knowledge-network/</loc>
-    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/small_group_distrupt/</loc>
-    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/categories/</loc>
     <lastmod>2021-06-23T00:00:00+00:00</lastmod>
@@ -119,9 +80,6 @@
   </url><url>
     <loc>https://MunjungKim.github.io/pr/doc2vec/</loc>
     <lastmod>2021-06-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/topic_diversity/</loc>
-    <lastmod>2021-06-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/posting/clustering/</loc>
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
@@ -150,17 +108,8 @@
     <loc>https://MunjungKim.github.io/posting/neural_network/</loc>
     <lastmod>2021-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://MunjungKim.github.io/apad/fc-fingerprint-behavior-natneuro/</loc>
-    <lastmod>2021-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/cpm/</loc>
-    <lastmod>2021-05-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://MunjungKim.github.io/posting/lorenz_wheel/</loc>
     <lastmod>2021-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/apad/math-typesetting/</loc>
-    <lastmod>2021-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/pr/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
