@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  dir="ltr" lang="en" data-theme="light"><head>
-    <title> MunJung Kim | Mixing Patterns </title>
+    <title> MunJung Kim | Measurement and Fairness </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.82.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Hi! :-)  I&#39;m an undergraduate student at the Department of Physics at POSTECH.">
+    <meta name="description" content="Coneference on Fairness, Accountability, and Transparency">
     
     
     
@@ -32,10 +32,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="/tags/mixing-patterns/">
+    <link rel="canonical" href="/apad/measurement_fairness/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="/tags/mixing-patterns/index.xml" title="MJ's blog" />
     
     
     
@@ -56,8 +55,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://MunjungKim.github.io/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Mixing Patterns"/>
-<meta name="twitter:description" content="Hi! :-)  I&#39;m an undergraduate student at the Department of Physics at POSTECH."/>
+<meta name="twitter:title" content="Measurement and Fairness"/>
+<meta name="twitter:description" content="Coneference on Fairness, Accountability, and Transparency"/>
 
 
     
@@ -186,24 +185,110 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
             
-                <div class="listing-title">2021</div>
+            <div class="post-title">
+                <h3>Measurement and Fairness</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="/posting/network_properties/" title="Brief Explanations of Network&#39;s Various Properties">Brief Explanations of Network&#39;s Various Properties</a>
-                                <div class="post-time"><span class="date"> 
-                                                                            6/8/2021
-                                                                            </span></div>
-                            </div>
-                        </div>
-                    </ul>
+            </div>
+
+            <h2 id="paper">Paper</h2>
+<p>Osat, S., Faqeeh, A. &amp; Radicchi, F. Optimal percolation on multiplex networks. Nat Commun 8, 1540 (2017). <a href="https://doi.org/10.1038/s41467-017-01442-2">https://doi.org/10.1038/s41467-017-01442-2</a></p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>
+<p>Computational Systems often contain unboservable theoretical constructs (e.g. teacher effectiveness, social status&hellip;)</p>
+</li>
+<li>
+<p>Several assumptions in the measurement model can have mismatch between the operationalization and theoretical understandings.</p>
+</li>
+<li>
+<p>How to anticipate these harms?</p>
+</li>
+<li></li>
+</ul>
+<h2 id="results">Results</h2>
+<h4 id="identifying-structural-nodes-in-multiplex-networks">Identifying structural nodes in multiplex networks</h4>
+<p>Goal: to find the minimal set of nodes such that, if removed from the multiplex, no mutual cluster with a size greater than \(N^{1/2}\) is found in the network.</p>
+<ul>
+<li>
+<p>Finding approximate solution is not trivial. For instance, in the greedy search which many researchers have been used, node degrees is used to calculate the score for each node. Howeer, in the multiplex network, it is not easy to assign one score into one node.</p>
+</li>
+<li>
+<p>Using various algorithms, the authors find optimal percolation solution with two layer multiplex network with \(N=10,000 \). Each network made through Erodoss-Renyi model with average k=5.</p>
+</li>
+<li>
+<p>As a result, simulated annealing optimization strategy was the best. SA has variou advantages but it also has drawbacks such as computation cost</p>
+</li>
+</ul>
+<h3 id="the-size-of-the-set-of-sns">The size of the set of SNs</h3>
+<ul>
+<li>
+<p>Relative error for optimal percolation behaves more or less in the same way as that of ordinary percolation. (inverse proportion)</p>
+</li>
+<li>
+<p>Generally, multiplex networks have considerably smaller sets of SNs compared to the SN sets of their single-layer based network representations.</p>
+</li>
+</ul>
+<h3 id="edge-overlap-and-degree-correlations">Edge overlap and degree correlations</h3>
+<ul>
+<li>Checked the dependence of the size of the SNs on overlap and layer to layer degree correlation.</li>
+<li>The size of SNs deviates immediately after \(\alpha\) becomes bigger than 0. As soon as there is a finite fraction of edges that are not shared by the two layers, the system behaves exactly as a multiplex</li>
+<li>The error committed when relying on single-layer representations of the multiplex does not regard only the size of the SN sets, but also the identity of the SNs.</li>
+</ul>
+<h3 id="self-consistency">Self Consistency</h3>
+<ul>
+<li>
+<p>\(S = \sum_i p_{i}^2 /\sum_i p_{i} \) . Multiplex network with small overlap and correlation has small S</p>
+</li>
+<li>
+<p>\(p_{i}\) is the probability that node \(i\) is found within the set of SNs of multiplex network. \(w_{i}\) is the probability that node \(i\) is found within the set of SNs of a specific single layer representation of that multiplex network.</p>
+</li>
+<li>
+<p>Precision \(P = \sum_i p_{i} w_{i} /\sum_i w_{i} \). (i.e. the ratio of the expected number of correctly detected SNs by single layer to the to the expected total number of detected SNs.   \(P\)  deteriorates as the edge overlap and inter layer degree correlation decrease.</p>
+</li>
+<li>
+<p>Recall \(R = \sum_i p_{i} w_{i} /\sum_i p_{i} \).</p>
+</li>
+<li>
+<p>\(F_{1} = 2/(1/P +1/R) \)</p>
+</li>
+</ul>
+<hr>
+<h4 id="multiplex-network">Multiplex network</h4>
+<p>Multiplex network is a subset of multilayer network.
+Multiplex network has two properties.</p>
+<ol>
+<li>all layers share the same nodes.</li>
+<li>all nodes are connected themselves in the different layers.
+e.g.) diseases spreading when two pathogens each of which enhances or impairs the spreading of the other.</li>
+</ol>
+<h4 id="percolation-theory">Percolation theory</h4>
+<p>Percolation indicates the phenomenon that the network is fragmented into small clusters when the critical fraction of nodes or links are randomly removed (node/edge isolation).</p>
+<ul>
+<li>The size of connected components within a graph can be used to examine the robustests of the system to node damage or failure</li>
+<li>Examine the capacity of the graph to maintain its connextedness under different kinds of topological attacks (graph topological perturbation).</li>
+<li>At percolation threshold, the network is fragmented.(phase transition)</li>
+</ul>
+<h4 id="simulated-aneealing-optimization">Simulated aneealing optimization</h4>
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://cosnet.bifi.es/network-theory/multiplex-networks/">https://cosnet.bifi.es/network-theory/multiplex-networks/</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Percolation_theory">https://en.wikipedia.org/wiki/Percolation_theory</a></li>
+</ul>
+</div>
+        <div class="post-footer">
+            <div class="info">
                 
-            
-        </ul>
+                
+            </div>
+        </div>
+
+        
     </div>
+
+
 
         </div>
     </div>
