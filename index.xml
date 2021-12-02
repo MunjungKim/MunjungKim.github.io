@@ -81,31 +81,12 @@ Philosophy of science   Karl Popper: the development of scientific ideas as a se
     </item>
     
     <item>
-      <title>Network Controllability</title>
-      <link>https://MunjungKim.github.io/posting/network_controllability/</link>
-      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/posting/network_controllability/</guid>
-      <description>Laplacian matrix \(L = D - A\) , where \(L\) is laplacian matrix, \(D\) is Degree matrix and \(A\) is the adjacency matrix.</description>
-    </item>
-    
-    <item>
       <title>Network neuroscience</title>
       <link>https://MunjungKim.github.io/apad/network-neuroscience/</link>
       <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://MunjungKim.github.io/apad/network-neuroscience/</guid>
       <description>Paper Bassett, D., Sporns, O. Network neuroscience. Nat Neurosci 20, 353–364 (2017).</description>
-    </item>
-    
-    <item>
-      <title>Brief Explanations of Network&#39;s Various Properties</title>
-      <link>https://MunjungKim.github.io/posting/network_properties/</link>
-      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/posting/network_properties/</guid>
-      <description>[This Article is not yet completed.]
-Random networks  Erdős and Rényi model contrived in 1960.</description>
     </item>
     
     <item>
@@ -297,16 +278,6 @@ from resting state connectivity in an independent sample of children and adolsec
       
       <guid>https://MunjungKim.github.io/posting/gradient_descent/</guid>
       <description>This article is written based on the lecture MATH532 by Prof.</description>
-    </item>
-    
-    <item>
-      <title>How to use BERT in python</title>
-      <link>https://MunjungKim.github.io/posting/bert/</link>
-      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://MunjungKim.github.io/posting/bert/</guid>
-      <description>[This article is not yet completed.]
-This article explains an &amp;ldquo;implementation&amp;rdquo; of BERT (Bidirectional Encoder Representations from Transformers) in a nutshell.</description>
     </item>
     
     <item>
