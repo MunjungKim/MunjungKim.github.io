@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://MunjungKim.github.io/</loc>
-    <lastmod>2021-09-04T00:00:00+09:00</lastmod>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="kor"
@@ -13,6 +13,34 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://MunjungKim.github.io/"
+                />
+  </url><url>
+    <loc>https://MunjungKim.github.io/posting/bert/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/natural-language-processing/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/neural-embedding/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/posting/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/representation-learning/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://MunjungKim.github.io/tags/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kor"
+                href="https://MunjungKim.github.io/kor/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://MunjungKim.github.io/tags/"
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/personal/links-life/</loc>
@@ -41,19 +69,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://MunjungKim.github.io/tags/journaling/"
-                />
-  </url><url>
-    <loc>https://MunjungKim.github.io/tags/</loc>
-    <lastmod>2021-09-01T00:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kor"
-                href="https://MunjungKim.github.io/kor/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://MunjungKim.github.io/tags/"
                 />
   </url><url>
     <loc>https://MunjungKim.github.io/tags/link/</loc>
@@ -94,9 +109,6 @@
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/tags/nestrov-accelerated-gradient/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://MunjungKim.github.io/posting/</loc>
     <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://MunjungKim.github.io/tags/cnn/</loc>
