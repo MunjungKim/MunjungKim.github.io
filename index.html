@@ -53,92 +53,90 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Munjung
-                        <span class="text-primary">Kim</span>
+                        Munjung Kim
                     </h1>
                     <div class="subheadinglow mb-5">
                         PhD Student in Informatics (Complex Networks and Systems) · <a href="https://bloomington.iu.edu/index.html">Indiana University Bloomington  </a>
                         <br>
                         <a href="mailto:munjkim@iu.edu">munjkim@iu.edu</a>
                     </div>
-                    
                     <p class="lead mb-5">
-                        Hi!  I am a second year PhD student in the Department of Informatics (specializing in Complex Network Systems) at Indiana University Bloomington. 
-                        I am advised by <a href="http://yongyeol.com">Yong-Yeol Ahn.</a> Before this, I was an undergraduate at <a href="https://www.postech.ac.kr/eng/">Pohang University of Science and Technology (POSTECH).</a>
+                        Hi! I'm a PhD student in Informatics at Indiana University Bloomington, specializing in Complex Systems and Network Science. 
+                        My research focuses on using and developing advanced AI and data science techniques to understand innovation in science and technology. 
+                        Thesedays, I'm also interested in exploring how large language models can be enhanced and understood through the lens of collective intelligence. Before joining the PhD program, I completed my undergraduate studies in Physics at Pohang University of Science and Technology (POSTECH).
                         <br>
                         <br>
-                        My research focuses on understanding the mechanisms through which human innovation arises, scientific fields evolve, and scientific theories are formulated. 
-                        I use various computational methods for my studies such as neural network embedding, language model, and network analysis.
-                         
-                        <br>
-                        <br>
-                        I'm currently engaged in improving or devising methods for quantifying diverse characteristics of scientific works (such as novelty, disruptiveness, etc.) and analyzing the underlying dynamics that govern these traits.
-                        My interests also extends to the realm of philosophy of science, where I explore inquiries such as whether scientific progress brings us closer to truth, how the relationship between science and truth changes depending on different scientific methods, and the distinctions that science apart from non-science.
-                        Through my studies, I aim to enhance the practices of scientific communities, foster improved scientific methodologies, and potentially pave the way for automated scientific procedures.
-                        
-                        <br>
-                        <br>
-                        <br>
-                        Science of Science ·  Neural Network Embedding · Language Models (LMs) 
+                        Machine Learning · Large Language Models · Science of Science
                     </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/snetsmj/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/MunjungKim"><i class="fab fa-github"></i></a>
                         <a class="social-icon-gs" href="https://scholar.google.com/citations?user=gMrsCCoAAAAJ&hl=en&oi=ao"><i class="ai ai-google-scholar-square"></i></a>
                         <a class="social-icon" href="https://twitter.com/snetsMJ"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon-gs" href="files/MunjungKim.pdf"><i class="ai ai-cv"></i></a>
+                        <a class="social-icon-gs" href="files/MunjungKim_CV_02162025.pdf"><i class="ai ai-cv"></i></a>
                         
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- News-->
             <section class="resume-section-superlow" id="news">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Recent News</h2>
-                    
-                        
-                    <!-- </ul> -->
+                  <h2 class="mb-5">Recent News</h2>
+                  
+                  <!-- News Page 1 -->
+                  <div id="news-page-1">
                     <div>
-                       
-                            
-                        <mark>  June 2024</mark> I will join Nokia Bell Labs as an intern
+                        <mark>Jan 2024</mark> I delivered an invited talk at SNU and KISTI.
+                      </div>
+                      <br>
+                    <div>
+                        <mark>Dec 2024</mark> I delivered an invited talk at KDI School and KAIST STP.
+                      </div>
+                      <br>
+                    <div>
+                      <mark>June - August 2024</mark> I completed an internship at Nokia Bell Labs.
                     </div>
                     <br>
                     <div>
-                       
-                            
-                        <mark>  July 2023</mark> I gave a poster presentation in ICS2S2
+                      <mark>July 2023</mark> I gave a poster presentation in ICS2S2.
+                    </div>
+                  </div>
+                  
+                  <!-- News Page 2 -->
+                  <div id="news-page-2" style="display:none;">
+                    <div>
+                      <mark>July 2023</mark> I gave an oral presentation in Netsci 2023.
                     </div>
                     <br>
                     <div>
-                       
-                            
-                            <mark>  July 2023</mark> I gave an oral presentation in Netsci 2023
+                      <mark>June 2023</mark> I joined Santa Fe Institute Complex System Summer School.
                     </div>
-                    <br>
-                    <div>
-                          <mark>  June 2023</mark> I joined Santa Fe Institute Complex System Summer School
-                        
-                    </div>
-                       
-                        <!-- <i class="fas fa-terminal"></i></span>
-                            Pytorch
-                        
-                        <i class="fas fa-terminal"></i></span>
-                            Sankemake
-                   
-                        <i class="fas fa-terminal"></i></span>
-                        git
-                     
-                        <i class="fas fa-terminal"></i></span>
-                        git -->
-                      
-                        
-                    
-                    
+                  </div>
+                  
+                  <!-- Navigation Button -->
+                  <br>
+                  <button id="newsToggleBtn" class="btn btn-secondary" onclick="toggleNewsPage()">Next</button>
                 </div>
-            </section>
+              </section>
+
+              <script>
+                function toggleNewsPage(){
+                  var page1 = document.getElementById("news-page-1");
+                  var page2 = document.getElementById("news-page-2");
+                  var btn = document.getElementById("newsToggleBtn");
+                
+                  // Toggle display of news pages
+                  if(page1.style.display !== "none"){
+                    page1.style.display = "none";
+                    page2.style.display = "block";
+                    btn.innerHTML = "Previous";
+                  } else {
+                    page1.style.display = "block";
+                    page2.style.display = "none";
+                    btn.innerHTML = "Next";
+                  }
+                }
+                </script>
             <hr class="m-0" />
             <!-- Interests-->
             <section class="resume-section" id="projects">
@@ -149,22 +147,18 @@
                             <h3 class="mb-0">Quantifying Disruptiveness using neural embedding method</h3>
                             <div>
                                 <br>
-                                Science and technology often revolve around development and disruption, where works can enhance existing knowledge (development) or revolutionize fields (disruption). 
-                                Due to the significant impact of disruptive innovations and the decline in such breakthroughs, there's growing interest in quantifying two characteristics and comprehending the factors that drive them. 
-                                Although the disruption index (D) proposed by Funk and Owen-Smith played a key role in exploring disruptive innovations, its characteristics and limitations remain unclear.
-                                
-
-                                Here, we introduce a graph embedding approach to quantify disruptiveness and demonstrate that our measure outperforms the original disruption index in multiple tasks. 
-                                Our measure shares the same idea with the disruption index—because disruptive papers create a new knowledge space, the papers that cite the disruptive papers are much less likely to cite the references of the disruptive papers. 
-                                We leverage the fact that the target and context vectors that node2vec (word2vec) learns have different semantics: by restricting the training context to only one side of the target node, we can learn the context of citations and that of references separately.
+                                Although understanding disruptive breakthroughs and their drivers hinges upon accurately quantifying disruptiveness, the core metric used in previous studies—the disruption index—remains insufficiently understood and tested. 
+                                Here, after demonstratinits conflicting evaluations for simultaneous discoveries or “multiples”, we propose a new, continuous measure of disruptiveness based on a neural embedding framework that addresses these limitations. 
+                                Our measure not only better distinguishes disruptive works, such as Nobel Prize-winning papers, from others, but also reveals simultaneous disruptions by allowing us to examine the “twins” that have the most similar future context.
+                                By offering a more robust and precise lens for identifying disruptive innovations and simultaneous discoveries, our study provides a foundation for deepening insights into the mechanisms driving scientific breakthroughs while establishing a more equitable basis for evaluating transformative contributions.
                                 <br>
                                 <br>
-                                [<a href="files/ic2s2_2023_03_02_disruptiveness.pdf">abstract</a>]
+                                [<a href="files/ic2s2_2023_03_02_disruptiveness.pdf">paper</a>]
                             </div>
                             
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">
-                            <p><img src="assets/img/Figure2_directional_node2vec_August_24.png" alt="project2" width = "600"></p>
+                            <p><img src="assets/img/Figure2_Schematics_Apr_25.png" alt="project2" width = "500"></p>
                         </span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
@@ -196,7 +190,7 @@
             </section>
             <hr class="m-0" />
             <!-- Experience-->
-            <section class="resume-section" id="experience">
+            <!-- <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -241,7 +235,7 @@
                         <div class="flex-shrink-0"><span class="text-primary">Dec 2019 - Jan 2020</span></div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <hr class="m-0" />
             <!-- Education-->
             <section class="resume-section-superlow" id="education">
@@ -285,7 +279,7 @@
                         <p class="lead mb-1">
                             
                             
-                        Pythons, R, Matlab,C, C++, HTML, CSS, UNIX Bash, Linux
+                        Python, R, Matlab,C, HTML, UNIX Bash, Linux
                         
                             
                        
@@ -330,35 +324,17 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                             National Scholarship for Excellence (Sci. & Eng.) -  Korea Studnet Aid Foundation, $20,000
+                            Humane Studies Fellowship, Institute for Humane Studies, 2024, $5,000
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Global Talent Attraction Program, Indiana University Bloomington, $4,000
+                             National Scholarship for Excellence (Sci. & Eng.) -  Korea Studnet Aid Foundation, 2017-2021, $20,000
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>st</sup>
-                            Bachelor's Thesis Award - Pohang University of Science and Technology
+                            Global Talent Attraction Program, Indiana University Bloomington, 2020, $4,000
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                           
-                            Semester of High Honor, 2019, 2020, 2021
-                        </li>
-
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                           
-                            Senior Mentoring Program Scholarship, 2019, 2020
-                        </li>
-
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                           
-                            Residential College Advisor Scholarship, 2019
-                        </li>
+                       
                        
                     </ul>
                 </div>
